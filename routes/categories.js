@@ -9,7 +9,7 @@ const categories = [
 ]
 
 router.get("/allcategories", (req, res) => {
-    res.json(wallpapers)
+    res.json(categories)
 })
    
 router.get("/categories", paginatedResults(categories), (req, res) => {
