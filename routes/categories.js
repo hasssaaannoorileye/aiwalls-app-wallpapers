@@ -2,7 +2,10 @@ const express = require('express')
 const router = express.Router()
 
 const categories = [
-
+    {
+        "title": "Abstract",
+        "bgImg": "https://i.pinimg.com/originals/e0/f2/9f/e0f29f2e5627d6ec4fa632d1e9488ee7.jpg"
+    }
 ]
 
 router.get("/allcategories", (req, res) => {
