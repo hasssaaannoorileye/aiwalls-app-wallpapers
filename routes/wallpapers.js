@@ -6397,18 +6397,12 @@ function paginatedResults(model) {
         const results = {}
 
         if (endIndex < model.length) {
-            results.next = {
-                page: page + 1,
-                limit: limit
-            }
+            results.next = page + 1
         }
 
         
         if (startIndex > 0) {
-            results.previousPage = {
-                page: page - 1,
-                limit: limit
-            }
+            results.previousPage = page - 1
         }
     
         try {
