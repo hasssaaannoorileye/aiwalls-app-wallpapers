@@ -3,6 +3,102 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2015/08/19/01/58/abstract-895396_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/08/19/01/58/abstract-895396_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-squares-triangle-polygon-895396/",
+        "desc": "Abstract Squares Triangle wallpaper latest colorful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/06/28/05/24/abstract-1483979_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/06/28/05/24/abstract-1483979_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-background-circle-bubbles-1483979/",
+        "desc": "Abstract Background Circle 3d"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/07/01/16/00/background-2461867_150.png",
+        "full": "https://cdn.pixabay.com/photo/2017/07/01/16/00/background-2461867_1280.png",
+        "pg": "https://pixabay.com/illustrations/background-blue-green-digital-paper-2461867/",
+        "desc": "background blue green digital paper vintage texture form pixels old one square frame free illustrations free images stylized retro iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/20/06/ai-generated-7826366_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/20/06/ai-generated-7826366_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-clouds-planets-7826366/",
+        "desc": "ai generated clouds planets background ai art fantasy nature colorful phone wallpaper painting phone background universe wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/10/30/21/41/abstract-5699827_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/10/30/21/41/abstract-5699827_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-geometric-background-5699827/",
+        "desc": "Abstract Geometric Background dark black pink"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/12/00/30/skull-7515393_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/12/00/30/skull-7515393_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/skull-spooky-halloween-art-nouveau-7515393/",
+        "desc": "featured skull spooky halloween art nouveau ornate decorative cartoon carving ai generated face phone  scary gothic bones dead biker dangerous cellphone  cover art book cover avatar profile picture"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/10/16/13/03/wallpaper-1745082_150.png",
+        "full": "https://cdn.pixabay.com/photo/2016/10/16/13/03/wallpaper-1745082_1280.png",
+        "pg": "https://pixabay.com/illustrations/wallpaper-inkscape-lines-gradient-1745082/",
+        "desc": "inkscape lines gradient curves design abstract red red abstract red abstract red design iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/21/18/47/background-8462412_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/12/21/18/47/background-8462412_1280.png",
+        "pg": "https://pixabay.com/illustrations/background-abstract-artistic-modern-8462412/",
+        "desc": "Background Abstract Artistic"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/10/16/01/18/antique-990352_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/10/16/01/18/antique-990352_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/antique-backdrop-background-baroque-990352/",
+        "desc": "Antique Backdrop Background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/22/15/02/hexagon-pattern-7338336_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/22/15/02/hexagon-pattern-7338336_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/hexagon-pattern-snowflake-pattern-7338336/",
+        "desc": "hexagon pattern snowflake pattern mobile abstract pattern background fractals digital art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/04/01/12/20/abstract-1300667_150.png",
+        "full": "https://cdn.pixabay.com/photo/2016/04/01/12/20/abstract-1300667_1280.png",
+        "pg": "https://pixabay.com/vectors/abstract-art-background-colorful-1300667/",
+        "desc": "Abstract Art Background colorful flowers"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/55/ai-generated-7826304_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/55/ai-generated-7826304_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-papercutting-foliage-7826304/",
+        "desc": "ai generated papercutting foliage background ai art flowers fantasy co"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/12/19/07/57/house-6880297_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/12/19/07/57/house-6880297_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/house-building-trees-pagoda-6880297/",
+        "desc": "house building trees pagoda phone wallpaper nature iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/24/12/57/space-6046408_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/24/12/57/space-6046408_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/space-planets-fantasy-fire-ring-6046408/",
+        "desc": "Space Planets Fantasy wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/12/29/20/48/tiger-6902729_1280.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/12/29/20/48/tiger-6902729_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/tiger-winter-blizzard-cold-dark-6902729/",
+        "desc": "tiger winter blizzard cold dark wallpaper iphone popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/10/01/20/30/star-6673568_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/10/01/20/30/star-6673568_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/star-abstract-pattern-wallpaper-6673568/",
+        "desc": "star abstract pattern wallpaper background abstract shapes shapes universe design iphone wallpaper"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/12/21/15/30/house-8462027_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/12/21/15/30/house-8462027_1280.jpg",
         "pg": "https://pixabay.com/illustrations/house-nature-christmas-tree-8462027/",
