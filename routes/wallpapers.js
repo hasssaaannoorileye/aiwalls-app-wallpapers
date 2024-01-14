@@ -3,6 +3,12 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/21/16/08/house-8462150_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/21/16/08/house-8462150_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/house-christmas-tree-christmas-8462150/",
+        "desc": "house christmas tree christmas decoration holiday winter nature december snow season ai generated wallpaper"
+   },
+    {
         "thumb": "https://i.pinimg.com/474x/e0/f2/9f/e0f29f2e5627d6ec4fa632d1e9488ee7.jpg",
         "full": "https://i.pinimg.com/originals/e0/f2/9f/e0f29f2e5627d6ec4fa632d1e9488ee7.jpg",
         "pg": "https://www.pinterest.com/pin/3588874695707572/",
