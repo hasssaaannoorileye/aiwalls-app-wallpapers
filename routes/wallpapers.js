@@ -3,6 +3,228 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://images.rawpixel.com/image_450/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODIwMTIwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMi5qcGc.jpg",
+        "full": "https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODIwMTIwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMi5qcGc.jpg",
+        "pg": "https://www.rawpixel.com/image/3864311/image-background-flower-wallpaper",
+        "desc": "IPHONE MOBILE PHONE BLUE IPHONE IPHONE GREEN TREE TRUNK TREE BRANCHES INSTAGRAM STORY popular"
+   },
+    {
+        "thumb": "https://images.pixexid.com/an-artistic-wallpaper-that-zooms-in-on-the-beauty-of-a-single-flower-in-macro-kl3gbluz.webp?h=700&q=70",
+        "full": "https://images.pixexid.com/an-artistic-wallpaper-that-zooms-in-on-the-beauty-of-a-single-flower-in-macro-kl3gbluz.webp?h=700&q=70",
+        "pg": "https://pixexid.com/image/an-artistic-wallpaper-that-zooms-in-on-the-beauty-of-a-single-flower-in-macro-kl3gbluz",
+        "desc": "Plant Flower Pollen Petal Light popular"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/922/821/HD-wallpaper-black-hacker-darkness-blueeyes-cool-horrible.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/922/821/HD-wallpaper-black-hacker-darkness-blueeyes-cool-horrible.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vqtby",
+        "desc": "Black, hacker, darkness, blueeyes, cool, horrible featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/759/286/HD-wallpaper-avengers-electric-electric-blue-magenta-dark-theme-night-dark-mode-marvel-bgmi-amoled-dark-black-panther-pubg-dark.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/759/286/HD-wallpaper-avengers-electric-electric-blue-magenta-dark-theme-night-dark-mode-marvel-bgmi-amoled-dark-black-panther-pubg-dark.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vsrbi",
+        "desc": "Avengers Electric, electric blue, magenta, Dark Theme, Night , Dark Mode, Marvel, bgmi, Amoled, dark, Black Panther, pubg, Dark featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/544/999/HD-wallpaper-amoled-dark-black-red-designs-abstract-digital-abstract-electric.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/544/999/HD-wallpaper-amoled-dark-black-red-designs-abstract-digital-abstract-electric.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-alulw",
+        "desc": "Amoled, dark, black, red, designs, abstract digital, abstract, electric featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/920/501/HD-wallpaper-black-abstract-amoled-blue-color-dark-edge.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/920/501/HD-wallpaper-black-abstract-amoled-blue-color-dark-edge.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kfgpj",
+        "desc": "Black, abstract, amoled, blue, color, dark, edge, featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/809/249/HD-wallpaper-colors-abstract-amoled-black-blue-color-samsung-super-ultra.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/809/249/HD-wallpaper-colors-abstract-amoled-black-blue-color-samsung-super-ultra.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-gdpny",
+        "desc": "Colors, abstract, amoled, black, blue, color, samsung, super, ultra wallpaper"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/49/900/HD-wallpaper-amoled-planet-apple-black-blue.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/49/900/HD-wallpaper-amoled-planet-apple-black-blue.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fctmy",
+        "desc": "Amoled planet , apple, black, blue, wallpaper"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/976/422/HD-wallpaper-iphone-apple-black-earth-element-fantasy-liquid-pattern-planet-texture.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/976/422/HD-wallpaper-iphone-apple-black-earth-element-fantasy-liquid-pattern-planet-texture.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nksak",
+        "desc": "iPhone, apple, black, earth, element, fantasy, liquid, pattern, planet, texture featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/567/451/HD-wallpaper-fantasy-fluid-planet-apple-black-cosmos-earth-liquid-solar-system-space.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/567/451/HD-wallpaper-fantasy-fluid-planet-apple-black-cosmos-earth-liquid-solar-system-space.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vkxum",
+        "desc": "Fantasy Fluid Planet, apple, black, cosmos, earth, liquid, solar system, space"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/386/56/HD-wallpaper-fantasy-planet-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-solar-system-space-stars.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/386/56/HD-wallpaper-fantasy-planet-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-solar-system-space-stars.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kcvpz",
+        "desc": "Fantasy Planet, Fluid, Galaxy, Geoglyser, bonito, blue, cosmo, cosmos, dreamy, green, orange, solar system, space, stars featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/346/335/HD-wallpaper-triangle-planet-color-colorful-geoglyser-abstract-blue-cosmos-dream-earth-fluid-galaxy-orange-pink-psychedelic-purple-rainbow-holographic-solar-system-space-stars-texture-vaporwave.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/346/335/HD-wallpaper-triangle-planet-color-colorful-geoglyser-abstract-blue-cosmos-dream-earth-fluid-galaxy-orange-pink-psychedelic-purple-rainbow-holographic-solar-system-space-stars-texture-vaporwave.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kztff",
+        "desc": "Triangle Planet, Color, Colorful, Geoglyser, abstract, blue, cosmos, dream, earth, fluid, galaxy, orange, pink, psicodelia, purple, rainbow holographic, solar system, space, stars, texture, vaporwave featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/484/981/HD-wallpaper-amoled-flower-galaxy-design-apple-dark-black.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/484/981/HD-wallpaper-amoled-flower-galaxy-design-apple-dark-black.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nxhje",
+        "desc": "Amoled flower, galaxy, desenho, apple, dark, black, featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/85/936/HD-wallpaper-samsung-galaxy-amoled-black-blue-dark-oled-pink-purple-violet.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/85/936/HD-wallpaper-samsung-galaxy-amoled-black-blue-dark-oled-pink-purple-violet.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nvhae",
+        "desc": "Samsung Galaxy, amoled, black, blue, dark, oled, pink, purple, violet featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/135/412/HD-wallpaper-street-lights-929-amoled-black-dark-minimal-minimalistic-thumbnail.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/135/412/HD-wallpaper-street-lights-929-amoled-black-dark-minimal-minimalistic-thumbnail.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nzxig",
+        "desc": "Street Lights, 929, amoled, black, dark, minimal, minimalistic"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/866/698/HD-wallpaper-iphone-apple-color-iphone-max-iphone-x-iphone-xs-nature-pink-planet.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/866/698/HD-wallpaper-iphone-apple-color-iphone-max-iphone-x-iphone-xs-nature-pink-planet.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fqhni",
+        "desc": "Iphone, apple, color, iphone max, iphone x, iphone xs, nature, pink, planet, "
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/196/918/HD-wallpaper-new-space-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-planet-solar-system-stars.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/196/918/HD-wallpaper-new-space-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-planet-solar-system-stars.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nxxqi",
+        "desc": "New Space, Fluid, Galaxy, Geoglyser, bonito, blue, cosmo, cosmos, dreamy, green, orange, planet, solar system, stars featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/535/227/HD-wallpaper-bmw-black-dark-vehicle-thumbnail.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/535/227/HD-wallpaper-bmw-black-dark-vehicle-thumbnail.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kcprt",
+        "desc": "BMW, black, dark, vehicle featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/159/80/HD-wallpaper-competition-3d-3d-design-amoled-black-cubes-dark-light-neon-night-render-thumbnail.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/159/80/HD-wallpaper-competition-3d-3d-design-amoled-black-cubes-dark-light-neon-night-render-thumbnail.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vpyqs",
+        "desc": "Competition, 3d, 3d design, amoled, black, cubes, dark, light, neon, night, render featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/775/340/HD-wallpaper-cubed-black-cube-dark-light-neon-rubix-simple.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/775/340/HD-wallpaper-cubed-black-cube-dark-light-neon-rubix-simple.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-pjmzf",
+        "desc": "Cubed, black, cube, dark, light, neon, rubix, simple 3d"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/164/773/HD-wallpaper-let-s-play-neon-sign-dark-game-gamer-gaming-light-neon-play-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/164/773/HD-wallpaper-let-s-play-neon-sign-dark-game-gamer-gaming-light-neon-play-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fbwct",
+        "desc": "Let's Play Neon Sign, dark, game, gamer, gaming, light, neon, play, sign featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/910/983/HD-wallpaper-black-light-bulb-dark.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/910/983/HD-wallpaper-black-light-bulb-dark.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nxinb",
+        "desc": "Black Light, bulb, dark"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/22/575/HD-wallpaper-gamer-zone-drawings-game-no-entry-red-door-sayings-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/22/575/HD-wallpaper-gamer-zone-drawings-game-no-entry-red-door-sayings-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-krjrh",
+        "desc": "Gamer zone, drawings, game, no entry, red door, sayings, sign featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/929/436/HD-wallpaper-gamer-game-gamers-games-playstation-ps4-ps5-video-game-video-games.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/929/436/HD-wallpaper-gamer-game-gamers-games-playstation-ps4-ps5-video-game-video-games.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-ogkuf",
+        "desc": "Gamer, game, gamers, games, playstation, ps4, ps5, video game, video games"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/968/215/HD-wallpaper-ps-playstation-game-gamer-playstation-ps4.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/968/215/HD-wallpaper-ps-playstation-game-gamer-playstation-ps4.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-asdfv",
+        "desc": "PS - PlayStation, game, gamer, playstation, ps4 featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/164/870/HD-wallpaper-dont-phone-saying-sign-touch.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/164/870/HD-wallpaper-dont-phone-saying-sign-touch.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-klayw",
+        "desc": "Dont, phone, saying, sign, touch featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/127/139/HD-wallpaper-today-saying-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/127/139/HD-wallpaper-today-saying-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nvwmw",
+        "desc": "Today, saying, sign quotes"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/430/425/HD-wallpaper-always-smile-saying-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/430/425/HD-wallpaper-always-smile-saying-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nviht",
+        "desc": "Always Smile, saying, sign quotes"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/581/45/HD-wallpaper-good-day-yellow-words-sayings-today.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/581/45/HD-wallpaper-good-day-yellow-words-sayings-today.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-podnp",
+        "desc": "good day, yellow, words, sayings, today,"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/705/349/HD-wallpaper-believe-in-black-wood-sayings-white-wood-words-yellow-yourself.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/705/349/HD-wallpaper-believe-in-black-wood-sayings-white-wood-words-yellow-yourself.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-ayyyz",
+        "desc": "Believe in, black wood, sayings, white, wood, words, yellow, yourself, featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/317/560/HD-wallpaper-make-yourself-happy-blackgreen-blue-colors-orange-sayings-words-yellow.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/317/560/HD-wallpaper-make-yourself-happy-blackgreen-blue-colors-orange-sayings-words-yellow.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fydwh",
+        "desc": "Make yourself happy, blackgreen, blue, colors, orange, sayings, words, yellow,"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/516/695/HD-wallpaper-always-smile-face-good-sad-sticker-theme-yellow.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/516/695/HD-wallpaper-always-smile-face-good-sad-sticker-theme-yellow.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kvpna",
+        "desc": "Always smile, face, good, sad, sticker, theme, yellow"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/892/973/HD-wallpaper-smiley-face-discover-more-always-smile-be-happy-emoji-happy-happy-face-smile-cute-emoji-scary.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/892/973/HD-wallpaper-smiley-face-discover-more-always-smile-be-happy-emoji-happy-happy-face-smile-cute-emoji-scary.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-euvpu",
+        "desc": "Smiley Face Discover more Always Smile, Be Happy, Emoji, Happy, Happy Face .. Smile , Cute emoji , Scary"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/977/920/HD-wallpaper-space-planet-planets-solar-system-universe.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/977/920/HD-wallpaper-space-planet-planets-solar-system-universe.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-pjski",
+        "desc": "SPACE, planet, planets, solar, system, universe"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/965/746/HD-wallpaper-big-smile-face-faces-minion-minions-smile.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/965/746/HD-wallpaper-big-smile-face-faces-minion-minions-smile.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-avlze",
+        "desc": "big Smile, face, faces, minion, minions, smile featured featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/9/32/HD-wallpaper-punch-hole-minion.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/9/32/HD-wallpaper-punch-hole-minion.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kjqrs",
+        "desc": "Punch Hole , minion yellow cartoon color notch hole punch black spiderman poco f3 amoled poco f3 samsung cartoon white poco f3 dot display poco f3 punch hole f3 hole punch"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/256/217/HD-wallpaper-smile-smiles-faces-emoji-friends-yellow-game-toy-facebook.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/256/217/HD-wallpaper-smile-smiles-faces-emoji-friends-yellow-game-toy-facebook.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-aejdv",
+        "desc": "smile, smiles, faces, emoji, friends, yellow, game, toy, facebook"
+   },
+    {
         "thumb": "https://w.forfun.com/fetch/c9/c9aebc69358c58c9f83f5544166d7331.jpeg?h=900&r=0.5",
         "full": "https://w.forfun.com/fetch/c9/c9aebc69358c58c9f83f5544166d7331.jpeg?h=900&r=0.5",
         "pg": "https://wallpaper.mob.org/image/3d-forma-svet-svetlii-poverkhnost-73890.html",
