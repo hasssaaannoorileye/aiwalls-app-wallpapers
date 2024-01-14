@@ -3,6 +3,144 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/21/15/30/house-8462027_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/21/15/30/house-8462027_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/house-nature-christmas-tree-8462027/",
+        "desc": "house nature christmas tree christmas decoration holiday winter december snow season landscape ai generated wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/21/15/30/christmas-tree-8462030_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/21/15/30/christmas-tree-8462030_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/christmas-tree-christmas-decoration-8462030/",
+        "desc": "christmas tree christmas decoration holiday winter nature december snow season ai generated wallpaper"
+   },
+     {
+        "thumb": "https://cdn.pixabay.com/photo/2014/09/07/16/37/nettle-437963_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/09/07/16/37/nettle-437963_1280.jpg",
+        "pg": "https://pixabay.com/photos/nettle-leaf-plant-leaf-veins-flora-437963/",
+        "desc": "Nettle, Leaf, Plant image popular green nature black dark popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/21/01/31/flower-7866187_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/21/01/31/flower-7866187_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-petals-blossom-bloom-white-7866187/",
+        "desc": "Flower, Petals, Blossom popular dark white nature popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/04/11/19/09/nature-3311427_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/04/11/19/09/nature-3311427_1280.jpg",
+        "pg": "https://pixabay.com/photos/nature-plant-summer-petal-garden-3311427/",
+        "desc": "Nature, Flower background, Plant green popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/08/05/23/46/tansy-2586769_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/08/05/23/46/tansy-2586769_1280.jpg",
+        "pg": "https://pixabay.com/photos/tansy-flowers-nature-2586769/",
+        "desc": "tansy flower background flower wallpaper beautiful flowers flowers nature popular"
+   },
+     {
+        "thumb": "https://cdn.pixabay.com/photo/2020/08/16/20/48/flower-5493808_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/08/16/20/48/flower-5493808_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-petals-stem-plant-nature-5493808/",
+        "desc": "flower petals stem flower wallpaper plant flower background nature beautiful flowers garden popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/08/06/12/24/nature-3587430_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/08/06/12/24/nature-3587430_1280.jpg",
+        "pg": "https://pixabay.com/photos/nature-flower-plant-summer-garden-3587430/",
+        "desc": "nature flower flower wallpaper plant flower background summer garden beautiful flowers flowers popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/22/17/03/ai-generated-8406003_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/22/17/03/ai-generated-8406003_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-wolf-mammalian-animal-8406003/",
+        "desc": "ai generated wolf mammalian animal winter snowing snow nature 4k wallpaper background "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456482_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456482_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-hd-wallpaper-orb-colorful-7456482/",
+        "desc": "abstract hd wallpaper orb colorful ball hd background background cgi computer art abstract art modern art 3d render 4k wallpaper 4k background"
+   },
+     {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456479_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456479_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-hd-wallpaper-colorful-orb-7456479/",
+        "desc": "abstract hd wallpaper colorful orb ball hd background background cgi computer art abstract art modern art 3d render 4k wallpaper 4k background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456480_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456480_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-hd-wallpaper-colorful-orb-7456480/",
+        "desc": "abstract hd wallpaper colorful orb ball hd background background cgi computer art abstract art modern art 3d render 4k wallpaper 4k background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/12/04/26/ai-generated-8121633_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/12/04/26/ai-generated-8121633_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-skull-bones-skeleton-8121633/",
+        "desc": "ai generated skull bones skeleton face 4k featured dark"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456481_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/15/13/43/abstract-7456481_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-hd-wallpaper-orb-colorful-7456481/",
+        "desc": "abstract hd wallpaper orb colorful ball hd background background cgi computer art abstract art modern art 3d render 4k wallpaper 4k background 3d"
+   },
+     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/02/13/36/diwali-8425696_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/02/13/36/diwali-8425696_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/diwali-lamp-diwa-candle-8425696/",
+        "desc": "diwali lamp diwa candle diwali lamp fire bokeh petals hd wallpaper photorealistic mobile wallpaper vibrant photo manipulation fantasy lamp wallpaper macro photography festival candle light cinematic diwali wallpaper diwali background 4k wallpaper festiveseasoncontest"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/15/16/38/bunny-8129249_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/15/16/38/bunny-8129249_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/bunny-magic-dream-magical-8129249/",
+        "desc": "bunny magic dream magical cinematic lighting vulmetric light cute bunny watercolor butterflies planets stars garden ai generated wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/06/11/55/ai-generated-8491227_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/06/11/55/ai-generated-8491227_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-bubbles-soap-bubbles-8491227/",
+        "desc": "ai generated bubbles soap bubbles iridescent background hd wallpaper close up macro"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/25/07/00/ai-generated-8148408_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/07/25/07/00/ai-generated-8148408_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-nature-8148408/",
+        "desc": "ai generated flowers nature floral background floral wallpaper flora blossom bloom plant full hd wallpaper screen background background image"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/15/11/18/city-8128607_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/07/15/11/18/city-8128607_1280.png",
+        "pg": "https://pixabay.com/illustrations/city-building-architecture-urban-8128607/",
+        "desc": "city building architecture urban heaven moon eiffel tower night cityscape background image screen background full hd wallpaper hd featured ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/22/14/16/ai-generated-8143521_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/07/22/14/16/ai-generated-8143521_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-japan-car-mountains-8143521/",
+        "desc": "ai generated japan car mountains landscape automobile drift tuning sports car road nature vehicle background image screen background full hd featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/10/01/20/31/smiley-6673571_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/10/01/20/31/smiley-6673571_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/smiley-pattern-wallpaper-6673571/",
+        "desc": "smiley pattern  phone  smiley background happy face emoji colorful seamless pattern design iphone "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/14/05/00/ai-generated-7851468_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/14/05/00/ai-generated-7851468_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-birds-beak-feathers-7851468/",
+        "desc": "ai generated birds beak feathers fire flame artistic hd nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/08/29/16/08/pikachu-5527377_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/08/29/16/08/pikachu-5527377_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/pikachu-pokemon-character-cartoon-5527377/",
+        "desc": "Pikachu Pokemon Character yellow cartoon anim color"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/12/21/16/08/house-8462150_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/12/21/16/08/house-8462150_1280.jpg",
         "pg": "https://pixabay.com/illustrations/house-christmas-tree-christmas-8462150/",
