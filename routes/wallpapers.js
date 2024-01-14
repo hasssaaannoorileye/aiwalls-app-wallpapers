@@ -3,6 +3,90 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://w.forfun.com/fetch/c9/c9aebc69358c58c9f83f5544166d7331.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/c9/c9aebc69358c58c9f83f5544166d7331.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/3d-forma-svet-svetlii-poverkhnost-73890.html",
+        "desc": "Shine, Light Coloured, 3D, Surface, Light,"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/9e/9e77af32992c43456695d345e7d1e6e7.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/9e/9e77af32992c43456695d345e7d1e6e7.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/cars-porsche_carrera_gt-porsche_carrera-porsche-sportkar-superkar-gonka-svet-77489.html",
+        "desc": " Light, Cars, Sports Car, Porsche Carrera, Shine, Supercar, Porsche, Porsche Carrera Gt, Sports, Race popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/eb/eb641a3e523c10f2cf53edf79e96c6c8.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/eb/eb641a3e523c10f2cf53edf79e96c6c8.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/3d-shari-neon-svet-yarkii-ten-137052.html",
+        "desc": "Shine, 3D, Balls, Light, Shadow, Bright, Neon"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/d6/d6b7a4fabe5db60be3528c038bd9729d.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/d6/d6b7a4fabe5db60be3528c038bd9729d.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-linii-blesk-polosi-sinii-115032.html",
+        "desc": "Shine, Brilliance, Streaks, Stripes, Lines, Abstract"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/ba/ba6fe5bb31082b4c5217ed7d3efad51b.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/ba/ba6fe5bb31082b4c5217ed7d3efad51b.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-fonar-krasnii-drova-ogon-svet-126642.html",
+        "desc": "Light, Miscellaneous, Firewood, Shine, Fire, Lantern, Miscellanea, Lamp popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/74/74e3cd06f190256b5b39689e442b93d4.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/74/74e3cd06f190256b5b39689e442b93d4.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-linii-polosi-svet-forma-108367.html",
+        "desc": "Streaks, Stripes, Light, Shine, Lines, Form, Abstract"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/78/781ec88cd10c0a655b10a2f007d36545.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/78/781ec88cd10c0a655b10a2f007d36545.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-white-cgi-colors-pattern-shapes-technology-texture-1079218.html",
+        "desc": "Abstract, Pattern, Texture, Colors, Shapes, Technology 3d"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/1a/1a1ee25c3cc068ad7528af93cdfa2c02.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/1a/1a1ee25c3cc068ad7528af93cdfa2c02.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-blue-colors-pattern-shapes-spikes-texture-1076219.html",
+        "desc": "Abstract, Pattern, Texture, Colors, Shapes, Spikes"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/e0/e089e3b714f5f7dd335dcd4cda5c6a45.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/e0/e089e3b714f5f7dd335dcd4cda5c6a45.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/artistic-3d_art-ball-glass-595966.html",
+        "desc": "Glass, Ball, Artistic, 3D Art"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/2d/2de60d6e873ab00c4f53e83eb4ccbfa4.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/2d/2de60d6e873ab00c4f53e83eb4ccbfa4.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/3d-kubik_rubik-raznotsvetnii-poverkhnost-kub-74268.html",
+        "desc": "Cube, Rubik's Cube, Surface, Motley, 3D, Multicolored "
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/8d/8d2c1399cd79d60c98d9fcf4911115d2.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/8d/8d2c1399cd79d60c98d9fcf4911115d2.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-cube-672708.html",
+        "desc": "Abstract, Cube colorful"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/17/17adc9d250c18e2b6acc7ac83d55e028.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/17/17adc9d250c18e2b6acc7ac83d55e028.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/vector-kubik-listya-sinii-zelenii-vektor-67643.html",
+        "desc": "Cube, Leaves, Vector 3D"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/3e/3ea6e7b25e3a13f9ebe937eb24d22677.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/3e/3ea6e7b25e3a13f9ebe937eb24d22677.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-cube-blue-sphere-1076025.html",
+        "desc": "Abstract, Sphere, Cube 3D"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/d5/d563f5cf368bc19df8313a4593f5298a.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/d5/d563f5cf368bc19df8313a4593f5298a.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/technology-linux-arch_linux-blue-cube-dark-light-159762.html",
+        "desc": "Arch Linux, Linux, Cube, Light, Technology, Dark "
+   },
+    {
         "thumb": "https://w.forfun.com/fetch/b1/b10c2b22fc83644699ec4822d102da6b.jpeg?h=900&r=0.5",
         "full": "https://w.forfun.com/fetch/b1/b10c2b22fc83644699ec4822d102da6b.jpeg?h=900&r=0.5",
         "pg": "https://wallpaper.mob.org/image/music-naushniki-poverkhnost-derevyannii-temnii-137056.html",
