@@ -3,6 +3,102 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://w.forfun.com/fetch/b1/b10c2b22fc83644699ec4822d102da6b.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/b1/b10c2b22fc83644699ec4822d102da6b.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/music-naushniki-poverkhnost-derevyannii-temnii-137056.html",
+        "desc": "Dark, Headphones, Music, Surface, Wood, Wooden featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/15/151b6fece4f86816128550113007bfa2.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/15/151b6fece4f86816128550113007bfa2.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-ogon-iskri-dim-drova-124162.html",
+        "desc": "Dark, Fire, Firewood, Sparks, Smoke, Bonfire wallpaper"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/59/592539975df748fbd5174dab4e02fb41.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/59/592539975df748fbd5174dab4e02fb41.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-lampa-temnii-neon-krasnii-113525.html",
+        "desc": "Dark, Miscellaneous, Miscellanea, Lamp, Neon wallpaper"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/2a/2a9ac434810553aa2da7ace347b41f74.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/2a/2a9ac434810553aa2da7ace347b41f74.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-plamya-ogon-poberezhe-voda-130121.html",
+        "desc": "Bonfire, Dark, Fire, Coast, Water, Flame popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/22/22be3adfd10bc5d2045c11817e1e220e.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/22/22be3adfd10bc5d2045c11817e1e220e.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/love-serdechki-zamok-vorota-temnii-111198.html",
+        "desc": " Hearts, Love, Dark, Gate, Lock, Goal featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/79/79b7415c3508dcb5eea7a5dd4a56f018.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/79/79b7415c3508dcb5eea7a5dd4a56f018.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/black-glaza-chernii-temnii-art-53627.html",
+        "desc": "Dark, Eyes, Art featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/ca/ca9d4f1e5bf3b74fccc40a785386ea75.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/ca/ca9d4f1e5bf3b74fccc40a785386ea75.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-romashka-polevoi_tsvetok-temnii_fon-146297.html",
+        "desc": "Chamomile, Dark, Wild Flower, Field Flower, Dark Background, Camomile featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/fc/fca53477ac6cadc1dd35ca947744eb22.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/fc/fca53477ac6cadc1dd35ca947744eb22.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-ogon-iskri-drova-141911.html",
+        "desc": "Sparks, Dark, Bonfire, Firewood, Fire nature popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/e0/e089b66073e362d67d964a9ba547bc44.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/e0/e089b66073e362d67d964a9ba547bc44.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-plamya-ogon-temnii-151521.html",
+        "desc": "Fire, Bonfire, Flame, Dark featured nature"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/4b/4bdd1c1e59f94de4f817cc710a7af369.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/4b/4bdd1c1e59f94de4f817cc710a7af369.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-muzhchina-chelovek-zont-doroga-zakat-119790.html",
+        "desc": "Umbrella, Road, Miscellaneous, Miscellanea, Person, Sunset, Human, Man featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/8b/8bc5a66b27fc36e5255dc7c1356939c8.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/8b/8bc5a66b27fc36e5255dc7c1356939c8.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/doroga-les-gora-povorot-priroda-58547.html",
+        "desc": " Road, Forest, Turn, Nature, Mountain popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/d9/d9b34c6bcd2aecb562fe5bf7046c7ecf.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/d9/d9b34c6bcd2aecb562fe5bf7046c7ecf.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/nature-doroga-asfalt-les-derevya-povorot-156205.html",
+        "desc": " Road, Trees, Turn, Asphalt, Nature, Forest popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/ec/ec6b003baecc72d15ef39a17193e1a98.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/ec/ec6b003baecc72d15ef39a17193e1a98.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/doroga-derevya-gora-vershina-priroda-55367.html",
+        "desc": "Road, Vertex, Trees, Top, Mountain, Nature popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/48/4898a81e3a26927cb2bcd97d7baadd1d.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/48/4898a81e3a26927cb2bcd97d7baadd1d.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/man_made-road-585271.html",
+        "desc": "Man Made, Road popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/6c/6c118342dcdef0a7bd7741dd6f219310.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/6c/6c118342dcdef0a7bd7741dd6f219310.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-shari-smaili-ulibka-zelenii-zheltii-158113.html",
+        "desc": "Smile, Balls, Smiles, Smilies, Miscellaneous, Miscellanea wallpaper"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/23/23636a4f6de3e9e7312260b0d02276d5.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/23/23636a4f6de3e9e7312260b0d02276d5.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/nature-derevya-gorizont-leto-ryad-oblaka-lug-goluboi-zelenii-den-79153.html",
+        "desc": "Summer, Row, Clouds, Day, Trees, Nature, Horizon, Meadow popular"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2015/08/19/01/58/abstract-895396_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2015/08/19/01/58/abstract-895396_1280.jpg",
         "pg": "https://pixabay.com/illustrations/abstract-squares-triangle-polygon-895396/",
