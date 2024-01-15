@@ -3,6 +3,504 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://images.rawpixel.com/image_450/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODIwMTIwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMi5qcGc.jpg",
+        "full": "https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODIwMTIwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMi5qcGc.jpg",
+        "pg": "https://www.rawpixel.com/image/3864311/image-background-flower-wallpaper",
+        "desc": "IPHONE MOBILE PHONE BLUE IPHONE IPHONE GREEN TREE TRUNK TREE BRANCHES INSTAGRAM STORY popular"
+   },
+    {
+        "thumb": "https://images.pixexid.com/an-artistic-wallpaper-that-zooms-in-on-the-beauty-of-a-single-flower-in-macro-kl3gbluz.webp?h=700&q=70",
+        "full": "https://images.pixexid.com/an-artistic-wallpaper-that-zooms-in-on-the-beauty-of-a-single-flower-in-macro-kl3gbluz.webp?h=700&q=70",
+        "pg": "https://pixexid.com/image/an-artistic-wallpaper-that-zooms-in-on-the-beauty-of-a-single-flower-in-macro-kl3gbluz",
+        "desc": "Plant Flower Pollen Petal Light popular"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/922/821/HD-wallpaper-black-hacker-darkness-blueeyes-cool-horrible.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/922/821/HD-wallpaper-black-hacker-darkness-blueeyes-cool-horrible.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vqtby",
+        "desc": "Black, hacker, darkness, blueeyes, cool, horrible featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/759/286/HD-wallpaper-avengers-electric-electric-blue-magenta-dark-theme-night-dark-mode-marvel-bgmi-amoled-dark-black-panther-pubg-dark.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/759/286/HD-wallpaper-avengers-electric-electric-blue-magenta-dark-theme-night-dark-mode-marvel-bgmi-amoled-dark-black-panther-pubg-dark.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vsrbi",
+        "desc": "Avengers Electric, electric blue, magenta, Dark Theme, Night , Dark Mode, Marvel, bgmi, Amoled, dark, Black Panther, pubg, Dark featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/544/999/HD-wallpaper-amoled-dark-black-red-designs-abstract-digital-abstract-electric.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/544/999/HD-wallpaper-amoled-dark-black-red-designs-abstract-digital-abstract-electric.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-alulw",
+        "desc": "Amoled, dark, black, red, designs, abstract digital, abstract, electric featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/920/501/HD-wallpaper-black-abstract-amoled-blue-color-dark-edge.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/920/501/HD-wallpaper-black-abstract-amoled-blue-color-dark-edge.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kfgpj",
+        "desc": "Black, abstract, amoled, blue, color, dark, edge, featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/809/249/HD-wallpaper-colors-abstract-amoled-black-blue-color-samsung-super-ultra.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/809/249/HD-wallpaper-colors-abstract-amoled-black-blue-color-samsung-super-ultra.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-gdpny",
+        "desc": "Colors, abstract, amoled, black, blue, color, samsung, super, ultra wallpaper"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/49/900/HD-wallpaper-amoled-planet-apple-black-blue.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/49/900/HD-wallpaper-amoled-planet-apple-black-blue.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fctmy",
+        "desc": "Amoled planet , apple, black, blue, wallpaper"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/976/422/HD-wallpaper-iphone-apple-black-earth-element-fantasy-liquid-pattern-planet-texture.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/976/422/HD-wallpaper-iphone-apple-black-earth-element-fantasy-liquid-pattern-planet-texture.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nksak",
+        "desc": "iPhone, apple, black, earth, element, fantasy, liquid, pattern, planet, texture featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/567/451/HD-wallpaper-fantasy-fluid-planet-apple-black-cosmos-earth-liquid-solar-system-space.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/567/451/HD-wallpaper-fantasy-fluid-planet-apple-black-cosmos-earth-liquid-solar-system-space.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vkxum",
+        "desc": "Fantasy Fluid Planet, apple, black, cosmos, earth, liquid, solar system, space"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/386/56/HD-wallpaper-fantasy-planet-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-solar-system-space-stars.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/386/56/HD-wallpaper-fantasy-planet-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-solar-system-space-stars.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kcvpz",
+        "desc": "Fantasy Planet, Fluid, Galaxy, Geoglyser, bonito, blue, cosmo, cosmos, dreamy, green, orange, solar system, space, stars featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/346/335/HD-wallpaper-triangle-planet-color-colorful-geoglyser-abstract-blue-cosmos-dream-earth-fluid-galaxy-orange-pink-psychedelic-purple-rainbow-holographic-solar-system-space-stars-texture-vaporwave.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/346/335/HD-wallpaper-triangle-planet-color-colorful-geoglyser-abstract-blue-cosmos-dream-earth-fluid-galaxy-orange-pink-psychedelic-purple-rainbow-holographic-solar-system-space-stars-texture-vaporwave.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kztff",
+        "desc": "Triangle Planet, Color, Colorful, Geoglyser, abstract, blue, cosmos, dream, earth, fluid, galaxy, orange, pink, psicodelia, purple, rainbow holographic, solar system, space, stars, texture, vaporwave featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/484/981/HD-wallpaper-amoled-flower-galaxy-design-apple-dark-black.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/484/981/HD-wallpaper-amoled-flower-galaxy-design-apple-dark-black.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nxhje",
+        "desc": "Amoled flower, galaxy, desenho, apple, dark, black, featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/85/936/HD-wallpaper-samsung-galaxy-amoled-black-blue-dark-oled-pink-purple-violet.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/85/936/HD-wallpaper-samsung-galaxy-amoled-black-blue-dark-oled-pink-purple-violet.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nvhae",
+        "desc": "Samsung Galaxy, amoled, black, blue, dark, oled, pink, purple, violet featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/135/412/HD-wallpaper-street-lights-929-amoled-black-dark-minimal-minimalistic-thumbnail.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/135/412/HD-wallpaper-street-lights-929-amoled-black-dark-minimal-minimalistic-thumbnail.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nzxig",
+        "desc": "Street Lights, 929, amoled, black, dark, minimal, minimalistic"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/866/698/HD-wallpaper-iphone-apple-color-iphone-max-iphone-x-iphone-xs-nature-pink-planet.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/866/698/HD-wallpaper-iphone-apple-color-iphone-max-iphone-x-iphone-xs-nature-pink-planet.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fqhni",
+        "desc": "Iphone, apple, color, iphone max, iphone x, iphone xs, nature, pink, planet, "
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/196/918/HD-wallpaper-new-space-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-planet-solar-system-stars.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/196/918/HD-wallpaper-new-space-fluid-galaxy-geoglyser-beautiful-blue-cosmo-cosmos-dreamy-green-orange-planet-solar-system-stars.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nxxqi",
+        "desc": "New Space, Fluid, Galaxy, Geoglyser, bonito, blue, cosmo, cosmos, dreamy, green, orange, planet, solar system, stars featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/535/227/HD-wallpaper-bmw-black-dark-vehicle-thumbnail.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/535/227/HD-wallpaper-bmw-black-dark-vehicle-thumbnail.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kcprt",
+        "desc": "BMW, black, dark, vehicle featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/159/80/HD-wallpaper-competition-3d-3d-design-amoled-black-cubes-dark-light-neon-night-render-thumbnail.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/159/80/HD-wallpaper-competition-3d-3d-design-amoled-black-cubes-dark-light-neon-night-render-thumbnail.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-vpyqs",
+        "desc": "Competition, 3d, 3d design, amoled, black, cubes, dark, light, neon, night, render featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/775/340/HD-wallpaper-cubed-black-cube-dark-light-neon-rubix-simple.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/775/340/HD-wallpaper-cubed-black-cube-dark-light-neon-rubix-simple.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-pjmzf",
+        "desc": "Cubed, black, cube, dark, light, neon, rubix, simple 3d"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/164/773/HD-wallpaper-let-s-play-neon-sign-dark-game-gamer-gaming-light-neon-play-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/164/773/HD-wallpaper-let-s-play-neon-sign-dark-game-gamer-gaming-light-neon-play-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fbwct",
+        "desc": "Let's Play Neon Sign, dark, game, gamer, gaming, light, neon, play, sign featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/910/983/HD-wallpaper-black-light-bulb-dark.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/910/983/HD-wallpaper-black-light-bulb-dark.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nxinb",
+        "desc": "Black Light, bulb, dark"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/22/575/HD-wallpaper-gamer-zone-drawings-game-no-entry-red-door-sayings-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/22/575/HD-wallpaper-gamer-zone-drawings-game-no-entry-red-door-sayings-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-krjrh",
+        "desc": "Gamer zone, drawings, game, no entry, red door, sayings, sign featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/929/436/HD-wallpaper-gamer-game-gamers-games-playstation-ps4-ps5-video-game-video-games.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/929/436/HD-wallpaper-gamer-game-gamers-games-playstation-ps4-ps5-video-game-video-games.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-ogkuf",
+        "desc": "Gamer, game, gamers, games, playstation, ps4, ps5, video game, video games"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/968/215/HD-wallpaper-ps-playstation-game-gamer-playstation-ps4.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/968/215/HD-wallpaper-ps-playstation-game-gamer-playstation-ps4.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-asdfv",
+        "desc": "PS - PlayStation, game, gamer, playstation, ps4 featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/164/870/HD-wallpaper-dont-phone-saying-sign-touch.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/164/870/HD-wallpaper-dont-phone-saying-sign-touch.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-klayw",
+        "desc": "Dont, phone, saying, sign, touch featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/127/139/HD-wallpaper-today-saying-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/127/139/HD-wallpaper-today-saying-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nvwmw",
+        "desc": "Today, saying, sign quotes"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/430/425/HD-wallpaper-always-smile-saying-sign.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/430/425/HD-wallpaper-always-smile-saying-sign.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-nviht",
+        "desc": "Always Smile, saying, sign quotes"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/581/45/HD-wallpaper-good-day-yellow-words-sayings-today.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/581/45/HD-wallpaper-good-day-yellow-words-sayings-today.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-podnp",
+        "desc": "good day, yellow, words, sayings, today,"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/705/349/HD-wallpaper-believe-in-black-wood-sayings-white-wood-words-yellow-yourself.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/705/349/HD-wallpaper-believe-in-black-wood-sayings-white-wood-words-yellow-yourself.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-ayyyz",
+        "desc": "Believe in, black wood, sayings, white, wood, words, yellow, yourself, featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/317/560/HD-wallpaper-make-yourself-happy-blackgreen-blue-colors-orange-sayings-words-yellow.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/317/560/HD-wallpaper-make-yourself-happy-blackgreen-blue-colors-orange-sayings-words-yellow.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-fydwh",
+        "desc": "Make yourself happy, blackgreen, blue, colors, orange, sayings, words, yellow,"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/516/695/HD-wallpaper-always-smile-face-good-sad-sticker-theme-yellow.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/516/695/HD-wallpaper-always-smile-face-good-sad-sticker-theme-yellow.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kvpna",
+        "desc": "Always smile, face, good, sad, sticker, theme, yellow"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/892/973/HD-wallpaper-smiley-face-discover-more-always-smile-be-happy-emoji-happy-happy-face-smile-cute-emoji-scary.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/892/973/HD-wallpaper-smiley-face-discover-more-always-smile-be-happy-emoji-happy-happy-face-smile-cute-emoji-scary.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-euvpu",
+        "desc": "Smiley Face Discover more Always Smile, Be Happy, Emoji, Happy, Happy Face .. Smile , Cute emoji , Scary"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/977/920/HD-wallpaper-space-planet-planets-solar-system-universe.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/977/920/HD-wallpaper-space-planet-planets-solar-system-universe.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-pjski",
+        "desc": "SPACE, planet, planets, solar, system, universe"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/965/746/HD-wallpaper-big-smile-face-faces-minion-minions-smile.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/965/746/HD-wallpaper-big-smile-face-faces-minion-minions-smile.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-avlze",
+        "desc": "big Smile, face, faces, minion, minions, smile featured featured"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/9/32/HD-wallpaper-punch-hole-minion.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/9/32/HD-wallpaper-punch-hole-minion.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-kjqrs",
+        "desc": "Punch Hole , minion yellow cartoon color notch hole punch black spiderman poco f3 amoled poco f3 samsung cartoon white poco f3 dot display poco f3 punch hole f3 hole punch"
+   },
+    {
+        "thumb": "https://w0.peakpx.com/wallpaper/256/217/HD-wallpaper-smile-smiles-faces-emoji-friends-yellow-game-toy-facebook.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/256/217/HD-wallpaper-smile-smiles-faces-emoji-friends-yellow-game-toy-facebook.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-aejdv",
+        "desc": "smile, smiles, faces, emoji, friends, yellow, game, toy, facebook"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/c9/c9aebc69358c58c9f83f5544166d7331.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/c9/c9aebc69358c58c9f83f5544166d7331.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/3d-forma-svet-svetlii-poverkhnost-73890.html",
+        "desc": "Shine, Light Coloured, 3D, Surface, Light,"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/9e/9e77af32992c43456695d345e7d1e6e7.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/9e/9e77af32992c43456695d345e7d1e6e7.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/cars-porsche_carrera_gt-porsche_carrera-porsche-sportkar-superkar-gonka-svet-77489.html",
+        "desc": " Light, Cars, Sports Car, Porsche Carrera, Shine, Supercar, Porsche, Porsche Carrera Gt, Sports, Race popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/eb/eb641a3e523c10f2cf53edf79e96c6c8.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/eb/eb641a3e523c10f2cf53edf79e96c6c8.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/3d-shari-neon-svet-yarkii-ten-137052.html",
+        "desc": "Shine, 3D, Balls, Light, Shadow, Bright, Neon"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/d6/d6b7a4fabe5db60be3528c038bd9729d.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/d6/d6b7a4fabe5db60be3528c038bd9729d.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-linii-blesk-polosi-sinii-115032.html",
+        "desc": "Shine, Brilliance, Streaks, Stripes, Lines, Abstract"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/ba/ba6fe5bb31082b4c5217ed7d3efad51b.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/ba/ba6fe5bb31082b4c5217ed7d3efad51b.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-fonar-krasnii-drova-ogon-svet-126642.html",
+        "desc": "Light, Miscellaneous, Firewood, Shine, Fire, Lantern, Miscellanea, Lamp popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/74/74e3cd06f190256b5b39689e442b93d4.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/74/74e3cd06f190256b5b39689e442b93d4.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-linii-polosi-svet-forma-108367.html",
+        "desc": "Streaks, Stripes, Light, Shine, Lines, Form, Abstract"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/78/781ec88cd10c0a655b10a2f007d36545.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/78/781ec88cd10c0a655b10a2f007d36545.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-white-cgi-colors-pattern-shapes-technology-texture-1079218.html",
+        "desc": "Abstract, Pattern, Texture, Colors, Shapes, Technology 3d"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/1a/1a1ee25c3cc068ad7528af93cdfa2c02.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/1a/1a1ee25c3cc068ad7528af93cdfa2c02.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-blue-colors-pattern-shapes-spikes-texture-1076219.html",
+        "desc": "Abstract, Pattern, Texture, Colors, Shapes, Spikes"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/e0/e089e3b714f5f7dd335dcd4cda5c6a45.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/e0/e089e3b714f5f7dd335dcd4cda5c6a45.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/artistic-3d_art-ball-glass-595966.html",
+        "desc": "Glass, Ball, Artistic, 3D Art"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/2d/2de60d6e873ab00c4f53e83eb4ccbfa4.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/2d/2de60d6e873ab00c4f53e83eb4ccbfa4.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/3d-kubik_rubik-raznotsvetnii-poverkhnost-kub-74268.html",
+        "desc": "Cube, Rubik's Cube, Surface, Motley, 3D, Multicolored "
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/8d/8d2c1399cd79d60c98d9fcf4911115d2.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/8d/8d2c1399cd79d60c98d9fcf4911115d2.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-cube-672708.html",
+        "desc": "Abstract, Cube colorful"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/17/17adc9d250c18e2b6acc7ac83d55e028.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/17/17adc9d250c18e2b6acc7ac83d55e028.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/vector-kubik-listya-sinii-zelenii-vektor-67643.html",
+        "desc": "Cube, Leaves, Vector 3D"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/3e/3ea6e7b25e3a13f9ebe937eb24d22677.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/3e/3ea6e7b25e3a13f9ebe937eb24d22677.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/abstract-cube-blue-sphere-1076025.html",
+        "desc": "Abstract, Sphere, Cube 3D"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/d5/d563f5cf368bc19df8313a4593f5298a.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/d5/d563f5cf368bc19df8313a4593f5298a.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/technology-linux-arch_linux-blue-cube-dark-light-159762.html",
+        "desc": "Arch Linux, Linux, Cube, Light, Technology, Dark "
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/b1/b10c2b22fc83644699ec4822d102da6b.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/b1/b10c2b22fc83644699ec4822d102da6b.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/music-naushniki-poverkhnost-derevyannii-temnii-137056.html",
+        "desc": "Dark, Headphones, Music, Surface, Wood, Wooden featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/15/151b6fece4f86816128550113007bfa2.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/15/151b6fece4f86816128550113007bfa2.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-ogon-iskri-dim-drova-124162.html",
+        "desc": "Dark, Fire, Firewood, Sparks, Smoke, Bonfire wallpaper"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/59/592539975df748fbd5174dab4e02fb41.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/59/592539975df748fbd5174dab4e02fb41.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-lampa-temnii-neon-krasnii-113525.html",
+        "desc": "Dark, Miscellaneous, Miscellanea, Lamp, Neon wallpaper"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/2a/2a9ac434810553aa2da7ace347b41f74.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/2a/2a9ac434810553aa2da7ace347b41f74.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-plamya-ogon-poberezhe-voda-130121.html",
+        "desc": "Bonfire, Dark, Fire, Coast, Water, Flame popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/22/22be3adfd10bc5d2045c11817e1e220e.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/22/22be3adfd10bc5d2045c11817e1e220e.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/love-serdechki-zamok-vorota-temnii-111198.html",
+        "desc": " Hearts, Love, Dark, Gate, Lock, Goal featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/79/79b7415c3508dcb5eea7a5dd4a56f018.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/79/79b7415c3508dcb5eea7a5dd4a56f018.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/black-glaza-chernii-temnii-art-53627.html",
+        "desc": "Dark, Eyes, Art featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/ca/ca9d4f1e5bf3b74fccc40a785386ea75.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/ca/ca9d4f1e5bf3b74fccc40a785386ea75.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-romashka-polevoi_tsvetok-temnii_fon-146297.html",
+        "desc": "Chamomile, Dark, Wild Flower, Field Flower, Dark Background, Camomile featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/fc/fca53477ac6cadc1dd35ca947744eb22.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/fc/fca53477ac6cadc1dd35ca947744eb22.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-ogon-iskri-drova-141911.html",
+        "desc": "Sparks, Dark, Bonfire, Firewood, Fire nature popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/e0/e089b66073e362d67d964a9ba547bc44.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/e0/e089b66073e362d67d964a9ba547bc44.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/dark-koster-plamya-ogon-temnii-151521.html",
+        "desc": "Fire, Bonfire, Flame, Dark featured nature"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/4b/4bdd1c1e59f94de4f817cc710a7af369.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/4b/4bdd1c1e59f94de4f817cc710a7af369.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-muzhchina-chelovek-zont-doroga-zakat-119790.html",
+        "desc": "Umbrella, Road, Miscellaneous, Miscellanea, Person, Sunset, Human, Man featured"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/8b/8bc5a66b27fc36e5255dc7c1356939c8.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/8b/8bc5a66b27fc36e5255dc7c1356939c8.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/doroga-les-gora-povorot-priroda-58547.html",
+        "desc": " Road, Forest, Turn, Nature, Mountain popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/d9/d9b34c6bcd2aecb562fe5bf7046c7ecf.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/d9/d9b34c6bcd2aecb562fe5bf7046c7ecf.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/nature-doroga-asfalt-les-derevya-povorot-156205.html",
+        "desc": " Road, Trees, Turn, Asphalt, Nature, Forest popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/ec/ec6b003baecc72d15ef39a17193e1a98.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/ec/ec6b003baecc72d15ef39a17193e1a98.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/doroga-derevya-gora-vershina-priroda-55367.html",
+        "desc": "Road, Vertex, Trees, Top, Mountain, Nature popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/48/4898a81e3a26927cb2bcd97d7baadd1d.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/48/4898a81e3a26927cb2bcd97d7baadd1d.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/man_made-road-585271.html",
+        "desc": "Man Made, Road popular"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/6c/6c118342dcdef0a7bd7741dd6f219310.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/6c/6c118342dcdef0a7bd7741dd6f219310.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/other-shari-smaili-ulibka-zelenii-zheltii-158113.html",
+        "desc": "Smile, Balls, Smiles, Smilies, Miscellaneous, Miscellanea wallpaper"
+   },
+    {
+        "thumb": "https://w.forfun.com/fetch/23/23636a4f6de3e9e7312260b0d02276d5.jpeg?h=900&r=0.5",
+        "full": "https://w.forfun.com/fetch/23/23636a4f6de3e9e7312260b0d02276d5.jpeg?h=900&r=0.5",
+        "pg": "https://wallpaper.mob.org/image/nature-derevya-gorizont-leto-ryad-oblaka-lug-goluboi-zelenii-den-79153.html",
+        "desc": "Summer, Row, Clouds, Day, Trees, Nature, Horizon, Meadow popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/08/19/01/58/abstract-895396_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/08/19/01/58/abstract-895396_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-squares-triangle-polygon-895396/",
+        "desc": "Abstract Squares Triangle wallpaper latest colorful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/06/28/05/24/abstract-1483979_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/06/28/05/24/abstract-1483979_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-background-circle-bubbles-1483979/",
+        "desc": "Abstract Background Circle 3d"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/07/01/16/00/background-2461867_150.png",
+        "full": "https://cdn.pixabay.com/photo/2017/07/01/16/00/background-2461867_1280.png",
+        "pg": "https://pixabay.com/illustrations/background-blue-green-digital-paper-2461867/",
+        "desc": "background blue green digital paper vintage texture form pixels old one square frame free illustrations free images stylized retro iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/20/06/ai-generated-7826366_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/20/06/ai-generated-7826366_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-clouds-planets-7826366/",
+        "desc": "ai generated clouds planets background ai art fantasy nature colorful phone wallpaper painting phone background universe wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/10/30/21/41/abstract-5699827_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/10/30/21/41/abstract-5699827_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-geometric-background-5699827/",
+        "desc": "Abstract Geometric Background dark black pink"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/12/00/30/skull-7515393_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/12/00/30/skull-7515393_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/skull-spooky-halloween-art-nouveau-7515393/",
+        "desc": "featured skull spooky halloween art nouveau ornate decorative cartoon carving ai generated face phone  scary gothic bones dead biker dangerous cellphone  cover art book cover avatar profile picture"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/10/16/13/03/wallpaper-1745082_150.png",
+        "full": "https://cdn.pixabay.com/photo/2016/10/16/13/03/wallpaper-1745082_1280.png",
+        "pg": "https://pixabay.com/illustrations/wallpaper-inkscape-lines-gradient-1745082/",
+        "desc": "inkscape lines gradient curves design abstract red red abstract red abstract red design iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/21/18/47/background-8462412_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/12/21/18/47/background-8462412_1280.png",
+        "pg": "https://pixabay.com/illustrations/background-abstract-artistic-modern-8462412/",
+        "desc": "Background Abstract Artistic"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/10/16/01/18/antique-990352_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/10/16/01/18/antique-990352_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/antique-backdrop-background-baroque-990352/",
+        "desc": "Antique Backdrop Background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/22/15/02/hexagon-pattern-7338336_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/22/15/02/hexagon-pattern-7338336_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/hexagon-pattern-snowflake-pattern-7338336/",
+        "desc": "hexagon pattern snowflake pattern mobile abstract pattern background fractals digital art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/04/01/12/20/abstract-1300667_150.png",
+        "full": "https://cdn.pixabay.com/photo/2016/04/01/12/20/abstract-1300667_1280.png",
+        "pg": "https://pixabay.com/vectors/abstract-art-background-colorful-1300667/",
+        "desc": "Abstract Art Background colorful flowers"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/55/ai-generated-7826304_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/55/ai-generated-7826304_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-papercutting-foliage-7826304/",
+        "desc": "ai generated papercutting foliage background ai art flowers fantasy co"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/12/19/07/57/house-6880297_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/12/19/07/57/house-6880297_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/house-building-trees-pagoda-6880297/",
+        "desc": "house building trees pagoda phone wallpaper nature iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/24/12/57/space-6046408_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/24/12/57/space-6046408_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/space-planets-fantasy-fire-ring-6046408/",
+        "desc": "Space Planets Fantasy wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/12/29/20/48/tiger-6902729_1280.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/12/29/20/48/tiger-6902729_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/tiger-winter-blizzard-cold-dark-6902729/",
+        "desc": "tiger winter blizzard cold dark wallpaper iphone popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/10/01/20/30/star-6673568_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/10/01/20/30/star-6673568_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/star-abstract-pattern-wallpaper-6673568/",
+        "desc": "star abstract pattern wallpaper background abstract shapes shapes universe design iphone wallpaper"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/12/21/15/30/house-8462027_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/12/21/15/30/house-8462027_1280.jpg",
         "pg": "https://pixabay.com/illustrations/house-nature-christmas-tree-8462027/",
