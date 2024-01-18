@@ -3,6 +3,216 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2021/12/29/20/48/tiger-6902729_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/12/29/20/48/tiger-6902729_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/tiger-winter-blizzard-cold-dark-6902729/",
+        "desc": "tiger winter blizzard cold dark wallpaper iphone "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2012/04/24/14/22/moon-40243_150.png",
+        "full": "https://cdn.pixabay.com/photo/2012/04/24/14/22/moon-40243_1280.png",
+        "pg": "https://pixabay.com/vectors/moon-tree-flowers-night-ocean-40243/",
+        "desc": "Moon Tree Flowers dark black night illustration featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/16/16/45/ai-generated-8512622_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/16/16/45/ai-generated-8512622_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-space-galaxy-night-8512622/",
+        "desc": "ai generated space galaxy night astronomy milky way nebula stars constellation dark planet star field astrology supernova glowing abstract spiral galaxy satellite background wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/31/22/39/flower-7234406_150.png",
+        "full": "https://cdn.pixabay.com/photo/2022/05/31/22/39/flower-7234406_1280.png",
+        "pg": "https://pixabay.com/illustrations/flower-night-dark-stars-shine-7234406/",
+        "desc": "flower night dark stars shine floral background nature bubble drawing background featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/15/14/48/rabbit-7854714_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/15/14/48/rabbit-7854714_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/rabbit-night-moon-stars-cold-7854714/",
+        "desc": "rabbit night moon stars cold simple bunny dar kart"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/06/05/16/29/moon-6313174_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/06/05/16/29/moon-6313174_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/moon-night-mountains-silhouette-6313174/",
+        "desc": "moon night mountains silhouette stars moonlight night sky sky mountain range landscape nature evening dark wallpaper iphone "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/21/19/55/ai-generated-8404138_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/11/21/19/55/ai-generated-8404138_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-demon-devil-monster-8404138/",
+        "desc": "ai generated demon devil monster halloween ghost dark fantasy skull magic night hell mysterious darkness featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2013/02/22/08/14/flowers-84837_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2013/02/22/08/14/flowers-84837_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/flower-blossoms-background-leaf-84837/",
+        "desc": "flower blossoms background leaf nature leaves floral background flora greeting card template texture abstract iphone abstract"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/06/26/00/56/toucan-6365043_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/06/26/00/56/toucan-6365043_1280.jpg",
+        "pg": "https://pixabay.com/photos/toucan-bird-animal-bill-feathers-6365043/",
+        "desc": "Toucan, Bird, Animal nature animals green popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/08/07/22/07/fruit-7371479_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/08/07/22/07/fruit-7371479_1280.jpg",
+        "pg": "https://pixabay.com/photos/fruit-watermelon-food-ripe-healthy-7371479/",
+        "desc": "fruit watermelon lock screen wallpaper food ripe samsung wallpaper beautiful wallpaper healthy fresh juicy phone wallpaper iphone wallpaper ipad wallpaper sweet organic produce mobile wallpaper harvest nature mobile wallpaper 4k summer pitchfork popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/26/21/58/abstract-phone-wallpaper-7679882_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/26/21/58/abstract-phone-wallpaper-7679882_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-phone-wallpaper-7679882/",
+        "desc": "abstract phone background design pattern lock screen smartphone "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/24/15/28/ai-generated-8273150_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/09/24/15/28/ai-generated-8273150_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-abstract-waves-8273150/",
+        "desc": "ai generated abstract waves gradient minimalist art design plain creative template"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/10/09/07/31/dandelion-4536639_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/10/09/07/31/dandelion-4536639_1280.jpg",
+        "pg": "https://pixabay.com/photos/dandelion-flower-nature-plants-4536639/",
+        "desc": "dandelion flower wallpaper flower flower background beautiful flowers nature plants popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/13/10/07/wildflower-6790945_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/13/10/07/wildflower-6790945_1280.jpg",
+        "pg": "https://pixabay.com/photos/wildflower-forest-floor-flower-6790945/",
+        "desc": "wildflower forest floor beautiful flowers flower white flower background nature popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/07/16/49/dahlia-8493592_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/07/16/49/dahlia-8493592_1280.jpg",
+        "pg": "https://pixabay.com/photos/dahlia-flower-plant-petals-bloom-8493592/",
+        "desc": "dahlia beautiful flowers flower plant petals flower background bloom blossom nature closeup wildlife flora flower popular autumn bud"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/05/01/07/flower-basket-8488640_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/05/01/07/flower-basket-8488640_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-basket-bicycle-art-flowers-8488640/",
+        "desc": "flower basket bicycle art flowers flower background nature beautiful flowers elegant flower popular beautiful relaxation"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/14/03/24/rose-8448104_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/14/03/24/rose-8448104_1280.jpg",
+        "pg": "https://pixabay.com/photos/rose-flower-golden-nature-black-8448104/",
+        "desc": "featured rose mobile 4k lock screen golden flower background floral background rose  beautiful flowers nature rose flower black samsung  phone dark ipad  darkness metallic metal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/13/15/23/toyota-8447095_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/13/15/23/toyota-8447095_1280.jpg",
+        "pg": "https://pixabay.com/photos/toyota-supra-car-racing-race-car-8447095/",
+        "desc": "toyota supra car racing race car sports car phone forza drag drift popular vehicle automobile"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/13/14/24/pink-8447022_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/13/14/24/pink-8447022_1280.jpg",
+        "pg": "https://pixabay.com/photos/pink-flowers-plant-spring-nature-8447022/",
+        "desc": "pink flowers plant spring nature beautiful flowers bloom flower popular garden flower background flora"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/05/09/15/flower-8431154_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/05/09/15/flower-8431154_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-background-nature-beauty-8431154/",
+        "desc": "popular garden fresh flower red white yellow flower background blue dark rose lock screen gift rose pure mobile 4k natural valentine marriage bloom pink heart closeup surprise"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/02/13/27/lily-8425681_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/02/13/27/lily-8425681_1280.jpg",
+        "pg": "https://pixabay.com/photos/lily-flower-plant-lotus-water-lily-8425681/",
+        "desc": "popular plant lotus water lily pink flower petals bloom pond beautiful   aquatic plant flora  nature flower closeup  4k wallpaper vibrant water droplets festiveseasoncontest"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/30/03/34/bougainvillea-8420695_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/30/03/34/bougainvillea-8420695_1280.jpg",
+        "pg": "https://pixabay.com/photos/bougainvillea-flower-pot-bonsai-8420695/",
+        "desc": "bougainvillea flower pot bonsai mini bonsai flower pots natural decorate blossom phone popular trees"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/21/18/08/automobile-8403916_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/21/18/08/automobile-8403916_1280.jpg",
+        "pg": "https://pixabay.com/photos/automobile-car-vehicle-opel-port-8403916/",
+        "desc": "automobile car vehicle opel port car wallpapers boat ship wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/18/22/18/sparrow-8397279_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/18/22/18/sparrow-8397279_1280.jpg",
+        "pg": "https://pixabay.com/photos/sparrow-bird-animal-flowers-plants-8397279/",
+        "desc": "sparrow beautiful flowers flower background flower popular bird animal flowers plants nature outdoors"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/04/12/48/cat-8364830_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/04/12/48/cat-8364830_1280.jpg",
+        "pg": "https://pixabay.com/photos/cat-street-city-night-highway-8364830/",
+        "desc": "cat street city night highway beautiful pet animal 8k wallpaper nature feline 8k"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/03/17/29/common-daisy-8363551_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/03/17/29/common-daisy-8363551_1280.jpg",
+        "pg": "https://pixabay.com/photos/common-daisy-daisy-withered-8363551/",
+        "desc": "common daisy daisy withered asteraceae autumn flower popular flower background bellis perennis beautiful flowers bloom flower nature close up"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/31/01/23/flower-8354128_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/31/01/23/flower-8354128_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-white-flower-plant-petals-8354128/",
+        "desc": "flower white flower flower popular plant petals bloom beautiful flowers caryophyllaceae spring flower background nature closeup"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/31/01/29/flower-8354146_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/31/01/29/flower-8354146_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-plant-nature-yellow-flower-8354146/",
+        "desc": "flower plant nature yellow flower petals flower background flower popular beautiful flowers bloom flora meadow closeup"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/23/08/21/flowers-8335588_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/23/08/21/flowers-8335588_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-bloom-blossom-nature-8335588/",
+        "desc": "flowers bloom blossom nature yellow gold flower popular fog flower background tree beautiful flowers water"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/19/05/45/flower-8325620_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/19/05/45/flower-8325620_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-dahlia-bloom-blossom-petals-8325620/",
+        "desc": "popular flowers dahlia bloom blossom petals flower background floriculture flower flora botanical garden flora nature garden macro close up summer summer flower red"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/21/10/00/flower-8331139_1280.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/21/10/00/flower-8331139_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-plant-petals-alyssum-bloom-8331139/",
+        "desc": "flower plant petals alyssum bloom beautiful flowers wildlife flower popular nature flower background closeup flora fauna silverweed seacress bush shrub"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/19/09/25/tulip-8325986_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/19/09/25/tulip-8325986_1280.jpg",
+        "pg": "https://pixabay.com/photos/tulip-flower-parrot-tulip-8325986/",
+        "desc": "tulip beautiful flowers flower popular flower flower background parrot tulip multicoloured purple lady gesner's tulip tulipa gesneriana nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/11/08/08/bee-8308005_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/11/08/08/bee-8308005_1280.jpg",
+        "pg": "https://pixabay.com/photos/bee-insect-flowers-plant-petals-8308005/",
+        "desc": "bee flower popular insect flower background flowers plant petals bloom blossom pollination wildlife beautiful flowers nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/08/06/04/bald-eagle-8301534_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/08/06/04/bald-eagle-8301534_1280.jpg",
+        "pg": "https://pixabay.com/photos/bald-eagle-eagle-bird-animal-8301534/",
+        "desc": "bald eagle eagle bird animal bird of prey raptor wildlife predator plumage nature phone wallpaper falconry"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/07/13/51/ai-generated-8300205_1280.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/07/13/51/ai-generated-8300205_1280.jpg",
+        "pg": "https://pixabay.com/photos/ai-generated-eagle-bird-beak-8300205/",
+        "desc": "ai generated mobile wallpaper eagle beautiful wallpaper bird beak samsung wallpaper lock screen wallpaper feathers iphone wallpaper plumage mobile wallpaper 4k wildlife ipad wallpaper nature phone wallpaper wallpaper"
+   },
+    {
         "thumb": "https://images.rawpixel.com/image_450/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODIwMTIwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMi5qcGc.jpg",
         "full": "https://images.rawpixel.com/image_600/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxODIwMTIwLXdpa2ltZWRpYS1pbWFnZS1qb2I1NzItMi5qcGc.jpg",
         "pg": "https://www.rawpixel.com/image/3864311/image-background-flower-wallpaper",
