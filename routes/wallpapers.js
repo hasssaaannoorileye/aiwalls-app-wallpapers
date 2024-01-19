@@ -3,6 +3,306 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/12/09/56/wallpaper-7919465_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/12/09/56/wallpaper-7919465_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7919465/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/01/07/20/orange-8226387_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/01/07/20/orange-8226387_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/orange-lightbulb-creative-brain-8226387/",
+        "desc": "orange lightbulb creative brain idea think abstract lamp wallpaper background fantasy surreal dream magic ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/12/09/43/wallpaper-7919283_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/12/09/43/wallpaper-7919283_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7919283/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/14/21/38/wallpaper-7926096_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/14/21/38/wallpaper-7926096_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7926096/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/29/05/16/wallpapers-8348672_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/29/05/16/wallpapers-8348672_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpapers-mobile-backgrounds-red-8348672/",
+        "desc": "wallpapers mobile backgrounds red black screen display aesthetic colorful abstract black background futuristic ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/11/07/40/wallpaper-7916123_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/11/07/40/wallpaper-7916123_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7916123/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/25/20/42/ai-generated-7876834_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/25/20/42/ai-generated-7876834_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-beach-ocean-waves-7876834/",
+        "desc": "ai generated beach ocean waves sunset recreation sand sea seascape seashore summer sun tropical vacation water outdoors sunset view background wallpaper nature landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/06/29/00/34/abstract-8095443_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/06/29/00/34/abstract-8095443_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-dots-wave-pattern-design-8095443/",
+        "desc": "abstractdotswavepatterndesignbackdropcreativegradientgraphicwallpaperbackground"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/30/09/59/abstract-8028123_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/05/30/09/59/abstract-8028123_1280.png",
+        "pg": "https://pixabay.com/illustrations/abstract-waves-background-pink-8028123/",
+        "desc": "abstractwavesbackgroundpinkwallpaperartbackdropcolordesigngraphicgrungepatternretrosurfacetexture"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/17/13/22/wallpapers-8321164_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/17/13/22/wallpapers-8321164_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpapers-mobile-backgrounds-8321164/",
+        "desc": "wallpapers mobile backgrounds screen display aesthetic abstract pattern ai generated minimal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/13/05/48/art-7518248_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/13/05/48/art-7518248_1280.jpg",
+        "pg": "https://pixabay.com/photos/art-land-space-stars-wallpaper-7518248/",
+        "desc": "art land phone wallpaper space stars wallpaper digital art digital artwork"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/03/05/24/ai-generated-8229903_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/09/03/05/24/ai-generated-8229903_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-waves-abstract-8229903/",
+        "desc": "ai generated waves abstract gradient design graphic wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/01/23/16/38/mustard-flowers-5942985_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/01/23/16/38/mustard-flowers-5942985_1280.jpg",
+        "pg": "https://pixabay.com/photos/mustard-flowers-yellow-green-5942985/",
+        "desc": "mustard flowers yellow green background black iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/07/16/52/ai-generated-8493598_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/01/07/16/52/ai-generated-8493598_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-cyberpunk-neon-8493598/",
+        "desc": "ai generated cat cyberpunk neon night steampunk futuristic wallpaper background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/24/18/09/ai-generated-8338828_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/10/24/18/09/ai-generated-8338828_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-window-universe-stars-8338828/",
+        "desc": "ai generated window universe stars fantasy galaxy mobile wallpaper phone smartphone surreal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/06/12/26/abstract-8110399_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/06/12/26/abstract-8110399_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-mosaic-pattern-geometric-8110399/",
+        "desc": "abstractmosaicpatterngeometricgraphictexturetilebackdropwallpaperbackground"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/26/05/28/circles-7345110_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/26/05/28/circles-7345110_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/circles-pattern-background-7345110/",
+        "desc": "circles pattern background wallpaper art graphics abstract digital art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/17/08/14/psychedelic-7858138_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/17/08/14/psychedelic-7858138_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/psychedelic-seventies-background-7858138/",
+        "desc": "psychedelicseventiesbackgroundcirclesroundsyellowgreenorangedesigngeometricpatternwallpaperscrapbookscrapbooking"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/02/15/01/23/fractal-2067435_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/02/15/01/23/fractal-2067435_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/fractal-fractal-background-design-2067435/",
+        "desc": "fractal fractal background design digital render color colorful fantasy psychedelic"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/05/13/01/44/fractal-764921_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/05/13/01/44/fractal-764921_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/fractal-abstract-artistic-764921/",
+        "desc": "fractalabstractartisticbackgroundcolorfuldmtexperiencepsychedelicshamanismlsd"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/02/15/01/15/fractal-2067420_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/02/15/01/15/fractal-2067420_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/fractal-fractal-background-design-2067420/",
+        "desc": "fractal fractal background design render digital color colorful fantasy psychedelic"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/07/13/48/ai-generated-8239125_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/07/13/48/ai-generated-8239125_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-emojis-emoticons-8239125/",
+        "desc": "ai generated emojis emoticons emotions wallpaper background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/03/17/11/03/smile-3233682_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/03/17/11/03/smile-3233682_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/smile-cool-best-smiley-perfect-ok-3233682/",
+        "desc": "smile cool best smiley perfect ok 3d emoticon emoji good quality gesture perfection solution excellent vote success brown smile brown emoji"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/22/03/09/ai-generated-7671391_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/22/03/09/ai-generated-7671391_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-archaic-skull-gothic-7671391/",
+        "desc": "ai generated archaic skull gothic spooky horror artistic book cover character creepy fantasy medieval ornate nightmare dangerous skeleton artwork decoration decorative portrait wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/02/06/21/32/ai-generated-7772790_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/02/06/21/32/ai-generated-7772790_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-kitten-cute-baby-7772790/",
+        "desc": "ai generated cat animal kitten cute baby rainbow psychedelic pet nature colorful cartoon bubbles"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/10/22/49/ai-generated-7710627_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/10/22/49/ai-generated-7710627_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-kitten-colorful-7710627/",
+        "desc": "ai generated cat kitten colorful nature cartoon cute pet animal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/09/04/56/fern-7183673_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/09/04/56/fern-7183673_1280.jpg",
+        "pg": "https://pixabay.com/photos/fern-plants-nature-forest-spring-7183673/",
+        "desc": "fern plants nature forest spring macro flora beautiful  popular  leaves greens background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/07/09/42/blossoms-7179867_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/07/09/42/blossoms-7179867_1280.jpg",
+        "pg": "https://pixabay.com/photos/blossoms-flowers-white-flowers-7179867/",
+        "desc": "blossoms flowers flower background beautiful flowers white flowers nature flower  popular  close up spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/03/16/27/flowers-7172144_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/03/16/27/flowers-7172144_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-field-cabin-hut-spring-7172144/",
+        "desc": "flowers flower background beautiful flowers flower wallpaper field cabin nature hut spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/30/12/39/flowers-7686890_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/30/12/39/flowers-7686890_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-bloom-blossom-spring-7686890/",
+        "desc": "flowers bloom beautiful flowers blossom spring floral nature flower  popular  mystical closeup floral background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/09/29/09/36/spring-3711039_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/09/29/09/36/spring-3711039_1280.jpg",
+        "pg": "https://pixabay.com/photos/spring-salix-botany-growth-macro-3711039/",
+        "desc": "springsalixbotanygrowthmacronatureplantdecorationeastercollection popular "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/02/12/21/29/flowers-7785967_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/02/12/21/29/flowers-7785967_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-branch-spring-white-flowers-7785967/",
+        "desc": "flowers branch spring flower  popular  flower background white flowers petals bloom blossom tree flora nature beautiful flowers green"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/04/30/20/11/daisy-747405_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/04/30/20/11/daisy-747405_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-meadow-flower-meadow-green-747405/",
+        "desc": "daisy meadow flower meadow green spring nature grass"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/05/27/22/49/daisy-1420753_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/05/27/22/49/daisy-1420753_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-flower-grass-outdoor-summer-1420753/",
+        "desc": "daisy flower grass flower  popular  outdoor summer happy flower background blossom spring beautiful flowers garden green spring green happy nature green grass green summer green happiness"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/10/19/14/48/flower-996171_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/10/19/14/48/flower-996171_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-the-scenery-meadow-flowers-996171/",
+        "desc": "flower flower  popular  the scenery meadow nature flowers beautiful flowers spring white flower background daisy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/09/14/23/28/daisy-940358_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/09/14/23/28/daisy-940358_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-flower-nature-plant-940358/",
+        "desc": "daisy flower  popular  beautiful flowers flower flower background nature plant"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/04/12/23/32/daisy-2226164_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/04/12/23/32/daisy-2226164_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-pointed-flower-flower-meadow-2226164/",
+        "desc": "daisy pointed flower flower meadow spring flower  popular  nature lawn flower wildflower flora small flower beautiful white beautiful flowers summer harbinger of spring flower background small green floral greeting tender lawn"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/07/15/16/18/bellis-perennis-846460_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/07/15/16/18/bellis-perennis-846460_1280.jpg",
+        "pg": "https://pixabay.com/photos/bellis-perennis-english-daisy-846460/",
+        "desc": "bellis perennis english daisy common daisy lawn daisy woundwort bruisewort flora wildflower daisy species botany blooming"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/03/21/12/59/flower-7083172_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/03/21/12/59/flower-7083172_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-daisy-bloom-blossom-botany-7083172/",
+        "desc": "flower daisy bloom nature blossom botany plant flower background petals growth macro flower  popular  beautiful flowers bellis red bellis perennis"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/08/06/22/48/daisy-5469338_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/08/06/22/48/daisy-5469338_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-petals-plant-coneflower-5469338/",
+        "desc": "daisy petals plant nature coneflower white daisy white coneflower echinacea white echinacea botany popular "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/06/08/09/19/daisies-3461970_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/06/08/09/19/daisies-3461970_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisies-flower-white-white-flowers-3461970/",
+        "desc": "daisies flower white white flowers blossoms meadow marguerite nature flower popular summer bloom close up flower background pointed flower wild daisy beautiful flowers daisy plant plant mountain daisy naturally meadow spring flora"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/06/17/17/16/african-daisy-7268414_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/06/17/17/16/african-daisy-7268414_1280.jpg",
+        "pg": "https://pixabay.com/photos/african-daisy-daisy-purple-daisy-7268414/",
+        "desc": "african daisy flower background daisy purple daisy purple flower beautiful flowers flower flora plant garden flower popular nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/08/14/55/daisy-5995056_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/08/14/55/daisy-5995056_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-flower-blossom-bloom-5995056/",
+        "desc": "daisy flower blossom bloom marguerite white flower white daisy petals white petals flora spring nature single flower flower popular "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/04/27/20/33/pink-6212489_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/04/27/20/33/pink-6212489_1280.jpg",
+        "pg": "https://pixabay.com/photos/pink-flowers-bloom-blossom-6212489/",
+        "desc": "pink flowers bloom blossom pink flowers pink petals floriculture flower popular background garden spring daisies pink daisies"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/03/17/29/common-daisy-8363551_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/03/17/29/common-daisy-8363551_1280.jpg",
+        "pg": "https://pixabay.com/photos/common-daisy-daisy-withered-8363551/",
+        "desc": "common daisy daisy withered flower beautiful flowers flower background asteraceae autumn bellis perennis bloom flower nature close up popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/09/18/05/09/chamomile-wild-2760720_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/09/18/05/09/chamomile-wild-2760720_1280.jpg",
+        "pg": "https://pixabay.com/photos/chamomile-wild-yellow-flowers-2760720/",
+        "desc": "chamomile wild yellow flowers yellow daisies daisy popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/05/14/20/flower-7176282_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/05/14/20/flower-7176282_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-daisy-botany-petals-growth-7176282/",
+        "desc": "flower daisy flower background botany petals growth macro flower popular beautiful flowers nature blossom bloom flora spring transvaal daisy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/05/29/10/43/margriet-1422735_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/05/29/10/43/margriet-1422735_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-flower-spring-1422735/",
+        "desc": "daisy beautiful flowers nature flower flower popular flower background spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/09/09/15/20/flower-2732301_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/09/09/15/20/flower-2732301_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-daisy-herb-2732301/",
+        "desc": "flower nature daisy beautiful flowers flower popular flower background herb"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/08/27/10/11/cabin-5521665_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/08/27/10/11/cabin-5521665_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/cabin-hut-tree-moss-fairy-fantasy-5521665/",
+        "desc": "cabin hut tree moss fairy fantasy forest fairytale magic light nature house fairy tale featured"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2018/07/28/01/08/vintage-3567130_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2018/07/28/01/08/vintage-3567130_1280.jpg",
         "pg": "https://pixabay.com/photos/vintage-bogota-ancient-retro-3567130/",
