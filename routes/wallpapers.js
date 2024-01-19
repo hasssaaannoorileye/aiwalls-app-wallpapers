@@ -3,6 +3,240 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://wallpaperbat.com/img/8657844-samsung-galaxy-s3-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8657844-samsung-galaxy-s3-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657849-wallpaper-for-samsung-galaxy-s3-doga.jpg",
+        "full": "https://wallpaperbat.com/img/8657849-wallpaper-for-samsung-galaxy-s3-doga.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657847-samsung-galaxy-s3-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8657847-samsung-galaxy-s3-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657851-download-samsung-galaxy-s-a-device.jpg",
+        "full": "https://wallpaperbat.com/img/8657851-download-samsung-galaxy-s-a-device.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657856-samsung-galaxy-s3-wallpaper-hd-1080p.jpg",
+        "full": "https://wallpaperbat.com/img/8657856-samsung-galaxy-s3-wallpaper-hd-1080p.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657860-samsung-galaxy-s-blue-drops-hd.jpg",
+        "full": "https://wallpaperbat.com/img/8657860-samsung-galaxy-s-blue-drops-hd.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657873-sumsung-samsung-galaxy-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8657873-sumsung-samsung-galaxy-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8657879-flowers-samsung-galaxy-samsung.jpg",
+        "full": "https://wallpaperbat.com/img/8657879-flowers-samsung-galaxy-samsung.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658012-samsung-galaxy-s3-hd-phone-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658012-samsung-galaxy-s3-hd-phone-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658014-samsung-galaxy-s-iii-stock-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658014-samsung-galaxy-s-iii-stock-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658015-samsung-galaxy-s3-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658015-samsung-galaxy-s3-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658019-wallpaper-galaxy-s3.jpg",
+        "full": "https://wallpaperbat.com/img/8658019-wallpaper-galaxy-s3.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658020-green-nature-hd-phone-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658020-green-nature-hd-phone-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "Best Samsung Galaxy S3 HD background windows blue water drop"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658027-high-tech-samsung-galaxy-s3-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658027-high-tech-samsung-galaxy-s3-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "material minimal blue"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658056-pinterest-samsung-galaxy-s3-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658056-pinterest-samsung-galaxy-s3-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "abstract minimal blue featured"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/8658062-galaxy-s3-hd-phone-wallpaper.jpg",
+        "full": "https://wallpaperbat.com/img/8658062-galaxy-s3-hd-phone-wallpaper.jpg",
+        "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
+        "desc": "water drop blue "
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/1861262-rain-forest-iphone-wallpaper-hd-wallpaper-iphone-wallpaper-iphone-wallpaper-wallpaper-forest-wallpaper.png",
+        "full": "https://wallpaperbat.com/img/1861262-rain-forest-iphone-wallpaper-hd-wallpaper-iphone-wallpaper-iphone-wallpaper-wallpaper-forest-wallpaper.png",
+        "pg": "https://wallpaperbat.com/rain-forest-wallpapers",
+        "desc": "rain forest green nature popular"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/9118340-tropical-rain.jpg",
+        "full": "https://wallpaperbat.com/img/9118340-tropical-rain.jpg",
+        "pg": "https://wallpaperbat.com/rain-forest-wallpapers",
+        "desc": "rain forest green nature popular"
+   },
+    {
+        "thumb": "https://wallpaperbat.com/img/1861186-download-ai-generated-rain-forest-waterfall-royalty-free-stock-illustration-image.png",
+        "full": "https://wallpaperbat.com/img/1861186-download-ai-generated-rain-forest-waterfall-royalty-free-stock-illustration-image.png",
+        "pg": "https://wallpaperbat.com/rain-forest-wallpapers",
+        "desc": "rain forest green nature popular ai generated"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/689/94/428/pattern-vertical-portrait-display-digital-art-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/689/94/428/pattern-vertical-portrait-display-digital-art-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/blue-and-black-abstract-painting-pattern-vertical-portrait-display-wallpaper-prnyy",
+        "desc": "blue and black abstract painting, pattern, vertical, portrait display featured"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/622/350/393/abstract-optic-fiber-dark-digital-art-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/622/350/393/abstract-optic-fiber-dark-digital-art-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/abstract-optic-fiber-dark-digital-art-lines-wallpaper-cwvxs",
+        "desc": "abstract, Optic fiber, dark, digital art, lines featured"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/465/981/154/alpine-roads-austria-curves-drive.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/465/981/154/alpine-roads-austria-curves-drive.jpg",
+        "pg": "https://www.wallpaperflare.com/nockalm-road-austria-alpine-roads-curves-drive-drivers-driving-wallpaper-azlho",
+        "desc": "Nockalm Road, Austria, alpine roads, curves, drive, drivers, driving popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/258/681/274/parked-gray-skoda-car.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/258/681/274/parked-gray-skoda-car.jpg",
+        "pg": "https://www.wallpaperflare.com/parked-gray-skoda-car-vehicle-transportation-automobile-tire-wallpaper-edilm",
+        "desc": "parked gray Skoda car, vehicle, transportation, automobile, tire popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/317/813/320/white-and-black-motorcycle-park-during-daytime.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/317/813/320/white-and-black-motorcycle-park-during-daytime.jpg",
+        "pg": "https://www.wallpaperflare.com/white-and-black-motorcycle-park-during-daytime-machine-wheel-wallpaper-ezxdg",
+        "desc": "white and black motorcycle park during daytime, machine, wheel popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/354/615/793/railway-indian-india-sunset.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/354/615/793/railway-indian-india-sunset.jpg",
+        "pg": "https://www.wallpaperflare.com/railway-indian-sunset-street-trains-sun-evening-rail-transportation-wallpaper-alulv",
+        "desc": "railway, indian, sunset, street, trains sun, evening, rail transportation popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/555/715/707/eiffel-tower-paris-france-tower-sights-sunset.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/555/715/707/eiffel-tower-paris-france-tower-sights-sunset.jpg",
+        "pg": "https://www.wallpaperflare.com/eiffel-tower-paris-france-sights-sunset-lockscreen-wallpaper-wallpaper-gcrmc",
+        "desc": "eiffel tower, paris, france, sights, sunset, lockscreen popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/607/918/491/plantation-kerala-nature-coffee.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/607/918/491/plantation-kerala-nature-coffee.jpg",
+        "pg": "https://www.wallpaperflare.com/plantation-kerala-nature-coffee-trees-leaves-green-farm-wallpaper-epaby",
+        "desc": "plantation, kerala, nature, coffee, trees, leaves, green, farm popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/476/316/856/kerala-nature-green-landscape.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/476/316/856/kerala-nature-green-landscape.jpg",
+        "pg": "https://www.wallpaperflare.com/kerala-nature-green-landscape-munnar-scenery-mountain-wallpaper-aupxq",
+        "desc": "kerala, nature, green, landscape, munnar, scenery, mountain popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/547/1004/842/india-thrissur-flower-green.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/547/1004/842/india-thrissur-flower-green.jpg",
+        "pg": "https://www.wallpaperflare.com/india-thrissur-flower-green-white-plants-leaves-garden-wallpaper-ekynn",
+        "desc": "thrissur, flower, green, white, plants, leaves, garden popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/549/471/791/acacia-foliage-rain-wet.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/549/471/791/acacia-foliage-rain-wet.jpg",
+        "pg": "https://www.wallpaperflare.com/acacia-foliage-rain-wet-drops-water-green-tree-drop-of-rain-wallpaper-zfqci",
+        "desc": "acacia, foliage, rain, wet, drops, water, green, tree, drop of rain popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/175/841/166/water-drops-leaf-grass.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/175/841/166/water-drops-leaf-grass.jpg",
+        "pg": "https://www.wallpaperflare.com/water-drops-leaf-grass-green-dew-rain-closeup-life-wallpaper-zjexu",
+        "desc": "water, drops, leaf, grass, green, dew, rain, closeup, life popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/94/899/655/leaf-drops-rainy-drop.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/94/899/655/leaf-drops-rainy-drop.jpg",
+        "pg": "https://www.wallpaperflare.com/leaf-drops-rainy-green-color-wet-water-freshness-close-up-wallpaper-zwsnp",
+        "desc": " leaf, drops, rainy, green color, wet, water, freshness, close-up popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/586/655/786/dew-drop-green-foliage-rose.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/586/655/786/dew-drop-green-foliage-rose.jpg",
+        "pg": "https://www.wallpaperflare.com/dew-drop-foliage-dew-drop-green-rose-just-add-water-nature-wallpaper-wofjy",
+        "desc": "Dew, Drop, Foliage, dew-drop, green, rose, just add water, nature popular"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/592/378/491/nature-other-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/592/378/491/nature-other-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/green-branches-leaves-drops-green-plants-nature-other-water-drop-wallpaper-mjqvz",
+        "desc": "Green Branches Leaves Drops, green plants, Nature, Other, water drop popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/967/119/716/leaf-flower-rain.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/967/119/716/leaf-flower-rain.jpg",
+        "pg": "https://www.wallpaperflare.com/leaf-flower-rain-drop-water-wet-close-up-plant-part-wallpaper-ebrym",
+        "desc": "leaf, flower, rain, drop, water, wet, close-up, plant part popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/764/734/486/foliage-tree-forest-nature.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/764/734/486/foliage-tree-forest-nature.jpg",
+        "pg": "https://www.wallpaperflare.com/foliage-tree-forest-nature-sprig-closeup-plant-green-wallpaper-aqqpp",
+        "desc": "foliage, tree, forest, nature, sprig, closeup, plant, green popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/780/381/268/leaf-green-drop-of-water-costs.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/780/381/268/leaf-green-drop-of-water-costs.jpg",
+        "pg": "https://www.wallpaperflare.com/leaf-drop-of-water-costs-green-rain-wet-freshness-full-frame-wallpaper-wkgeu",
+        "desc": "Leaf, Drop Of Water, Costs, green, rain, wet, freshness, full frame popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/542/538/409/leaves-abstract-background-rain-raindrops.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/542/538/409/leaves-abstract-background-rain-raindrops.jpg",
+        "pg": "https://www.wallpaperflare.com/leaves-abstract-background-rain-raindrops-droplets-green-wallpaper-wawhj",
+        "desc": "leaves, abstract background, rain, raindrops, droplets, green popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/398/326/408/tea-tea-garden-green-plant.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/398/326/408/tea-tea-garden-green-plant.jpg",
+        "pg": "https://www.wallpaperflare.com/tea-garden-green-plant-rize-landscape-turkey-leaves-nature-wallpaper-wjgfc",
+        "desc": "Tea Garden, Green, Plant, Rize, landscape, turkey, leaves, nature popular"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2015/06/27/16/38/sky-823624_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2015/06/27/16/38/sky-823624_1280.jpg",
         "pg": "https://pixabay.com/photos/sky-balloon-flying-minimal-travel-823624/",
