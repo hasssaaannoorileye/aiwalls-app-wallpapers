@@ -3,6 +3,156 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2015/06/27/16/38/sky-823624_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/06/27/16/38/sky-823624_1280.jpg",
+        "pg": "https://pixabay.com/photos/sky-balloon-flying-minimal-travel-823624/",
+        "desc": "sky balloon blue sky flying minimal travel tourism freedom blue transportation aircraft nature aviation journey weather adventure"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/06/17/52/window-7305702_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/06/17/52/window-7305702_1280.jpg",
+        "pg": "https://pixabay.com/photos/window-building-wall-sky-clouds-7305702/",
+        "desc": "windowbuildingwallskynaturecloudsarchitectureminimallandscapeosijek"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/20/03/02/abstract-6032128_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/20/03/02/abstract-6032128_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/abstract-flower-leaves-pattern-6032128/",
+        "desc": "abstract flower nature leaves floral background pattern background decoration modern wall texture style elegant template trendy cover minimal concept"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/11/00/58/desert-7915031_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/11/00/58/desert-7915031_1280.jpg",
+        "pg": "https://pixabay.com/photos/desert-sand-texture-pattern-shadow-7915031/",
+        "desc": "desert nature sand texture pattern shadow minimal nature dark landscape black and white"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/09/04/23/29/minimal-923194_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/09/04/23/29/minimal-923194_1280.jpg",
+        "pg": "https://pixabay.com/photos/minimal-furniture-drawers-cup-923194/",
+        "desc": "minimalfurnituredrawerscupinteriordesignpastel"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/03/13/11/00/cityscape-4927628_150.png",
+        "full": "https://cdn.pixabay.com/photo/2020/03/13/11/00/cityscape-4927628_1280.png",
+        "pg": "https://pixabay.com/vectors/cityscape-minimal-urban-building-4927628/",
+        "desc": "cityscapenatureminimalurbanbuildingsky"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/03/02/19/00/dandelion-4896595_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/03/02/19/00/dandelion-4896595_1280.jpg",
+        "pg": "https://pixabay.com/photos/dandelion-black-white-minimal-4896595/",
+        "desc": "dandelionblackwhiteminimal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/14/16/22/arch-8449183_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/14/16/22/arch-8449183_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/arch-poster-minimalist-rainbow-8449183/",
+        "desc": "archposterminimalistrainbowbackgroundbranchleavesnatureminimalismminimalwallaestheticsunsunset"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/12/13/59/cat-8185712_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/08/12/13/59/cat-8185712_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/cat-circle-poster-design-drawing-8185712/",
+        "desc": "catcircleposterdesigndrawingbackgroundminimalistpetanimalsimple"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/17/06/30/sunrise-7326601_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/17/06/30/sunrise-7326601_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/sunrise-sunset-desert-wall-art-7326601/",
+        "desc": "sunrise sunset desert wall art minimalist poster nature minimalist geometric trendy background poster poster background abstract rising sun abstract landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/30/06/30/pastel-8477460_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/30/06/30/pastel-8477460_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/pastel-cute-kawaii-background-8477460/",
+        "desc": "pastel cute kawaii background waves wallpaper simple minimal minimalism minimalist design frame contemporary creative boho copy space"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/26/09/28/background-7345432_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/26/09/28/background-7345432_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/background-leaf-nature-wallpaper-7345432/",
+        "desc": "background leaf nature minimal green background frame"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/10/27/18/14/minimal-background-6748084_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/10/27/18/14/minimal-background-6748084_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/minimal-background-line-art-nature-6748084/",
+        "desc": "minimal background line art nature phone"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/01/12/11/building-5970426_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/01/12/11/building-5970426_1280.jpg",
+        "pg": "https://pixabay.com/photos/building-modern-minimal-5970426/",
+        "desc": "buildingmodernminimalarchitecturedesignminimalist"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/29/16/54/background-6833021_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/29/16/54/background-6833021_1280.jpg",
+        "pg": "https://pixabay.com/photos/background-frame-pattern-design-6833021/",
+        "desc": "background frame pattern design beautiful art minimal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/28/05/15/horses-8416707_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/28/05/15/horses-8416707_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/horses-desert-minimalist-shore-sun-8416707/",
+        "desc": "horses desert minimalist shore sun sky sunset nature landscape mountains hills minimalism minimal art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/08/18/23/pineapple-7441650_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/08/18/23/pineapple-7441650_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/pineapple-fresh-tropical-background-7441650/",
+        "desc": "pineapplefreshtropicalbackgroundorganicdietvegetarianhealthyfoodveganfruitminimalyellowsweetjuicyleafnatureripedesignsummericonobjectvitaminraw"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/03/30/19/20/gypsophila-4985244_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/03/30/19/20/gypsophila-4985244_1280.jpg",
+        "pg": "https://pixabay.com/photos/gypsophila-flower-wedding-4985244/",
+        "desc": "gypsophila wedding day love nature happy mothers day valentine's day blossoms romance background to marry romantic tender in love decoration beautiful flowers minimalism"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/31/14/41/boho-8355260_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/31/14/41/boho-8355260_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/boho-bohemian-boho-design-design-8355260/",
+        "desc": "boho bohemian boho design design sun minimal mountains nature scenery painting poster simple frame earth planet boho illustration minimalist green"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/29/19/05/boho-7625140_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/11/29/19/05/boho-7625140_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/boho-plant-background-plant-pot-7625140/",
+        "desc": "boho plant background plant pot bohemian design sheet leaves nature floral background botanical drawing decoration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/13/06/58/hearts-7715405_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/13/06/58/hearts-7715405_1280.jpg",
+        "pg": "https://pixabay.com/photos/hearts-balloons-abstract-blockchain-7715405/",
+        "desc": "hearts balloons abstract blockchain cloth cube design digital geometric graphic interior light 3d wallpapers minimal beautiful minimum 3d love valentines day valentine background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/06/01/16/43/plane-7236193_150.png",
+        "full": "https://cdn.pixabay.com/photo/2022/06/01/16/43/plane-7236193_1280.png",
+        "pg": "https://pixabay.com/illustrations/plane-holiday-travel-design-sky-7236193/",
+        "desc": "plane holiday travel design nature sky minimalist minimalism blue sky flat design vector art artistic creative shadow"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/07/11/00/00/write-3529977_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/07/11/00/00/write-3529977_1280.jpg",
+        "pg": "https://pixabay.com/photos/write-white-space-flatlay-business-3529977/",
+        "desc": "write white space flatlay business feminine pink simple minimal watch self care blog journal writing paper purple pen office table white workplace clean open stationary"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/06/21/08/33/flower-8078781_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/06/21/08/33/flower-8078781_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-petals-paper-pencil-write-8078781/",
+        "desc": "flower petals paper pencil write beautiful nature flower floral desk beautiful pink minimal flat lay background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/02/08/12/44/hydrangea-4829996_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/02/08/12/44/hydrangea-4829996_1280.jpg",
+        "pg": "https://pixabay.com/photos/hydrangea-violet-blossom-bloom-4829996/",
+        "desc": "hydrangea violet blossom bloom purple  blue hydrangeas blooming background nature macro close up lovely beautiful flowers flora still life white minimal plain"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/04/12/09/56/wallpaper-7919465_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/04/12/09/56/wallpaper-7919465_1280.jpg",
         "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7919465/",
