@@ -3,6 +3,126 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2018/07/28/01/08/vintage-3567130_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/07/28/01/08/vintage-3567130_1280.jpg",
+        "pg": "https://pixabay.com/photos/vintage-bogota-ancient-retro-3567130/",
+        "desc": "vintage bogota ancient retro decoration 80sinteriors inside"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/02/27/22/43/scooter-4025114_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/02/27/22/43/scooter-4025114_1280.jpg",
+        "pg": "https://pixabay.com/photos/scooter-yellow-vehicle-retro-4025114/",
+        "desc": "scooter yellow vehicle retro vintage street wheels transport motorcycle"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/09/19/49/dandelion-7185471_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/09/19/49/dandelion-7185471_1280.jpg",
+        "pg": "https://pixabay.com/photos/dandelion-dandelion-seeds-wildflower-7185471/",
+        "desc": "popular beautiful n seeds wildflower garden flower nature flora samsung meadow botany flower common dandelion mobile 4k medicinal plant"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/00/37/hearts-7744860_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/00/37/hearts-7744860_1280.png",
+        "pg": "https://pixabay.com/illustrations/hearts-valentine-background-pattern-7744860/",
+        "desc": "hearts valentine background pattern love color yellow hearts design wallpaper green"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/25/19/57/marble-8213617_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/08/25/19/57/marble-8213617_1280.jpg",
+        "pg": "https://pixabay.com/photos/marble-surface-yellow-4k-wallpaper-8213617/",
+        "desc": "marble phone wallpaper surface yellow 4k popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/11/07/33/wallpaper-7916059_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/11/07/33/wallpaper-7916059_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7916059/",
+        "desc": "illustration wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/05/29/11/01/protea-5234686_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/05/29/11/01/protea-5234686_1280.jpg",
+        "pg": "https://pixabay.com/photos/protea-flower-vase-petals-natural-5234686/",
+        "desc": "protea flower beautiful flowers vase nature flower background flower wallpaper petals natural popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/08/01/06/18/background-7357438_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/08/01/06/18/background-7357438_1280.jpg",
+        "pg": "https://pixabay.com/photos/background-pattern-texture-purple-7357438/",
+        "desc": "background phone featured pattern texture purple polygon design scrapbooking decorative decoration digital scrapbooking"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/15/18/37/waves-7594544_150.png",
+        "full": "https://cdn.pixabay.com/photo/2022/11/15/18/37/waves-7594544_1280.png",
+        "pg": "https://pixabay.com/illustrations/waves-material-purple-google-7594544/",
+        "desc": "waves material purple google abstract"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/03/27/10/00/art-7094588_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/03/27/10/00/art-7094588_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/art-pattern-design-background-7094588/",
+        "desc": "art pattern design background graphic decor backdrop scrapbooking decorative decoration digital scrapbooking beautifully designed abstract artistic decoration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/06/12/05/44/light-5289203_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/06/12/05/44/light-5289203_1280.jpg",
+        "pg": "https://pixabay.com/photos/light-white-lamp-around-turn-on-5289203/",
+        "desc": "light white lamp around turn on green bokeh sky bulp daylight savings blur background nikon d5100 no flash portrait"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/03/27/18/46/flowers-7095848_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/03/27/18/46/flowers-7095848_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-white-nature-flora-spring-7095848/",
+        "desc": "flowers white nature flora phone spring wallpaper background bloom blossom botany"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/24/12/15/sky-7947944_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/04/24/12/15/sky-7947944_1280.png",
+        "pg": "https://pixabay.com/illustrations/sky-stars-night-space-walls-7947944/",
+        "desc": "sky stars night space walls nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/07/16/23/01/atoms-7326152_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/07/16/23/01/atoms-7326152_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/atoms-cells-pattern-chemistry-7326152/",
+        "desc": "atoms pattern chemistry decor backdrop design art scrapbooking decorative digital scrapbooking abstract artistic neuron nerve neurology neurological cognitive information processing neurodiversity"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/17/11/28/geometric-8258351_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/09/17/11/28/geometric-8258351_1280.png",
+        "pg": "https://pixabay.com/illustrations/geometric-design-psychedelic-8258351/",
+        "desc": "geometric design psychedelic colorful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/14/21/38/wallpaper-7926096_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/14/21/38/wallpaper-7926096_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7926096/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/14/21/36/wallpaper-7926075_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/14/21/36/wallpaper-7926075_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7926075/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/10/04/14/halloween-7510719_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/10/04/14/halloween-7510719_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/halloween-haunted-house-ghosts-7510719/",
+        "desc": "halloween haunted house ghosts wallpaper digital art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/11/08/08/wallpaper-7916437_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/11/08/08/wallpaper-7916437_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7916437/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/06/16/01/40/buildings-5303864_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/06/16/01/40/buildings-5303864_1280.jpg",
+        "pg": "https://pixabay.com/photos/buildings-traffic-street-cars-5303864/",
+        "desc": "buildings traffic street cars empire state building skyscrapers new york manhattan avenue urban skyline architecture america city ny nyc cab night photography city lights downtown"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/10/01/14/13/hornet-8287485_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/10/01/14/13/hornet-8287485_1280.jpg",
         "pg": "https://pixabay.com/photos/hornet-wasp-insect-entomology-8287485/",
