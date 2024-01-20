@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2019/09/21/15/13/fairy-lights-4494115_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/09/21/15/13/fairy-lights-4494115_1280.jpg",
+        "pg": "https://pixabay.com/photos/fairy-lights-lights-mood-light-4494115/",
+        "desc": "fairy lights lights mood light romantic lighting abendstimmung rest mystical autumn atmosphere evening afterglow backlighting ambient christmas blur bokeh brown bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/12/04/09/50/lantern-2996652_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/12/04/09/50/lantern-2996652_1280.jpg",
+        "pg": "https://pixabay.com/photos/lantern-christmas-kerosene-lamp-2996652/",
+        "desc": "lantern christmas kerosene lamp christmas decoration bokeh light nature lighting mood lamp snow contemplative lights radiant"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/12/19/15/49/christmas-tree-3028211_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/12/19/15/49/christmas-tree-3028211_1280.jpg",
+        "pg": "https://pixabay.com/photos/christmas-tree-christmas-3028211/",
+        "desc": "christmas tree christmas christmas baubles christmas tree decorations the lights decoration bokeh christmas decoration holidays bauble"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/12/27/19/53/bicycle-4723288_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/12/27/19/53/bicycle-4723288_1280.jpg",
+        "pg": "https://pixabay.com/photos/bicycle-bokeh-bike-cycling-old-4723288/",
+        "desc": "bicycle bokeh bike cycling old handle lights outdoor lake photography blur nature wheels city"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/10/16/38/ai-generated-8379719_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/10/16/38/ai-generated-8379719_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-tree-branch-leaves-8379719/",
+        "desc": "ai generated tree branch leaves dewdrops dew autumn vibrant translucent botanical serene ethereal colorful nature bokeh flora"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/12/27/17/50/bicycle-4722976_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/12/27/17/50/bicycle-4722976_1280.jpg",
+        "pg": "https://pixabay.com/photos/bicycle-bokeh-bike-cycling-old-4722976/",
+        "desc": "bicycle bokeh bike cycling old handle lights outdoor lake photography blur nature wheels city"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/03/11/22/27/bokeh-4923438_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/03/11/22/27/bokeh-4923438_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/bokeh-abstract-background-points-4923438/",
+        "desc": "bokeh abstract background points gradientart graphic layout design template multi coloured circles shining fantasy modern dotted colorful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/25/14/44/autumn-7478500_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/25/14/44/autumn-7478500_1280.jpg",
+        "pg": "https://pixabay.com/photos/autumn-cozy-mug-plaid-still-life-7478500/",
+        "desc": "autumn cozy mug plaid still life bokeh fall season"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/14/16/35/leaves-6795065_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/14/16/35/leaves-6795065_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaves-forest-fall-nature-bokeh-6795065/",
+        "desc": "leaves forest fall nature bokeh multi coloured season landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/12/09/35/tulip-7650619_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/12/09/35/tulip-7650619_1280.jpg",
+        "pg": "https://pixabay.com/photos/tulip-field-flower-petals-bokeh-7650619/",
+        "desc": "tulip nature flower wallpaper flower background field flower beautiful flowers petals bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/08/14/55/daisy-5995056_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/08/14/55/daisy-5995056_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-flower-blossom-bloom-5995056/",
+        "desc": "daisy flower blossom daisy petals white flower background flora spring nature single bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/11/06/12/57/tennis-2923531_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/11/06/12/57/tennis-2923531_1280.jpg",
+        "pg": "https://pixabay.com/photos/tennis-tennis-player-bokeh-sports-2923531/",
+        "desc": "tennis tennis player bokeh sports dynamics tennis court surcharge ball sports whole body popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/04/25/15/45/wikiproject-taiwan-5091378_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/04/25/15/45/wikiproject-taiwan-5091378_1280.jpg",
+        "pg": "https://pixabay.com/photos/taiwan-taipei-city-firefly-bokeh-5091378/",
+        "desc": "taiwan taipei city firefly bokeh computer macintosh model popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/25/18/22/nature-7616677_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/11/25/18/22/nature-7616677_1280.jpg",
+        "pg": "https://pixabay.com/photos/nature-botany-outdoors-park-meadow-7616677/",
+        "desc": "nature botany outdoors flower background park beautiful flowers meadow green close up grass bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/08/07/21/38/flowers-2608135_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/08/07/21/38/flowers-2608135_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-nature-blossoms-branches-2608135/",
+        "desc": "flowers nature blossoms branches stems stalk white flower popular background yellow pollen petals bokeh outdoors beautiful garden"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/12/06/20/44/tulips-5809984_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/12/06/20/44/tulips-5809984_1280.jpg",
+        "pg": "https://pixabay.com/photos/tulips-buds-petals-blossoming-5809984/",
+        "desc": "tulips buds petals blossoming blooming beautiful flowers floriculture horticulture garden gardening bokeh springtime "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/04/11/11/16/tulip-717599_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/04/11/11/16/tulip-717599_1280.jpg",
+        "pg": "https://pixabay.com/photos/tulip-water-macro-spring-717599/",
+        "desc": "tulip nature water macro spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/02/10/08/14/heart-7004820_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/02/10/08/14/heart-7004820_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/heart-sand-art-design-shape-7004820/",
+        "desc": "heart sand art design shape symbol broken hearted hurt soul"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/11/14/05/17/palace-4625332_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/11/14/05/17/palace-4625332_1280.jpg",
+        "pg": "https://pixabay.com/photos/palace-netherlands-amsterdam-4625332/",
+        "desc": "palace netherlands amsterdam royal palace architecture tower buildings 4k 6k hdr dam"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/23/19/15/ai-generated-8271636_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/23/19/15/ai-generated-8271636_1280.jpg",
+        "pg": "https://pixabay.com/photos/ai-generated-ice-cream-dessert-8271636/",
+        "desc": "ai generated ice cream dessert chocolate vanilla creamy glass choco chips sweet 4k sprinkles decoration celebration frozen food"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/03/28/13/04/forest-7097457_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/03/28/13/04/forest-7097457_1280.jpg",
+        "pg": "https://pixabay.com/photos/forest-lake-moon-night-wallpaper-7097457/",
+        "desc": "forest lake moon iphone featured night 4k ipad landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/02/16/33/yellow-flower-8102501_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/02/16/33/yellow-flower-8102501_1280.jpg",
+        "pg": "https://pixabay.com/photos/yellow-flower-flower-plant-petals-8102501/",
+        "desc": "yellow popular samsung beautiful flowers plant beautiful petals floral lock screen bloom flora spring flower flower ipad nature 4k"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/24/22/00/twig-6822161_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/24/22/00/twig-6822161_1280.jpg",
+        "pg": "https://pixabay.com/photos/twig-branch-buds-nature-plant-6822161/",
+        "desc": "twig branch lock screen phone buds nature mobile 4k plant botany ipad background design decorative floral  greeting card"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/20/07/09/woman-7208823_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/20/07/09/woman-7208823_1280.jpg",
+        "pg": "https://pixabay.com/photos/woman-space-stars-sky-planet-7208823/",
+        "desc": "woman lock screen beautiful space 4k mobile stars samsung sky sky background planet nature ipad space"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/04/20/02/10/truck-7144089_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/04/20/02/10/truck-7144089_1280.jpg",
+        "pg": "https://pixabay.com/photos/truck-road-vehicle-street-new-york-7144089/",
+        "desc": "truck road ipad vehicle samsung street new york auto lock automobile nyc beautiful city urban cars traffic phone 4k concrete"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/08/04/19/13/rocks-6522419_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/08/04/19/13/rocks-6522419_1280.jpg",
+        "pg": "https://pixabay.com/photos/rocks-mineral-wallpaper-pebbles-6522419/",
+        "desc": "rocks mineral lock screen phone pebbles samsung mobile featured ipad beautiful solid material"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/03/28/13/03/metal-ring-7097451_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/03/28/13/03/metal-ring-7097451_1280.jpg",
+        "pg": "https://pixabay.com/photos/metal-ring-rusty-metal-ring-metal-7097451/",
+        "desc": "metal ring beautiful samsung mobile 4k lock screen iphone ipad rusty metal ring metal rusty featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/01/01/23/mountains-7961981_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/05/01/01/23/mountains-7961981_1280.jpg",
+        "pg": "https://pixabay.com/photos/mountains-road-highway-snow-utah-7961981/",
+        "desc": "mountains mobile road beautiful highway samsung ipad snow lock screen utah landscape winter travel popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/10/06/13/mountain-8117525_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/10/06/13/mountain-8117525_1280.jpg",
+        "pg": "https://pixabay.com/photos/mountain-road-highway-spring-8117525/",
+        "desc": "mountain road highway spring nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/09/04/09/32/road-6597404_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/09/04/09/32/road-6597404_1280.jpg",
+        "pg": "https://pixabay.com/photos/road-highway-sea-mountains-coast-6597404/",
+        "desc": "road highway sea mountains coast shore clouds nature wölken landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/20/22/12/cosmos-7605414_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/11/20/22/12/cosmos-7605414_1280.jpg",
+        "pg": "https://pixabay.com/photos/cosmos-astronomy-galaxy-purple-7605414/",
+        "desc": "cosmos iphone featured phone lock screen 4k ipad astronomy beautiful galaxy purple"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/24/15/18/astronomy-8338435_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/10/24/15/18/astronomy-8338435_1280.png",
+        "pg": "https://pixabay.com/illustrations/astronomy-space-galaxy-universe-8338435/",
+        "desc": "astronomy space galaxy universe ai generated art featured"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2014/07/06/03/23/chain-of-lights-385238_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2014/07/06/03/23/chain-of-lights-385238_1280.jpg",
         "pg": "https://pixabay.com/photos/chain-of-lights-light-outdoor-party-385238/",
