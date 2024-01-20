@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://c0.wallpaperflare.com/preview/100/598/569/headphones-music-pastel-colors-blue.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/100/598/569/headphones-music-pastel-colors-blue.jpg",
+        "pg": "https://www.wallpaperflare.com/headphones-music-pastel-colors-blue-pink-minimal-colorful-wallpaper-aaezf",
+        "desc": "headphones, music, pastel colors, blue, pink, minimal, colorful"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/261/101/127/rock-stack-balance-minimal.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/261/101/127/rock-stack-balance-minimal.jpg",
+        "pg": "https://www.wallpaperflare.com/selective-focus-photography-of-pile-of-decorative-stones-rock-wallpaper-azbfw",
+        "desc": "selective focus photography of pile of decorative stones, rock"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/940/512/994/balance-balancing-boulder-close-up.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/940/512/994/balance-balancing-boulder-close-up.jpg",
+        "pg": "https://www.wallpaperflare.com/rocks-stacked-stones-rock-balance-balancing-boulder-close-up-wallpaper-uiryt",
+        "desc": "rocks, stacked, stones, rock, balance, balancing, boulder, close -up"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/454/1018/495/minimalism-geometric-figures-colorful-shapes-digital-art-hd-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/454/1018/495/minimalism-geometric-figures-colorful-shapes-digital-art-hd-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/minimalism-geometric-figures-colorful-shapes-digital-art-wallpaper-ycqpq",
+        "desc": "minimalism, geometric figures, colorful, shapes, digital art"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/315/149/314/round-brown-wooden-top-and-black-base-chair-on-yellow-background.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/315/149/314/round-brown-wooden-top-and-black-base-chair-on-yellow-background.jpg",
+        "pg": "https://www.wallpaperflare.com/round-brown-wooden-top-and-black-base-chair-on-yellow-background-wallpaper-afgqc",
+        "desc": " round brown wooden top and black base chair on yellow background"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/398/59/668/chamomile-leaves-minimalism-pastel-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/398/59/668/chamomile-leaves-minimalism-pastel-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/artificial-white-flowers-chamomile-leaves-minimalism-pastel-wallpaper-cqmd",
+        "desc": "artificial white flowers, chamomile, leaves, minimalism, pastel"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/43/391/736/space-shuttle-minimalism-portrait-display-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/43/391/736/space-shuttle-minimalism-portrait-display-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/space-shuttle-minimalism-portrait-display-copy-space-no-people-wallpaper-sutkz",
+        "desc": "space shuttle, minimalism, portrait display, copy space, no people"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/912/697/216/earphone-gear-earpod-product.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/912/697/216/earphone-gear-earpod-product.jpg",
+        "pg": "https://www.wallpaperflare.com/apple-earpods-on-gray-surface-apple-airpods-earphone-gear-wallpaper-zbqgp",
+        "desc": "Apple EarPods on gray surface, Apple AirPods, earphone, gear"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/685/520/1018/movies-edgar-wright-baby-driver-minimalism-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/685/520/1018/movies-edgar-wright-baby-driver-minimalism-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/movies-edgar-wright-baby-driver-minimalism-car-wallpaper-costp",
+        "desc": " movies, Edgar Wright, Baby Driver, minimalism, car"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/303/561/244/edgar-wright-glock-baby-driver-minimalism-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/303/561/244/edgar-wright-glock-baby-driver-minimalism-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/edgar-wright-glock-baby-driver-minimalism-gun-movies-wallpaper-qbbqd",
+        "desc": "Edgar Wright, Glock, Baby Driver, minimalism, gun, movies"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/249/952/906/chairs-contemporary-cosy-cosy-flat.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/249/952/906/chairs-contemporary-cosy-cosy-flat.jpg",
+        "pg": "https://www.wallpaperflare.com/photo-of-green-leaf-potted-plants-on-window-and-stand-chairs-wallpaper-arnjf",
+        "desc": "Photo of Green Leaf Potted Plants on Window and Stand, chairs"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/838/269/76/plane-moon-sky-minimalism-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/838/269/76/plane-moon-sky-minimalism-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/plane-moon-sky-minimalism-flight-trace-wallpaper-cwdyc",
+        "desc": "plane, moon, sky, minimalism, flight, trace"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/421/690/419/ronin-samurai-ninja-modern-moon-hd-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/421/690/419/ronin-samurai-ninja-modern-moon-hd-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/ronin-samurai-ninja-modern-moon-neon-neon-glow-neon-green-wallpaper-yczkn",
+        "desc": "Ronin, samurai, Ninja, modern, Moon, neon, neon glow, neon green featured"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/82/264/36/portrait-display-digital-art-signs-radioactive-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/82/264/36/portrait-display-digital-art-signs-radioactive-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/two-black-fans-on-yellow-background-portrait-display-digital-art-wallpaper-huetk",
+        "desc": "two black fans on yellow background, portrait display, digital art"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/683/1010/407/malika-favre-minimalism-portrait-display-artwork-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/683/1010/407/malika-favre-minimalism-portrait-display-artwork-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/malika-favre-minimalism-portrait-display-artwork-digital-art-wallpaper-cpike",
+        "desc": "Malika Favre, minimalism, portrait display, artwork, digital art"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/772/222/504/twig-branch-minimal-eucalyptu.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/772/222/504/twig-branch-minimal-eucalyptu.jpg",
+        "pg": "https://www.wallpaperflare.com/green-leaf-twig-branch-minimal-eucalyptu-stem-leafe-greenery-wallpaper-azbsd",
+        "desc": "green leaf, twig, branch, minimal, eucalyptu, stem, leafe, greenery"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/766/613/197/isometric-minimalism-blender-pyramid-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/766/613/197/isometric-minimalism-blender-pyramid-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/isometric-minimalism-blender-pyramid-studio-shot-technology-wallpaper-ccoec",
+        "desc": "isometric, minimalism, Blender, pyramid, studio shot, technology"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/601/703/779/isometric-minimalism-blender-pyramid-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/601/703/779/isometric-minimalism-blender-pyramid-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/isometric-minimalism-blender-pyramid-studio-shot-technology-wallpaper-pwgrb",
+        "desc": " isometric, minimalism, Blender, pyramid, studio shot, technology"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/472/59/610/coffee-grinder-next-to-laptop-computer-and-cup.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/472/59/610/coffee-grinder-next-to-laptop-computer-and-cup.jpg",
+        "pg": "https://www.wallpaperflare.com/coffee-grinder-next-to-laptop-computer-and-cup-coffee-cup-computer-keyboard-wallpaper-elqhv",
+        "desc": "coffee grinder next to laptop computer and cup, coffee cup, computer keyboard"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/266/253/199/empty-spiral-notebook-near-keyboard-and-pen.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/266/253/199/empty-spiral-notebook-near-keyboard-and-pen.jpg",
+        "pg": "https://www.wallpaperflare.com/empty-spiral-notebook-near-keyboard-and-pen-office-desk-work-wallpaper-akfjm",
+        "desc": "empty spiral notebook near keyboard and pen, office, desk, work"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/87/9/258/windows-10-operating-systems-portrait-display-minimalism-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/87/9/258/windows-10-operating-systems-portrait-display-minimalism-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/windows-10-operating-systems-portrait-display-minimalism-wallpaper-smhts",
+        "desc": "Windows 10, operating systems, portrait display, minimalism"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/344/287/640/cat-silhouette-black-yellow-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/344/287/640/cat-silhouette-black-yellow-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/cat-silhouette-black-yellow-minimalism-copy-space-no-people-wallpaper-cugm",
+        "desc": "cat, silhouette, black, yellow, minimalism, copy space, no people"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/787/340/937/digital-art-universe-space-space-art-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/787/340/937/digital-art-universe-space-space-art-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/solar-system-illustration-digital-art-universe-space-space-art-wallpaper-mkui",
+        "desc": "solar system illustration, digital art, universe, space, space art"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/473/637/153/motorcycles-yamaha-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/473/637/153/motorcycles-yamaha-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/yamaha-yzf-r1-yellow-bike-yellow-and-black-sport-bike-motorcycles-wallpaper-mjpsv",
+        "desc": "Yamaha Yzf-R1 Yellow Bike, yellow and black sport bike, Motorcycles"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/552/11/720/s2000-s2k-honda-wheel.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/552/11/720/s2000-s2k-honda-wheel.jpg",
+        "pg": "https://www.wallpaperflare.com/yellow-honda-car-on-road-yellow-honda-vehicle-s2000-s2k-wheel-wallpaper-zujuv",
+        "desc": " yellow Honda car on road, yellow Honda vehicle, s2000, s2k, wheel"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/753/1024/925/armchair-shadow-minimalism-dark-background-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/753/1024/925/armchair-shadow-minimalism-dark-background-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/brown-and-blue-sofa-chair-armchair-shadow-minimalism-dark-background-wallpaper-mdcq",
+        "desc": "brown and blue sofa chair, armchair, shadow, minimalism, dark background"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/402/71/705/wall-paint-brick-abstract.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/402/71/705/wall-paint-brick-abstract.jpg",
+        "pg": "https://www.wallpaperflare.com/blue-and-white-painted-wall-blue-and-white-brick-wall-abstract-wallpaper-zuboc",
+        "desc": "blue and white painted wall, blue and white brick wall, abstract"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/300/760/21/abstract-fractal-digital-art-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/300/760/21/abstract-fractal-digital-art-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/abstract-fractal-digital-art-wallpaper-cosnp",
+        "desc": " abstract, fractal, digital art"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/279/168/1/crack-texture-paint-cracked-paint.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/279/168/1/crack-texture-paint-cracked-paint.jpg",
+        "pg": "https://www.wallpaperflare.com/untitled-crack-texture-paint-cracked-paint-wall-white-wallpaper-zhafp",
+        "desc": "untitled, crack, texture, paint, cracked paint, wall, white"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/257/980/983/paint-roller-color-colour.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/257/980/983/paint-roller-color-colour.jpg",
+        "pg": "https://www.wallpaperflare.com/four-orange-green-blue-and-red-paint-rollers-four-assorted-paint-rollers-wallpaper-zubsi",
+        "desc": "four orange, green, blue, and red paint rollers, four assorted paint rollers"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/455/123/764/animals-lion-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/455/123/764/animals-lion-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/king-of-beasts-paintings-multicolored-lion-wallpaper-animals-wallpaper-mxgnm",
+        "desc": "King Of Beasts Paintings, multicolored lion wallpaper, Animals"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/385/846/442/fence-red-stained-vertical.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/385/846/442/fence-red-stained-vertical.jpg",
+        "pg": "https://www.wallpaperflare.com/fence-red-stained-vertical-wood-knots-privacy-planks-wallpaper-gsrfe",
+        "desc": "fence, red, stained, vertical, wood, knots, privacy, planks"
+   },
+    {
         "thumb": "https://wallpaperbat.com/img/8657844-samsung-galaxy-s3-wallpaper.jpg",
         "full": "https://wallpaperbat.com/img/8657844-samsung-galaxy-s3-wallpaper.jpg",
         "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
