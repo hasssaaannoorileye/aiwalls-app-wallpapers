@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2015/04/28/01/02/bokeh-742892_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/04/28/01/02/bokeh-742892_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-fluorescent-shapes-background-742892/",
+        "desc": "bokeh fluorescent shapes background past beautiful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/29/12/13/fence-1869401_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/29/12/13/fence-1869401_1280.jpg",
+        "pg": "https://pixabay.com/photos/fence-chain-link-bokeh-lights-1869401/",
+        "desc": "fence chain link bokeh lights traffic chain link fence wires demarcation blurred bokeh lights wire mesh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/01/06/07/32/leaf-5893399_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/01/06/07/32/leaf-5893399_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-fence-demarcation-green-leaf-5893399/",
+        "desc": "leaf nature fence demarcation green leaf leaf veins link fence chain link chain link fence metal barrier grid"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/03/30/09/28/red-admiral-butterfly-6136492_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/03/30/09/28/red-admiral-butterfly-6136492_1280.jpg",
+        "pg": "https://pixabay.com/photos/red-admiral-butterfly-butterfly-6136492/",
+        "desc": "red admiral butterfly butterfly fence chain link fence insect animal nature closeup"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/06/20/02/bokeh-7503536_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/06/20/02/bokeh-7503536_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-purple-design-pattern-7503536/",
+        "desc": "bokeh purple beautiful wallpaper design pattern scrapbooking background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/01/27/11/20/hearts-4796957_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/01/27/11/20/hearts-4796957_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/hearts-bokeh-purple-paper-texture-4796957/",
+        "desc": "hearts bokeh purple paper texture valentine's day background date of birth wrapping paper scrapbooking happy mothers day scrapbook romantic"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/02/20/14/30/heart-2082708_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/02/20/14/30/heart-2082708_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/heart-bokeh-decorations-lights-2082708/",
+        "desc": "heart bokeh decorations lights holidays winter christmas"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/06/15/19/47/deco-2406498_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/06/15/19/47/deco-2406498_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/deco-heart-butterfly-2406498/",
+        "desc": "deco heart butterfly decoration heart decoration decorative wood ornament decorations"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/04/28/19/36/heart-5106075_150.png",
+        "full": "https://cdn.pixabay.com/photo/2020/04/28/19/36/heart-5106075_1280.png",
+        "pg": "https://pixabay.com/vectors/heart-love-kawaii-face-expression-5106075/",
+        "desc": "heart love kawaii face expression romantic emotions pink valentine symbol beautiful background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/05/12/08/21/daisy-3392654_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/05/12/08/21/daisy-3392654_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-heart-romance-valentines-day-3392654/",
+        "desc": "daisy heart romance valentine's day love spring greeting heart-shaped friendship symbol love symbol flower beautiful flowers pink daisy nature "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/03/30/20/33/heart-700141_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/03/30/20/33/heart-700141_1280.jpg",
+        "pg": "https://pixabay.com/photos/heart-love-romance-valentine-700141/",
+        "desc": "heart love romance valentine harmony romantic brown love brown heart"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/05/19/14/13/daisies-1403041_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/05/19/14/13/daisies-1403041_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisies-heart-daisy-heart-love-1403041/",
+        "desc": "daisies heart daisy heart love heart shaped flower wallpaper white daisies nature bloom blossom flora romantic spring symbol flower background flowers flower heart romance decoration beautiful flowers decorative"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/06/02/15/25/daisy-6304767_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/06/02/15/25/daisy-6304767_1280.jpg",
+        "pg": "https://pixabay.com/photos/daisy-flower-heart-love-blossom-6304767/",
+        "desc": "daisy flower heart love blossom bloom valentine's day symbol in love pick beautiful flowers sweet map flower wallpaper thank you gift purple spring summer pleasure flower background nature friends"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/06/11/15/48/hearts-1450300_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/06/11/15/48/hearts-1450300_1280.jpg",
+        "pg": "https://pixabay.com/photos/hearts-clothespins-clothesline-hang-1450300/",
+        "desc": "hearts clothespins clothesline hang hanging cord suspended love together love symbol friendship connectedness"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/11/27/11/12/leaf-547400_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/11/27/11/12/leaf-547400_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-heart-green-shadow-play-547400/",
+        "desc": "leaf heart green shadow play leaf veins sheet plants nature botany "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/29/11/51/close-up-1869305_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/29/11/51/close-up-1869305_1280.jpg",
+        "pg": "https://pixabay.com/photos/close-up-heart-rustic-text-wooden-1869305/",
+        "desc": "close up heart rustic text wooden love black heart wooden heart"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/08/30/21/55/leaf-3643430_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/08/30/21/55/leaf-3643430_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-heart-leaf-heart-nature-love-3643430/",
+        "desc": "leaf heart leaf heart nature love heart shape symbol romantic imagination in love tendril green structure beautiful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/05/30/22/02/bleeding-heart-1425870_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/05/30/22/02/bleeding-heart-1425870_1280.jpg",
+        "pg": "https://pixabay.com/photos/bleeding-heart-flowers-plant-1425870/",
+        "desc": "bleeding heart beautiful plant red flowers bloom flower blossom asian bleeding-heart flora garden nature background closeup"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/02/17/13/52/heart-268151_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/02/17/13/52/heart-268151_1280.jpg",
+        "pg": "https://pixabay.com/photos/heart-lock-padlock-fence-locked-268151/",
+        "desc": "heart lock padlock fence locked love lock symbol love love symbol valentine's day grid"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/09/18/19/19/padlock-3686990_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/09/18/19/19/padlock-3686990_1280.jpg",
+        "pg": "https://pixabay.com/photos/padlock-still-life-lock-old-metal-3686990/",
+        "desc": "padlock still life lock old metal door rust"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/14/20/24/christmas-balls-8449616_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/14/20/24/christmas-balls-8449616_1280.jpg",
+        "pg": "https://pixabay.com/photos/christmas-balls-fairy-lights-deco-8449616/",
+        "desc": "christmas balls fairy lights deco christmas fir tree lights macro"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/09/26/23/58/bokeh-4507218_1280.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/09/26/23/58/bokeh-4507218_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-light-reflects-sky-blue-4507218/",
+        "desc": "bokeh light reflects sky blue effect background digital sunshine stains glitter shining beautiful lights atmospheric"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/12/03/01/38/bokeh-554876_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/12/03/01/38/bokeh-554876_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-gold-glitter-backdrop-554876/",
+        "desc": "bokeh gold glitter backdrop glowing sparkle magical glittering twinkle brown bokeh brown magic"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/04/29/13/28/bokeh-334405_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/04/29/13/28/bokeh-334405_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-colors-new-year-lights-334405/",
+        "desc": "bokeh colors new year lights christmas blur black news black bokeh black new"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/01/13/21/38/bokeh-1978312_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/01/13/21/38/bokeh-1978312_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-pattern-red-lights-glitter-1978312/",
+        "desc": "bokeh pattern red lights glitter sparkle round defocused festive celebration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/09/12/20/leaves-7580472_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/11/09/12/20/leaves-7580472_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaves-colorful-autumn-nature-7580472/",
+        "desc": "leaves colorful autumnn ature macro bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/01/01/07/49/bokeh-1944144_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/01/01/07/49/bokeh-1944144_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-light-vague-1944144/",
+        "desc": "bokeh light vague"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/12/22/12/10/machine-3033525_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/12/22/12/10/machine-3033525_1280.jpg",
+        "pg": "https://pixabay.com/photos/machine-gold-bokeh-walle-3033525/",
+        "desc": "machine gold bokeh walle photograph brown bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/04/08/13/27/cat-7119497_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/04/08/13/27/cat-7119497_1280.jpg",
+        "pg": "https://pixabay.com/photos/cat-pet-bokeh-animal-lights-7119497/",
+        "desc": "cat pet bokeh animal nature lights feline"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/04/16/09/16/leaf-5049827_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/04/16/09/16/leaf-5049827_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-natural-bokeh-5049827/",
+        "desc": "leaf natural nature bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/04/18/08/23/wheel-3329768_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/04/18/08/23/wheel-3329768_1280.jpg",
+        "pg": "https://pixabay.com/photos/wheel-bike-bicycle-city-lights-3329768/",
+        "desc": "wheel bike bicycle city lights bokeh cycle"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/01/05/21/33/christmas-tree-5892519_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/01/05/21/33/christmas-tree-5892519_1280.jpg",
+        "pg": "https://pixabay.com/photos/christmas-tree-christmas-decorations-5892519/",
+        "desc": "christmas tree christmas decorations fairy lights nature tree spruce needles bokeh lights bokeh christmas lights"
+   },
+    {
         "thumb": "https://c0.wallpaperflare.com/preview/100/598/569/headphones-music-pastel-colors-blue.jpg",
         "full": "https://c0.wallpaperflare.com/preview/100/598/569/headphones-music-pastel-colors-blue.jpg",
         "pg": "https://www.wallpaperflare.com/headphones-music-pastel-colors-blue-pink-minimal-colorful-wallpaper-aaezf",
