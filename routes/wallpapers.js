@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2014/07/06/03/23/chain-of-lights-385238_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/07/06/03/23/chain-of-lights-385238_1280.jpg",
+        "pg": "https://pixabay.com/photos/chain-of-lights-light-outdoor-party-385238/",
+        "desc": "chain of lights light nature outdoor party bokeh summer green party green bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/06/06/21/01/leaf-4256926_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/06/06/21/01/leaf-4256926_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-green-bokeh-nerves-4256926/",
+        "desc": "leaf green nature bokeh nerves"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/12/12/01/13/christmas-candle-1900641_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/12/12/01/13/christmas-candle-1900641_1280.jpg",
+        "pg": "https://pixabay.com/photos/christmas-candle-xmas-festive-1900641/",
+        "desc": "christmas candle xmas festive holiday bokeh blur dof depth of field decoration tree background brown tree brown candle brown candles brown field brown bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/05/29/17/53/flower-5236020_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/05/29/17/53/flower-5236020_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-bokeh-macro-blur-nature-5236020/",
+        "desc": "flower bokeh macro blur beautiful flowers nature flora flower spring background summer brown bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/04/08/13/27/cat-7119496_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/04/08/13/27/cat-7119496_1280.jpg",
+        "pg": "https://pixabay.com/photos/cat-pet-animal-roses-bokeh-nature-7119496/",
+        "desc": "cat pet animal roses bokeh nature feline"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/03/15/06/cat-7567706_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/11/03/15/06/cat-7567706_1280.jpg",
+        "pg": "https://pixabay.com/photos/cat-pet-animal-garden-nature-7567706/",
+        "desc": "cat pet animal garden nature feline cute kitty kitten"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/04/09/09/29/lantern-714193_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/04/09/09/29/lantern-714193_1280.jpg",
+        "pg": "https://pixabay.com/photos/lantern-light-lamp-candle-bokeh-714193/",
+        "desc": "lantern light lamp candle bokeh hand handle"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/02/15/22/47/kerosene-lamp-1202277_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/02/15/22/47/kerosene-lamp-1202277_1280.jpg",
+        "pg": "https://pixabay.com/photos/kerosene-lamp-old-lighting-lamp-1202277/",
+        "desc": "kerosene lamp old lighting lamp incandescent lantern glowing antique lampshade light"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/12/13/09/58/bokeh-1903648_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/12/13/09/58/bokeh-1903648_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-light-coloring-sardinia-1903648/",
+        "desc": "bokeh light coloring sardinia silhouette"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/06/11/09/22/leaf-805656_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/06/11/09/22/leaf-805656_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-backlighting-close-up-805656/",
+        "desc": "leaf backlighting close up sheet framework green sun hand bokeh mood light"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/05/29/17/53/flower-5236013_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/05/29/17/53/flower-5236013_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-green-macro-bokeh-blur-5236013/",
+        "desc": "flower green macro flower background flower bokeh blur nature summer spring meadow bloom beautiful flowers plant yellow green bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/09/02/23/48/christmas-919834_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/09/02/23/48/christmas-919834_1280.jpg",
+        "pg": "https://pixabay.com/photos/christmas-tree-christmas-blurred-919834/",
+        "desc": "christmas tree christmas blurred bokeh lights points of light"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/08/06/20/01/mug-2595773_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/08/06/20/01/mug-2595773_1280.jpg",
+        "pg": "https://pixabay.com/photos/mug-hot-coffee-drink-hand-blur-2595773/",
+        "desc": "mug hot coffee drink hand blur nature bokeh coffee cup smoke christmas tree"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/01/08/15/27/lamborghini-593098_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/01/08/15/27/lamborghini-593098_1280.jpg",
+        "pg": "https://pixabay.com/photos/lamborghini-brno-racing-car-593098/",
+        "desc": "lamborghini brno racing car automobiles vehicles motors cars fast power orange bokeh tilt-shift gray power gray bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/12/16/30/light-1819170_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/12/16/30/light-1819170_1280.jpg",
+        "pg": "https://pixabay.com/photos/light-vintage-bokeh-disney-lamp-1819170/",
+        "desc": "light vintage bokeh disney lamp old architectura lantique decoration lanternironout door retro"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/11/01/14/01/mushroom-5703868_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/11/01/14/01/mushroom-5703868_1280.jpg",
+        "pg": "https://pixabay.com/photos/mushroom-grass-fungus-fungi-5703868/",
+        "desc": "mushroom grass fungus fungitoads tool autumn forest bokeh shining nature meadow"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/04/10/15/24/bottle-3307703_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/04/10/15/24/bottle-3307703_1280.jpg",
+        "pg": "https://pixabay.com/photos/bottle-glass-clear-3307703/",
+        "desc": "bottle glass clear abstract bokeh background 3d glossy gray abstract gray bottle gray bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/08/29/18/12/lighthouse-4439625_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/08/29/18/12/lighthouse-4439625_1280.jpg",
+        "pg": "https://pixabay.com/photos/lighthouse-crystal-girl-ball-moon-4439625/",
+        "desc": "lighthouse crystal girl nature ball moon light sparks bokeh sky clouds fantasy photoshop steam lighting story"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/08/25/23/44/camera-5518255_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/08/25/23/44/camera-5518255_1280.jpg",
+        "pg": "https://pixabay.com/photos/camera-lens-film-light-analogue-5518255/",
+        "desc": "camera lens film light analogue technology table body bokeh equipment"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/07/11/12/55/tiger-4330634_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/07/11/12/55/tiger-4330634_1280.jpg",
+        "pg": "https://pixabay.com/photos/tiger-zoo-stripes-sitting-bokeh-4330634/",
+        "desc": "tiger zoo stripes sitting bokeh yellow eyes"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/01/12/09/56/winter-4759644_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/01/12/09/56/winter-4759644_1280.jpg",
+        "pg": "https://pixabay.com/photos/winter-rain-texture-drops-water-4759644/",
+        "desc": "winter rain texture nature drops water bokeh weather"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/12/09/14/44/leaf-3865014_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/12/09/14/44/leaf-3865014_1280.jpg",
+        "pg": "https://pixabay.com/photos/leaf-maple-autumn-foliage-botany-3865014/",
+        "desc": "leaf map lea utumn foliage botany nature growth season fall rain water"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/01/09/18/flower-7491157_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/01/09/18/flower-7491157_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-hibiscus-sprig-nature-plant-7491157/",
+        "desc": "flower background hibiscus sprig nature plant pink flower beautiful flowers macro bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/01/18/21/43/window-5929492_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/01/18/21/43/window-5929492_1280.jpg",
+        "pg": "https://pixabay.com/photos/window-structure-mosque-steel-5929492/",
+        "desc": "window structure mosque steel metal building light bokeh close up"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/03/10/17/08/blossom-3214563_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/03/10/17/08/blossom-3214563_1280.jpg",
+        "pg": "https://pixabay.com/photos/blossom-bloom-plant-nature-colour-3214563/",
+        "desc": "blossom bloom plant nature colour bright leaf bokehs pring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/10/10/11/10/bokeh-483255_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/10/10/11/10/bokeh-483255_1280.jpg",
+        "pg": "https://pixabay.com/photos/bokeh-lights-illumination-festive-483255/",
+        "desc": "bokeh light sillumination festive night glowing"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/09/06/00/47/dandelion-7435458_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/09/06/00/47/dandelion-7435458_1280.jpg",
+        "pg": "https://pixabay.com/photos/dandelion-nature-green-7435458/",
+        "desc": "dandelion nature green background bokeh colorful journal outdoors scenery"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/08/03/10/50/dreamcatcher-2575527_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/08/03/10/50/dreamcatcher-2575527_1280.jpg",
+        "pg": "https://pixabay.com/photos/dreamcatcher-art-design-dark-night-2575527/",
+        "desc": "dream catcherart design dark night bokeh"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/11/09/12/19/flowers-7580470_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/11/09/12/19/flowers-7580470_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-asters-white-autumn-bokeh-7580470/",
+        "desc": "flowers flower wallpaper asters white autumn bokeh flower background beautiful flowers nature macro"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/08/27/14/12/lantern-7414557_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/08/27/14/12/lantern-7414557_1280.jpg",
+        "pg": "https://pixabay.com/photos/lantern-night-evening-light-7414557/",
+        "desc": "lantern night evening light ornament decoration bokeh dark background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/12/06/15/22/fox-5809091_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/12/06/15/22/fox-5809091_1280.jpg",
+        "pg": "https://pixabay.com/photos/fox-doll-toy-miniature-figurine-5809091/",
+        "desc": "foxdolltoyminiaturenaturefigurinebokehsunsetcuteness"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/02/16/13/48/nature-4000378_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/02/16/13/48/nature-4000378_1280.jpg",
+        "pg": "https://pixabay.com/photos/nature-bokeh-macro-drops-detail-4000378/",
+        "desc": "nature bokeh macro drops detail plant close up fall garden"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2015/04/28/01/02/bokeh-742892_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2015/04/28/01/02/bokeh-742892_1280.jpg",
         "pg": "https://pixabay.com/photos/bokeh-fluorescent-shapes-background-742892/",
