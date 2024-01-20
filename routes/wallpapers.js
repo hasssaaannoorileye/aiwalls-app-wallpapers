@@ -264,37 +264,37 @@ const wallpapers = [
         "thumb": "https://cdn.pixabay.com/photo/2015/09/04/23/29/minimal-923194_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2015/09/04/23/29/minimal-923194_1280.jpg",
         "pg": "https://pixabay.com/photos/minimal-furniture-drawers-cup-923194/",
-        "desc": "minimalfurnituredrawerscupinteriordesignpastel"
+        "desc": "minimal furniture drawers cup interior design pastel"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2020/03/13/11/00/cityscape-4927628_150.png",
         "full": "https://cdn.pixabay.com/photo/2020/03/13/11/00/cityscape-4927628_1280.png",
         "pg": "https://pixabay.com/vectors/cityscape-minimal-urban-building-4927628/",
-        "desc": "cityscapenatureminimalurbanbuildingsky"
+        "desc": "city scape nature minimal urban building sky"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2020/03/02/19/00/dandelion-4896595_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2020/03/02/19/00/dandelion-4896595_1280.jpg",
         "pg": "https://pixabay.com/photos/dandelion-black-white-minimal-4896595/",
-        "desc": "dandelionblackwhiteminimal"
+        "desc": "dande lion black white minimal"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2023/12/14/16/22/arch-8449183_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/12/14/16/22/arch-8449183_1280.jpg",
         "pg": "https://pixabay.com/illustrations/arch-poster-minimalist-rainbow-8449183/",
-        "desc": "archposterminimalistrainbowbackgroundbranchleavesnatureminimalismminimalwallaestheticsunsunset"
+        "desc": "archposter minimalist rainbow background branch leaves nature minimalism minimal wall aesthetic sun sunset"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2023/08/12/13/59/cat-8185712_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/08/12/13/59/cat-8185712_1280.jpg",
         "pg": "https://pixabay.com/illustrations/cat-circle-poster-design-drawing-8185712/",
-        "desc": "catcircleposterdesigndrawingbackgroundminimalistpetanimalsimple"
+        "desc": "cat circle poster design drawing background minimalist pet animal simple"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2022/07/17/06/30/sunrise-7326601_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2022/07/17/06/30/sunrise-7326601_1280.jpg",
         "pg": "https://pixabay.com/illustrations/sunrise-sunset-desert-wall-art-7326601/",
-        "desc": "sunrise sunset desert wall art minimalist poster nature minimalist geometric trendy background poster poster background abstract rising sun abstract landscape"
+        "desc": "sunrise sunset desert wall art minimalist poster nature geometric trendy background poster poster abstract rising sun abstract landscape"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2023/12/30/06/30/pastel-8477460_150.jpg",
@@ -306,7 +306,7 @@ const wallpapers = [
         "thumb": "https://cdn.pixabay.com/photo/2022/07/26/09/28/background-7345432_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2022/07/26/09/28/background-7345432_1280.jpg",
         "pg": "https://pixabay.com/illustrations/background-leaf-nature-wallpaper-7345432/",
-        "desc": "background leaf nature minimal green background frame"
+        "desc": "background leaf nature minimal green frame"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2021/10/27/18/14/minimal-background-6748084_150.jpg",
@@ -318,7 +318,7 @@ const wallpapers = [
         "thumb": "https://cdn.pixabay.com/photo/2021/02/01/12/11/building-5970426_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2021/02/01/12/11/building-5970426_1280.jpg",
         "pg": "https://pixabay.com/photos/building-modern-minimal-5970426/",
-        "desc": "buildingmodernminimalarchitecturedesignminimalist"
+        "desc": "building modern minimal architecture design minimalist"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2021/11/29/16/54/background-6833021_150.jpg",
@@ -336,7 +336,7 @@ const wallpapers = [
         "thumb": "https://cdn.pixabay.com/photo/2022/09/08/18/23/pineapple-7441650_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2022/09/08/18/23/pineapple-7441650_1280.jpg",
         "pg": "https://pixabay.com/illustrations/pineapple-fresh-tropical-background-7441650/",
-        "desc": "pineapplefreshtropicalbackgroundorganicdietvegetarianhealthyfoodveganfruitminimalyellowsweetjuicyleafnatureripedesignsummericonobjectvitaminraw"
+        "desc": "pine apple fresh tropical background organic dietvegetarian healthy food vegan fruit minimal yellow sweet juicy leaf nature ripe design summer icon"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2020/03/30/19/20/gypsophila-4985244_150.jpg",
@@ -432,25 +432,25 @@ const wallpapers = [
         "thumb": "https://cdn.pixabay.com/photo/2023/06/29/00/34/abstract-8095443_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/06/29/00/34/abstract-8095443_1280.jpg",
         "pg": "https://pixabay.com/illustrations/abstract-dots-wave-pattern-design-8095443/",
-        "desc": "abstractdotswavepatterndesignbackdropcreativegradientgraphicwallpaperbackground"
+        "desc": "abstract dot swave pattern design back drop creative gradient graphic background"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2023/05/30/09/59/abstract-8028123_150.png",
         "full": "https://cdn.pixabay.com/photo/2023/05/30/09/59/abstract-8028123_1280.png",
         "pg": "https://pixabay.com/illustrations/abstract-waves-background-pink-8028123/",
-        "desc": "abstractwavesbackgroundpinkwallpaperartbackdropcolordesigngraphicgrungepatternretrosurfacetexture"
+        "desc": "abstract waves background pink art backdrop color design graphic grunge pattern retro surface texture"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2023/10/17/13/22/wallpapers-8321164_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/10/17/13/22/wallpapers-8321164_1280.jpg",
         "pg": "https://pixabay.com/illustrations/wallpapers-mobile-backgrounds-8321164/",
-        "desc": "wallpapers mobile backgrounds screen display aesthetic abstract pattern ai generated minimal"
+        "desc": "mobile backgrounds screen display aesthetic abstract pattern ai generated minimal"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2022/10/13/05/48/art-7518248_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2022/10/13/05/48/art-7518248_1280.jpg",
         "pg": "https://pixabay.com/photos/art-land-space-stars-wallpaper-7518248/",
-        "desc": "art land phone wallpaper space stars wallpaper digital art digital artwork"
+        "desc": "art land phone space stars wallpaper digital art digital artwork"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2023/09/03/05/24/ai-generated-8229903_150.png",
