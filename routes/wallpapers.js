@@ -3,6 +3,102 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://images.unsplash.com/photo-1663544093605-31a537e5afe5?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1663544093605-31a537e5afe5?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/background-pattern-aw6tcJCIhbU",
+        "desc": " Featured in Editorial, Textures & Patterns, Hd Abstrac Graphics Hd Art Light Backgrounds Ornament Fractal"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1663094620259-faa6478a09b9?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1663094620259-faa6478a09b9?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/background-pattern-FRzXCNSuWlA",
+        "desc": "Hd Purple Planets Portrait Colored Spheres Abstract Wall Color Wall Corner Hq Design Texture Esfera Wall Esferas Art Ball Balloon Images"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1663630487263-1f6b2790e0f0?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1663630487263-1f6b2790e0f0?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/shape-Lc8h5CAR3V8",
+        "desc": "Blue Test 4k For Smartphone For Hd Texture Abstract Iphone 14 Sphere Ball Balloon Bubble"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1663630487153-701b372dc538?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1663630487153-701b372dc538?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/a-screenshot-of-a-video-game-yKn52RVCAnY",
+        "desc": "Mobile Mosaic Colorized Screen Full  Paper Wall Hd For Smartphone Texture Outdoors featured"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1558369178-6556d97855d0?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1558369178-6556d97855d0?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/road-with-vehicles-near-buildings-j57b5V7_RJw",
+        "desc": "Manhattan Bridge United States Hd Cityscape New York Beauty Hq Background Images Vibrant Color Nyc Traffic Street Street Photography Neighborhood"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1504681869696-d977211a5f4c?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/body-of-water-near-trees-at-daytime-toPRrcyAIUY",
+        "desc": "Aerial Hd Android Iphone Cool Tumblr Hd Hq Images Computer Wave Reflection Shadow Woodland Lagoon Sand Hd Forest Tree Inspiration Drone View Blue Water"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1515578706925-0dc1a7bfc8cb?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1515578706925-0dc1a7bfc8cb?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/aerial-photography-of-beach-KGc9MaDmjtI",
+        "desc": "Nature Sea Ocean Water Beach Travel Images Hd Ipad Aerial Landscape Wall Hd Grey Hd Snow Outdoors Glacier Ice Mountain Home Decor Blanket Sea Waves"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1560306843-33986aebaf12?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1560306843-33986aebaf12?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/architectural-photography-of-brown-building-PTmrpv_2gUI",
+        "desc": "New York popular United States Flatiron Building New Urban Office Building Flatiron Summer Cloudscape Sunset Time Hdr Hd Sky Metropolis Light Road High Rise Pedestrian Steeple Spire"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1513477967668-2aaf11838bd6?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1513477967668-2aaf11838bd6?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/white-and-black-ceramic-cup-filled-with-brown-liquid-on-brown-wooden-sufface-FBiKcUw_sQw",
+        "desc": "Coffee Images Cup Social Mug Teacher Humanity Life Coach Mentor Tutor Training Inspirational Images Vision Volunteer Saying New Text"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1574285013029-29296a71930e?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1574285013029-29296a71930e?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/aerial-photography-of-seashore-55ulpBt_z2Q",
+        "desc": "Water Beach Drone Hd Green Sand Outdoors Landscape Nature Hd Scenery Hd Ocean Sea Aerial View Land Shoreline Coast Vegetation Plant popular"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1639807478843-77609140d22d?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1639807478843-77609140d22d?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/the-sun-is-setting-over-the-water-at-the-beach-FVU7foXhkfY",
+        "desc": "Beach Grey popular Nature Outdoors Shoreline Sea Dusk Dawn Sky Red Sky Coast Promontory Architecture Building Sunrise Flare"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1648728460542-a6ae01465739?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1648728460542-a6ae01465739?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/a-stack-of-rocks-XvVakf_sbSE",
+        "desc": "Tenerife Texture Backgrounds Hd Pattern Beach Tenerife BeachStacked Stones Beach Stones Stone Tower Hd Blue Rock Pebble popular"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1657632843433-e6a8b7451ac6?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1657632843433-e6a8b7451ac6?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/a-bright-red-and-blue-circle-3E2xgrlNXq4",
+        "desc": "Digital Image Render 3d Art Digital Art Twist Hd Purple Experimental Futuristic Hd Dark Abstract 4k Graphics Sphere Coil Light Pattern"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1661949734732-7a845100959e?q=75&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1661949734732-7a845100959e?q=75&fm=jpg",
+        "pg": "https://unsplash.com/photos/background-pattern-wOVUjOGc9Oo",
+        "desc": "Digital Image Green Spiral Art Experimental 3d Art Twist 4k Violet 3d Render Hd Abstract Futuristic Colorful Displacement Digital Art"
+   },
+    {
+        "thumb": "https://images.pexels.com/photos/1969979/pexels-photo-1969979.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "full": "https://images.pexels.com/photos/1969979/pexels-photo-1969979.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "pg": "https://www.pexels.com/photo/windmill-under-starry-sky-1969979/",
+        "desc": "Alternative Energy Backlit Energy Renewable Energy Samsung Silhouette Stars Wind Turbine Windmill popular"
+   },
+    {
+        "thumb": "https://images.pexels.com/photos/13513991/pexels-photo-13513991.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "full": "https://images.pexels.com/photos/13513991/pexels-photo-13513991.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "pg": "https://www.pexels.com/photo/headlight-of-expensive-car-13513991/",
+        "desc": "Car Expensive Headlight Illuminated Luxurious New Vertical Shot popular"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2019/09/21/15/13/fairy-lights-4494115_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2019/09/21/15/13/fairy-lights-4494115_1280.jpg",
         "pg": "https://pixabay.com/photos/fairy-lights-lights-mood-light-4494115/",
