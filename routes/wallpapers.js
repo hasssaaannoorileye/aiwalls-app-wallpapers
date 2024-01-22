@@ -6,7 +6,7 @@ const wallpapers = [
         "thumb": "https://images.unsplash.com/photo-1663544093605-31a537e5afe5?q=75&fm=jpg&w=200&fit=max",
         "full": "https://images.unsplash.com/photo-1663544093605-31a537e5afe5?q=75&fm=jpg",
         "pg": "https://unsplash.com/photos/background-pattern-aw6tcJCIhbU",
-        "desc": " Featured in Editorial, Textures & Patterns, Hd Abstrac Graphics Hd Art Light Backgrounds Ornament Fractal"
+        "desc": " Featured in Editorial, Textures & Patterns, Hd Abstrac Graphics Hd Art Light Backgrounds Ornament Fractal, premium"
    },
     {
         "thumb": "https://images.unsplash.com/photo-1663094620259-faa6478a09b9?q=75&fm=jpg&w=200&fit=max",
