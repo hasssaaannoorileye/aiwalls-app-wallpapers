@@ -1371,6 +1371,18 @@ const wallpapers = [
         "desc": "Best Samsung Galaxy S3 HD background"
    },
     {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/689/94/428/pattern-vertical-portrait-display-digital-art-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/689/94/428/pattern-vertical-portrait-display-digital-art-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/blue-and-black-abstract-painting-pattern-vertical-portrait-display-wallpaper-prnyy",
+        "desc": "blue and black abstract painting, pattern, vertical, portrait display featured"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/622/350/393/abstract-optic-fiber-dark-digital-art-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/622/350/393/abstract-optic-fiber-dark-digital-art-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/abstract-optic-fiber-dark-digital-art-lines-wallpaper-cwvxs",
+        "desc": "abstract, Optic fiber, dark, digital art, lines featured"
+   },
+    {
         "thumb": "https://wallpaperbat.com/img/8658015-samsung-galaxy-s3-wallpaper.jpg",
         "full": "https://wallpaperbat.com/img/8658015-samsung-galaxy-s3-wallpaper.jpg",
         "pg": "https://wallpaperbat.com/samsung-galaxy-s3-wallpapers",
@@ -1425,40 +1437,10 @@ const wallpapers = [
         "desc": "rain forest green nature popular ai generated"
    },
     {
-        "thumb": "https://c4.wallpaperflare.com/wallpaper/689/94/428/pattern-vertical-portrait-display-digital-art-wallpaper-preview.jpg",
-        "full": "https://c4.wallpaperflare.com/wallpaper/689/94/428/pattern-vertical-portrait-display-digital-art-wallpaper-preview.jpg",
-        "pg": "https://www.wallpaperflare.com/blue-and-black-abstract-painting-pattern-vertical-portrait-display-wallpaper-prnyy",
-        "desc": "blue and black abstract painting, pattern, vertical, portrait display featured"
-   },
-    {
-        "thumb": "https://c4.wallpaperflare.com/wallpaper/622/350/393/abstract-optic-fiber-dark-digital-art-wallpaper-preview.jpg",
-        "full": "https://c4.wallpaperflare.com/wallpaper/622/350/393/abstract-optic-fiber-dark-digital-art-wallpaper-preview.jpg",
-        "pg": "https://www.wallpaperflare.com/abstract-optic-fiber-dark-digital-art-lines-wallpaper-cwvxs",
-        "desc": "abstract, Optic fiber, dark, digital art, lines featured"
-   },
-    {
         "thumb": "https://c0.wallpaperflare.com/preview/465/981/154/alpine-roads-austria-curves-drive.jpg",
         "full": "https://c0.wallpaperflare.com/preview/465/981/154/alpine-roads-austria-curves-drive.jpg",
         "pg": "https://www.wallpaperflare.com/nockalm-road-austria-alpine-roads-curves-drive-drivers-driving-wallpaper-azlho",
         "desc": "Nockalm Road, Austria, alpine roads, curves, drive, drivers, driving popular"
-   },
-    {
-        "thumb": "https://c0.wallpaperflare.com/preview/258/681/274/parked-gray-skoda-car.jpg",
-        "full": "https://c0.wallpaperflare.com/preview/258/681/274/parked-gray-skoda-car.jpg",
-        "pg": "https://www.wallpaperflare.com/parked-gray-skoda-car-vehicle-transportation-automobile-tire-wallpaper-edilm",
-        "desc": "parked gray Skoda car, vehicle, transportation, automobile, tire popular"
-   },
-    {
-        "thumb": "https://c0.wallpaperflare.com/preview/317/813/320/white-and-black-motorcycle-park-during-daytime.jpg",
-        "full": "https://c0.wallpaperflare.com/preview/317/813/320/white-and-black-motorcycle-park-during-daytime.jpg",
-        "pg": "https://www.wallpaperflare.com/white-and-black-motorcycle-park-during-daytime-machine-wheel-wallpaper-ezxdg",
-        "desc": "white and black motorcycle park during daytime, machine, wheel popular"
-   },
-    {
-        "thumb": "https://c0.wallpaperflare.com/preview/354/615/793/railway-indian-india-sunset.jpg",
-        "full": "https://c0.wallpaperflare.com/preview/354/615/793/railway-indian-india-sunset.jpg",
-        "pg": "https://www.wallpaperflare.com/railway-indian-sunset-street-trains-sun-evening-rail-transportation-wallpaper-alulv",
-        "desc": "railway, indian, sunset, street, trains sun, evening, rail transportation popular"
    },
     {
         "thumb": "https://c1.wallpaperflare.com/preview/555/715/707/eiffel-tower-paris-france-tower-sights-sunset.jpg",
@@ -1503,42 +1485,6 @@ const wallpapers = [
         "desc": " leaf, drops, rainy, green color, wet, water, freshness, close-up popular"
    },
     {
-        "thumb": "https://c1.wallpaperflare.com/preview/586/655/786/dew-drop-green-foliage-rose.jpg",
-        "full": "https://c1.wallpaperflare.com/preview/586/655/786/dew-drop-green-foliage-rose.jpg",
-        "pg": "https://www.wallpaperflare.com/dew-drop-foliage-dew-drop-green-rose-just-add-water-nature-wallpaper-wofjy",
-        "desc": "Dew, Drop, Foliage, dew-drop, green, rose, just add water, nature popular"
-   },
-    {
-        "thumb": "https://c4.wallpaperflare.com/wallpaper/592/378/491/nature-other-wallpaper-preview.jpg",
-        "full": "https://c4.wallpaperflare.com/wallpaper/592/378/491/nature-other-wallpaper-preview.jpg",
-        "pg": "https://www.wallpaperflare.com/green-branches-leaves-drops-green-plants-nature-other-water-drop-wallpaper-mjqvz",
-        "desc": "Green Branches Leaves Drops, green plants, Nature, Other, water drop popular"
-   },
-    {
-        "thumb": "https://c0.wallpaperflare.com/preview/967/119/716/leaf-flower-rain.jpg",
-        "full": "https://c0.wallpaperflare.com/preview/967/119/716/leaf-flower-rain.jpg",
-        "pg": "https://www.wallpaperflare.com/leaf-flower-rain-drop-water-wet-close-up-plant-part-wallpaper-ebrym",
-        "desc": "leaf, flower, rain, drop, water, wet, close-up, plant part popular"
-   },
-    {
-        "thumb": "https://c1.wallpaperflare.com/preview/764/734/486/foliage-tree-forest-nature.jpg",
-        "full": "https://c1.wallpaperflare.com/preview/764/734/486/foliage-tree-forest-nature.jpg",
-        "pg": "https://www.wallpaperflare.com/foliage-tree-forest-nature-sprig-closeup-plant-green-wallpaper-aqqpp",
-        "desc": "foliage, tree, forest, nature, sprig, closeup, plant, green popular"
-   },
-    {
-        "thumb": "https://c1.wallpaperflare.com/preview/780/381/268/leaf-green-drop-of-water-costs.jpg",
-        "full": "https://c1.wallpaperflare.com/preview/780/381/268/leaf-green-drop-of-water-costs.jpg",
-        "pg": "https://www.wallpaperflare.com/leaf-drop-of-water-costs-green-rain-wet-freshness-full-frame-wallpaper-wkgeu",
-        "desc": "Leaf, Drop Of Water, Costs, green, rain, wet, freshness, full frame popular"
-   },
-    {
-        "thumb": "https://c1.wallpaperflare.com/preview/542/538/409/leaves-abstract-background-rain-raindrops.jpg",
-        "full": "https://c1.wallpaperflare.com/preview/542/538/409/leaves-abstract-background-rain-raindrops.jpg",
-        "pg": "https://www.wallpaperflare.com/leaves-abstract-background-rain-raindrops-droplets-green-wallpaper-wawhj",
-        "desc": "leaves, abstract background, rain, raindrops, droplets, green popular"
-   },
-    {
         "thumb": "https://c1.wallpaperflare.com/preview/398/326/408/tea-tea-garden-green-plant.jpg",
         "full": "https://c1.wallpaperflare.com/preview/398/326/408/tea-tea-garden-green-plant.jpg",
         "pg": "https://www.wallpaperflare.com/tea-garden-green-plant-rize-landscape-turkey-leaves-nature-wallpaper-wjgfc",
@@ -1554,7 +1500,25 @@ const wallpapers = [
         "thumb": "https://cdn.pixabay.com/photo/2022/07/06/17/52/window-7305702_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2022/07/06/17/52/window-7305702_1280.jpg",
         "pg": "https://pixabay.com/photos/window-building-wall-sky-clouds-7305702/",
-        "desc": "windowbuildingwallskynaturecloudsarchitectureminimallandscapeosijek"
+        "desc": "window building wall sky nature clouds architecture minimal landscape osijek"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/258/681/274/parked-gray-skoda-car.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/258/681/274/parked-gray-skoda-car.jpg",
+        "pg": "https://www.wallpaperflare.com/parked-gray-skoda-car-vehicle-transportation-automobile-tire-wallpaper-edilm",
+        "desc": "parked gray Skoda car, vehicle, transportation, automobile, tire popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/317/813/320/white-and-black-motorcycle-park-during-daytime.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/317/813/320/white-and-black-motorcycle-park-during-daytime.jpg",
+        "pg": "https://www.wallpaperflare.com/white-and-black-motorcycle-park-during-daytime-machine-wheel-wallpaper-ezxdg",
+        "desc": "white and black motorcycle park during daytime, machine, wheel popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/354/615/793/railway-indian-india-sunset.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/354/615/793/railway-indian-india-sunset.jpg",
+        "pg": "https://www.wallpaperflare.com/railway-indian-sunset-street-trains-sun-evening-rail-transportation-wallpaper-alulv",
+        "desc": "railway, indian, sunset, street, trains sun, evening, rail transportation popular"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2021/02/20/03/02/abstract-6032128_150.jpg",
@@ -1753,6 +1717,42 @@ const wallpapers = [
         "full": "https://cdn.pixabay.com/photo/2023/10/17/13/22/wallpapers-8321164_1280.jpg",
         "pg": "https://pixabay.com/illustrations/wallpapers-mobile-backgrounds-8321164/",
         "desc": "mobile backgrounds screen display aesthetic abstract pattern ai generated minimal"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/586/655/786/dew-drop-green-foliage-rose.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/586/655/786/dew-drop-green-foliage-rose.jpg",
+        "pg": "https://www.wallpaperflare.com/dew-drop-foliage-dew-drop-green-rose-just-add-water-nature-wallpaper-wofjy",
+        "desc": "Dew, Drop, Foliage, dew-drop, green, rose, just add water, nature popular"
+   },
+    {
+        "thumb": "https://c4.wallpaperflare.com/wallpaper/592/378/491/nature-other-wallpaper-preview.jpg",
+        "full": "https://c4.wallpaperflare.com/wallpaper/592/378/491/nature-other-wallpaper-preview.jpg",
+        "pg": "https://www.wallpaperflare.com/green-branches-leaves-drops-green-plants-nature-other-water-drop-wallpaper-mjqvz",
+        "desc": "Green Branches Leaves Drops, green plants, Nature, Other, water drop popular"
+   },
+    {
+        "thumb": "https://c0.wallpaperflare.com/preview/967/119/716/leaf-flower-rain.jpg",
+        "full": "https://c0.wallpaperflare.com/preview/967/119/716/leaf-flower-rain.jpg",
+        "pg": "https://www.wallpaperflare.com/leaf-flower-rain-drop-water-wet-close-up-plant-part-wallpaper-ebrym",
+        "desc": "leaf, flower, rain, drop, water, wet, close-up, plant part popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/764/734/486/foliage-tree-forest-nature.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/764/734/486/foliage-tree-forest-nature.jpg",
+        "pg": "https://www.wallpaperflare.com/foliage-tree-forest-nature-sprig-closeup-plant-green-wallpaper-aqqpp",
+        "desc": "foliage, tree, forest, nature, sprig, closeup, plant, green popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/780/381/268/leaf-green-drop-of-water-costs.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/780/381/268/leaf-green-drop-of-water-costs.jpg",
+        "pg": "https://www.wallpaperflare.com/leaf-drop-of-water-costs-green-rain-wet-freshness-full-frame-wallpaper-wkgeu",
+        "desc": "Leaf, Drop Of Water, Costs, green, rain, wet, freshness, full frame popular"
+   },
+    {
+        "thumb": "https://c1.wallpaperflare.com/preview/542/538/409/leaves-abstract-background-rain-raindrops.jpg",
+        "full": "https://c1.wallpaperflare.com/preview/542/538/409/leaves-abstract-background-rain-raindrops.jpg",
+        "pg": "https://www.wallpaperflare.com/leaves-abstract-background-rain-raindrops-droplets-green-wallpaper-wawhj",
+        "desc": "leaves, abstract background, rain, raindrops, droplets, green popular"
    },
     {
         "thumb": "https://cdn.pixabay.com/photo/2022/10/13/05/48/art-7518248_150.jpg",
