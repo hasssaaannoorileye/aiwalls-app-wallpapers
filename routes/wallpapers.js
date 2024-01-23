@@ -3,6 +3,450 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/28/15/46/ai-generated-8474405_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/28/15/46/ai-generated-8474405_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-galaxy-starry-sky-8474405/",
+        "desc": "ai generated galaxy starry sky universe space cosmos astronomy milky way science fiction fog starry nebula"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/17/14/09/outer-space-6803696_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/17/14/09/outer-space-6803696_1280.jpg",
+        "pg": "https://pixabay.com/photos/outer-space-universe-cosmos-galaxy-6803696/",
+        "desc": "outer space universe cosmos galaxy stars astronomy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2011/12/13/14/31/earth-11015_1280.jpg",
+        "pg": "https://pixabay.com/photos/earth-globe-planet-world-space-11015/",
+        "desc": "earth globe planet world space universe astronautics nasa space travel astronomy science outer space celestial body"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/08/27/00/11/plant-7413415_150.png",
+        "full": "https://cdn.pixabay.com/photo/2022/08/27/00/11/plant-7413415_1280.png",
+        "pg": "https://pixabay.com/vectors/plant-foliage-monstera-leaves-7413415/",
+        "desc": "plant foliage monstera leaves nature houseplant cartoon clip art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/06/17/08/24/pastel-4279379_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/06/17/08/24/pastel-4279379_1280.jpg",
+        "pg": "https://pixabay.com/photos/pastel-potted-plant-flowers-season-4279379/",
+        "desc": "pastel potted nature flowers season beautiful plants beauty atmosphere background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/08/14/23/44/star-2642378_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/08/14/23/44/star-2642378_1280.jpg",
+        "pg": "https://pixabay.com/photos/star-planet-galaxy-sun-cosmos-2642378/",
+        "desc": "star planet nature galaxy sun cosmos universe featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2011/12/14/12/18/space-11099_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2011/12/14/12/18/space-11099_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-universe-night-sky-sky-fog-11099/",
+        "desc": "space universe night sky sky fog star gases color farbenspiel explosion nature star clusters galaxies galaxy star formation star birth space background featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/05/22/04/58/planets-5203789_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/05/22/04/58/planets-5203789_1280.jpg",
+        "pg": "https://pixabay.com/photos/planets-space-planet-universe-moon-5203789/",
+        "desc": "planets space nature planet universe moon galaxy night sky astronomy stars sky night atmosphere earth cosmos clouds fantasy star blue planet featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/13/07/37/planet-7652688_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/13/07/37/planet-7652688_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/planet-space-cosmos-moon-ball-7652688/",
+        "desc": "planet space cosmos moon ball fantasy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/08/03/06/22/space-1565986_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/08/03/06/22/space-1565986_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/space-galaxy-planet-universe-1565986/",
+        "desc": "space galaxy planet universe vertical cosmos phone space universe blue telephone blue planet"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/23/15/42/space-8271231_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/09/23/15/42/space-8271231_1280.png",
+        "pg": "https://pixabay.com/illustrations/space-saturn-disco-ball-disco-8271231/",
+        "desc": "space saturn disco ball disco night sky colorful cosmos sky stars fantasy planet universe galaxy imagination nature world sparkles"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/08/12/02/10/space-1587393_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/08/12/02/10/space-1587393_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-moon-planet-galaxy-star-sky-1587393/",
+        "desc": "space night sky planet star universe nature planet earth moon blue stars galaxy featured blue"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/04/18/20/01/planet-3331451_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/04/18/20/01/planet-3331451_1280.jpg",
+        "pg": "https://pixabay.com/photos/planet-moon-spherical-space-sphere-3331451/",
+        "desc": "planet moon spherical space sphere galaxy star cosmos universe milky way featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2011/12/15/11/11/ngc-2264-11176_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2011/12/15/11/11/ngc-2264-11176_1280.jpg",
+        "pg": "https://pixabay.com/photos/ngc-2264-dark-cloud-cone-nebula-11176/",
+        "desc": "ngc 2264 dark cloud cone nebula star clusters christmas tree star clusters diffuse fog constellation unicorn open star cluster starry sky space universe night sky heaven astronautics nasa space travel"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/10/07/09/35/land-4532228_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/10/07/09/35/land-4532228_1280.jpg",
+        "pg": "https://pixabay.com/photos/land-planet-space-bridge-human-4532228/",
+        "desc": "land planet space bridge human greens stroll fantasy photo shop glow featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/05/05/14/30/lunar-landscape-2287215_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/05/05/14/30/lunar-landscape-2287215_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/lunar-landscape-space-gas-mist-2287215/",
+        "desc": "lunar landscape space gas mist double sun gas clouds star birth star formation mountains nature water reflection reflection mountain peaks contrast light dark reddish multicoloured landscape mountain range water lake puddle pool headland schroff chapped rubble stars double-star system distance space travel science fiction space art 3d artmatic voyager cinema 4d"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/01/31/23/47/saturn-2028281_150.png",
+        "full": "https://cdn.pixabay.com/photo/2017/01/31/23/47/saturn-2028281_1280.png",
+        "pg": "https://pixabay.com/vectors/saturn-planet-space-black-planet-2028281/",
+        "desc": "saturn planet space black planet"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/18/23/47/universe-6807690_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/18/23/47/universe-6807690_1280.jpg",
+        "pg": "https://pixabay.com/photos/universe-earth-world-planet-6807690/",
+        "desc": "universe earth world planet painted water color stars art featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/13/22/14/ai-generated-7717016_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/13/22/14/ai-generated-7717016_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-river-waterfall-planet-7717016/",
+        "desc": "ai generated river waterfall planet clouds outdoor colorful nature surroundings painting fantasy landscape illustrations"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/09/01/10/54/sun-1635796_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/09/01/10/54/sun-1635796_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/sun-space-distance-science-fiction-1635796/",
+        "desc": "sun space distance science fiction utopia fantasy sunlight planet the atmosphere lighting mood globe planets blue planet universe nature celestial bodies"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/09/05/47/cosmos-7706677_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/09/05/47/cosmos-7706677_1280.jpg",
+        "pg": "https://pixabay.com/photos/cosmos-universe-exoplanet-planet-7706677/",
+        "desc": "cosmos universe exoplanet planet stars space sun galaxy fog starry nebula radiation energy digital art alie extraterrestrial astronomy astrophysics solar system science fiction fantasy nature supernova space art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11007_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11007_1280.jpg",
+        "pg": "https://pixabay.com/photos/earth-blue-planet-globe-moon-11007/",
+        "desc": "earth blue planet globe moon earth and moon planet space universe night sky heaven astronautics nasa space travel aviation astronomy science research"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/02/13/18/24/landscape-2063372_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/02/13/18/24/landscape-2063372_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/landscape-planet-artifact-stars-2063372/",
+        "desc": "landscape planet artifact stars starry sky building clouds space space art universe red dwarf mountains alie extraterrestrial life form civilization mountain ridge mountain range desert dry sunrise backlighting dark blue red reddish violet stones rubble sand temple investment city nature strange aliens research expedition distance science fiction cosmos astronomy astronautics technology artmatic voyager"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/01/13/33/ai-generated-8357621_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/11/01/13/33/ai-generated-8357621_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-space-galaxy-stars-8357621/",
+        "desc": "ai generated space galaxy stars planets mobile colorful vivid illustrations"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/09/12/12/51/space-6618319_150.png",
+        "full": "https://cdn.pixabay.com/photo/2021/09/12/12/51/space-6618319_1280.png",
+        "pg": "https://pixabay.com/illustrations/space-planets-stars-wallpaper-6618319/",
+        "desc": "space planets stars cartoon cosmos galaxy universe art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/10/19/10/15/fantasy-6723158_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/10/19/10/15/fantasy-6723158_1280.jpg",
+        "pg": "https://pixabay.com/photos/fantasy-nature-planet-sky-beach-6723158/",
+        "desc": "fantasy nature planet sky beach moon lock screen beautiful mountain samsung ocean background sea art night universe cosmos 4k space art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/21/15/17/ai-generated-7734342_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/21/15/17/ai-generated-7734342_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-astronaut-space-7734342/",
+        "desc": "ai generated astronaut space universe cosmos planets digital 3d graphics technology render illustrations"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/15/ai-generated-7747178_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/15/ai-generated-7747178_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-colorful-blaze-7747178/",
+        "desc": "ai generated planets colorful blaze plasma design art wallpaper graphic light pattern fractal illustrations"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/20/00/ai-generated-7826326_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/20/00/ai-generated-7826326_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826326/",
+        "desc": "ai generated planets mountains background ai art fantasy colorful phone illustrations nature painting phone universe clouds"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/03/12/57/ai-generated-8485445_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/03/12/57/ai-generated-8485445_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-space-universe-galaxy-8485445/",
+        "desc": "ai generated space universe galaxy spaceship andromeda space travel astronomy flying objects starry sky ufo creation science fiction meteorite comets planets stars fantasy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/20/03/ai-generated-7826344_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/20/03/ai-generated-7826344_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826344/",
+        "desc": "ai generated planets mountains ai art fantasy colorful phone nature painting phone background universe clouds"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/59/ai-generated-7826323_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/59/ai-generated-7826323_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-clouds-colorful-7826323/",
+        "desc": "ai generated clouds colorful fantasy abstract background ai art phone planets painting nature phone background universe"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/57/ai-generated-7826314_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/57/ai-generated-7826314_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826314/",
+        "desc": "ai generated nature planets mountains background ai art fantasy colorful phone wallpaper painting phone background universe"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/13/05/48/stars-7518258_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/13/05/48/stars-7518258_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/stars-solar-system-space-sun-moon-7518258/",
+        "desc": "stars solar system space sun moon saturn land mars pluto jupiter galaxy planets nature art wallpaper geometry figure digital art digital artwork featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/06/05/16/25/planet-earth-7244382_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/06/05/16/25/planet-earth-7244382_1280.jpg",
+        "pg": "https://pixabay.com/photos/planet-earth-space-globe-planet-7244382/",
+        "desc": "planet earth space globe planet science fiction earth futuristic solar system cosmos galaxy celestial object astronomy climate environment sci fi heatwave featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/20/04/ai-generated-7826349_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/20/04/ai-generated-7826349_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-clouds-7826349/",
+        "desc": "ai generated planets clouds background ai art fantasy colorful phone wallpaper nature painting phone background universe wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/57/ai-generated-7826315_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/57/ai-generated-7826315_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826315/",
+        "desc": "ai generated planets mountains background ai art nature fantasy colorful phone wallpaper painting phone background universe wallpaper clouds"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/08/01/08/06/science-fiction-2563383_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/08/01/08/06/science-fiction-2563383_1280.jpg",
+        "pg": "https://pixabay.com/photos/science-fiction-sci-fi-future-2563383/",
+        "desc": "science fiction sci fi future futuristic spaceship cover adventure photomontage space travel research planets stars nebula space cosmos technology astronomy universe starry sky play of colors city skyline"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/12/07/36/science-fiction-7919038_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/12/07/36/science-fiction-7919038_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/science-fiction-space-fantasy-gate-7919038/",
+        "desc": "science fiction space fantasy gate stargate ai generated planet featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/02/22/01/12/space-7027822_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/02/22/01/12/space-7027822_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/space-cosmos-planet-futuristic-7027822/",
+        "desc": "space cosmos planet futuristic fantasy science fiction"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/20/02/ai-generated-7826340_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/20/02/ai-generated-7826340_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826340/",
+        "desc": "ai generated planets mountains background ai art fantasy colorful phone wallpaper painting phone background universe wallpaper nature clouds"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/06/21/20/25/space-5326668_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/06/21/20/25/space-5326668_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-earth-moon-planet-galaxy-5326668/",
+        "desc": "space earth moon planet galaxy cosmos photos hop universe astronomy stars purple light flare"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/30/10/55/astronaut-8223030_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/08/30/10/55/astronaut-8223030_1280.png",
+        "pg": "https://pixabay.com/illustrations/astronaut-moon-space-planet-star-8223030/",
+        "desc": "astronaut moon space planet star universe science fantasy earth globe astronautics sky galaxy atmosphere technology cosmos space wallpaper whale"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/09/19/13/55/cosmos-4489339_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/09/19/13/55/cosmos-4489339_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-moon-astronaut-the-suit-arch-4489339/",
+        "desc": "space moon astronaut the suit arch light photoshop fantasy surrealism flight"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/07/10/09/planets-6775208_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/07/10/09/planets-6775208_1280.jpg",
+        "pg": "https://pixabay.com/photos/planets-outer-space-galaxy-6775208/",
+        "desc": "planets outer space ipad lock screen galaxy background beautiful phone mobile 4k samsung mobile"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/20/15/10/space-station-7535073_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/20/15/10/space-station-7535073_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/space-station-space-sci-fi-universe-7535073/",
+        "desc": "space station space sci fi universe future cosmos background planet earth dice"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/57/ai-generated-7826316_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/57/ai-generated-7826316_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826316/",
+        "desc": "ai generated planets mountains background nature ai art fantasy colorful phone wallpaper painting phone background universe wallpaper clouds"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/08/01/16/43/science-fiction-3577581_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/08/01/16/43/science-fiction-3577581_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/science-fiction-digital-illustration-3577581/",
+        "desc": "science fiction digital illustration photo composition zeppelin space futuristic future nebula adventure sci fi technology ebook cover spaceship space travel planet stars to travel"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/10/20/16/34/science-fiction-1755976_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/10/20/16/34/science-fiction-1755976_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/science-fiction-background-fantasy-1755976/",
+        "desc": "science fiction background fantasy technology futuristic featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/05/27/12/03/moon-5226915_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/05/27/12/03/moon-5226915_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/moon-space-eclipse-universe-planet-5226915/",
+        "desc": "moon space eclipse universe planet galaxy sky stars"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/09/24/17/16/house-5599294_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/09/24/17/16/house-5599294_1280.jpg",
+        "pg": "https://pixabay.com/photos/home-moon-night-abandoned-ruins-5599294/",
+        "desc": "home moon night abandoned ruins surrealism environment mystic lights dawn fantasy landscape darling planet cosmos digital art composition imagination photoshop bufon concept art illustration design"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/02/19/58/ai-generated-7826318_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/02/19/58/ai-generated-7826318_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planets-mountains-7826318/",
+        "desc": "ai generated planets mountains background ai art fantasy nature colorful phone wallpaper painting phone background universe wallpaper illustrations"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/18/20/13/planets-8397083_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/18/20/13/planets-8397083_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/planets-space-cosmos-galaxy-8397083/",
+        "desc": "planets space cosmos galaxy background universe ai generated featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/04/18/01/planets-7829969_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/04/18/01/planets-7829969_1280.jpg",
+        "pg": "https://pixabay.com/photos/planets-moons-celestial-bodies-7829969/",
+        "desc": "planets moons celestial bodies universe space fantasy featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/18/20/13/planets-8397083_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/18/20/13/planets-8397083_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/planets-space-cosmos-galaxy-8397083/",
+        "desc": "planets space cosmos galaxy background universe ai generated featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/20/13/01/ai-generated-8264793_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/20/13/01/ai-generated-8264793_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-sailboat-boat-ship-8264793/",
+        "desc": "ai generated sailboat boat ship space planet stars nebula sea ocean night adventure travel sail vessel water sky sailing moon journey surreal universe exploration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/01/25/21/12/space-5949683_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/01/25/21/12/space-5949683_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-planets-saturn-galaxy-stars-5949683/",
+        "desc": "space planets saturn galaxy stars moon"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/11/18/23/47/background-6807689_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/11/18/23/47/background-6807689_1280.jpg",
+        "pg": "https://pixabay.com/photos/background-universe-planet-fantasy-6807689/",
+        "desc": "background universe planet fantasy moon stars space galaxy cosmos colorful water color featured art"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/19/19/58/ai-generated-8263411_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/19/19/58/ai-generated-8263411_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-earth-world-fire-8263411/",
+        "desc": "ai generated earth world fire planet apocalypse"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/11/14/58/ai-generated-7917447_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/11/14/58/ai-generated-7917447_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planet-galaxy-universe-7917447/",
+        "desc": "ai generated planet galaxy universe cosmos stars futuristic space sci-fi mountains sky"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/01/08/46/portal-7822557_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/01/08/46/portal-7822557_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/portal-gate-planet-fantasy-7822557/",
+        "desc": "portal gate planet fantasy science fiction"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/18/07/10/planet-8323102_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/18/07/10/planet-8323102_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/planet-moon-sun-universe-space-8323102/",
+        "desc": "planet moon sun universe space galaxy stars explosion science fiction fantasy ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/20/19/04/christmas-tree-7668507_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/20/19/04/christmas-tree-7668507_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/christmas-tree-christmas-holiday-7668507/",
+        "desc": "christmas tree christmas holiday saturn planet orb"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/02/23/16/24/planet-7030982_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/02/23/16/24/planet-7030982_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/planet-moon-space-clouds-universe-7030982/",
+        "desc": "planet moon space clouds universe galaxy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/29/15/43/ai-generated-7885819_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/29/15/43/ai-generated-7885819_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-futuristic-space-7885819/",
+        "desc": "ai generated futuristic space imagination sci-fi nature galaxy mountains sky stars planet universe cosmos featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/11/25/21/47/globe-1062995_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/11/25/21/47/globe-1062995_1280.jpg",
+        "pg": "https://pixabay.com/photos/globe-planet-soil-continents-1062995/",
+        "desc": "globe planet soil continent slighting"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/24/17/22/fantasy-8015392_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/05/24/17/22/fantasy-8015392_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/fantasy-bee-honeycomb-other-world-8015392/",
+        "desc": "fantasy bee honeycomb other world climate change earth planet"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/20/11/39/ai-generated-8400949_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/11/20/11/39/ai-generated-8400949_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-universe-stars-galaxy-8400949/",
+        "desc": "ai generated universe popular stars galaxy planet space comet nebula moon exploration astronomy cosmology solar system meteor asteroids orbit gravity fusion gas giant dwarf planet astrophysics"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/17/20/14/ai-generated-8133485_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/17/20/14/ai-generated-8133485_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planet-extraterrestrial-8133485/",
+        "desc": "ai generated planet extraterrestrial ecology space cosmic peace land nature fantasy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/06/17/00/00/ai-generated-8068962_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/06/17/00/00/ai-generated-8068962_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-robot-cyborg-matrix-8068962/",
+        "desc": "featured ai generated robot cyborg matrix multiverse fantasy universe planet horizon space cosmic celestial galaxy astral sci-fi mystical magical extraterrestrial otherworldly astronomical enchanting dreamy vast surreal cosmic landscape wallpaper background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/21/19/13/earth-7867992_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/21/19/13/earth-7867992_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/earth-planet-planet-earth-7867992/",
+        "desc": "earth planet planet earth environment ecology environmental protection biodiversity future heart feeling gentleness feminine care emotion peace compassion softness tenderness creativity empathy kindness ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/01/22/17/25/space-3099439_150.png",
+        "full": "https://cdn.pixabay.com/photo/2018/01/22/17/25/space-3099439_1280.png",
+        "pg": "https://pixabay.com/photos/space-nebula-stars-planet-earth-3099439/",
+        "desc": "space nebula stars planet earth moon galaxy cosmos astronomy universe"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/26/01/31/ai-generated-8341540_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/26/01/31/ai-generated-8341540_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-planet-world-map-8341540/",
+        "desc": "ai generated planet world map climate trees sea"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/30/11/29/ai-generated-7887541_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/30/11/29/ai-generated-7887541_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-space-fog-galaxy-7887541/",
+        "desc": "ai generated space fog galaxy cosmos universe colourful wallpaper creative unique wallpaper nature planet stars alone loneliness art paint painting colorful watercolor texture pattern design"
+   },
+    {
         "thumb": "https://images.unsplash.com/photo-1663544093605-31a537e5afe5?q=75&fm=jpg&w=200&fit=max",
         "full": "https://images.unsplash.com/photo-1663544093605-31a537e5afe5?q=75&fm=jpg",
         "pg": "https://unsplash.com/photos/background-pattern-aw6tcJCIhbU",
