@@ -3,6 +3,174 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/27/ai-generated-7747334_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/27/ai-generated-7747334_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-petals-daisy-7747334/",
+        "desc": "ai generated flowers nature petals daisy plant blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/23/ai-generated-7747280_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/23/ai-generated-7747280_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-petals-daisy-7747280/",
+        "desc": "ai generated flowers nature petals daisy plant blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/24/ai-generated-7747290_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/24/ai-generated-7747290_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-vase-decoration-art-7747290/",
+        "desc": "ai generated vase decoration art design light graphic art wallpaper color backdrop"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/16/ai-generated-7747181_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/16/ai-generated-7747181_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-daisy-petal-7747181/",
+        "desc": "ai generated nature flower daisy petal plant blossom floral garden spring bright"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/18/ai-generated-7747220_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/18/ai-generated-7747220_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-petals-daisy-plant-7747220/",
+        "desc": "ai generated petals nature daisy plant blossom floral garden spring bright flowers"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/18/ai-generated-7747216_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/18/ai-generated-7747216_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-petals-daisy-7747216/",
+        "desc": "ai generated flower petals daisy plant blossom floral garden nature spring bright"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/16/ai-generated-7747189_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/16/ai-generated-7747189_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-blaze-plasma-design-7747189/",
+        "desc": "ai generated blaze plasma design art wallpaper graphic light pattern fractal texture"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/15/ai-generated-7747175_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/15/ai-generated-7747175_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-daisy-plant-7747175/",
+        "desc": "ai generated flower daisy plant blossom floral nature garden spring bright"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747148_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747148_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-sunflowers-7747148/",
+        "desc": "ai generated flowers sunflowers space plant blossom floral garden spring nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747150_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/13/ai-generated-7747150_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-dahlia-plant-7747150/",
+        "desc": "ai generated flower dahlia plant nature blossom floral garden spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/21/ai-generated-7747254_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/21/ai-generated-7747254_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-plant-blossom-7747254/",
+        "desc": "ai generated flowers plant blossom floral garden spring nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/19/17/02/cat-7938159_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/19/17/02/cat-7938159_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/cat-kitten-feline-motorcycle-7938159/",
+        "desc": "cat kitten feline nature motorcycle stones wheels transport pet street animal ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/03/18/19/ai-generated-7968325_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/05/03/18/19/ai-generated-7968325_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-cloud-moon-asleep-7968325/",
+        "desc": "ai generated cat cloud moon asleep dream kitten cute pet stars animal universe sleep nap fantasy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/18/16/39/ai-generated-8456375_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/12/18/16/39/ai-generated-8456375_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-girl-love-heart-8456375/",
+        "desc": "ai generated girl love heart valentine day romance symbol romantic decoration card art holiday woman cartoon happiness valentine's day"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/31/13/57/ai-generated-8355197_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/31/13/57/ai-generated-8355197_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-vehicle-futuristic-8355197/",
+        "desc": "ai generated vehicle futuristic sleek aerodynamic distinctive wheels chrome reflective reflection nature mountainous terrain sky design"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/28/08/02/ai-generated-8154764_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/07/28/08/02/ai-generated-8154764_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-blueberry-raspberry-8154764/",
+        "desc": "ai generated blueberry raspberry berry fruit vitamin food organic fresh ripe diet sweet dessert nutrition harvest"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/25/18/46/ai-generated-8213491_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/08/25/18/46/ai-generated-8213491_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-astronaut-space-galaxy-8213491/",
+        "desc": "ai generated astronaut space galaxy cosmos adventure infinity starry sky space travel exploration astronomy universe planet background featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/07/02/55/ai-generated-7640082_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/07/02/55/ai-generated-7640082_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-control-room-neon-7640082/",
+        "desc": "ai generated control room neon power computer futuristic future technology spaceship headquarters modern digital"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/18/21/23/ai-generated-8199328_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/08/18/21/23/ai-generated-8199328_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-pumpkins-vegetables-8199328/",
+        "desc": "ai generated pumpkins vegetables leaves autumn halloween harvest food fall season plant holiday gourd design october decoration nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/11/04/07/52/pumpkin-5711688_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/11/04/07/52/pumpkin-5711688_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/pumpkin-halloween-5711688/",
+        "desc": "pumpkin halloween halloween decoration october vegetable squash decoration autumn nature design"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/26/14/25/olives-8342800_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/26/14/25/olives-8342800_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/olives-food-fresh-ripe-ingredients-8342800/",
+        "desc": "olives food fresh nature ripe ingredients greece italy water droplets leaves tree salty mediterranean ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/10/20/37/laptop-8380077_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/10/20/37/laptop-8380077_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/laptop-office-tropical-vacation-8380077/",
+        "desc": "laptop office tropical vacation desk night city sunset nature luxury travel remote ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/12/16/01/ai-generated-8445503_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/12/16/01/ai-generated-8445503_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-space-spiral-light-8445503/",
+        "desc": "ai generated space spiral light art galaxy astronomy universe dark night stars nebula cosmos supernova fantasy science fiction featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/ac/57/f8/ac57f8f362411c55958dd4ec02176000.jpg",
+        "full": "https://i.pinimg.com/originals/ac/57/f8/ac57f8f362411c55958dd4ec02176000.jpg",
+        "pg": "https://in.pinterest.com/pin/2462974787822056/",
+        "desc": "dark blue featured texture wall"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/09/82/55/098255474a0b3e94e8d741580d45acbf.jpg",
+        "full": "https://i.pinimg.com/originals/09/82/55/098255474a0b3e94e8d741580d45acbf.jpg",
+        "pg": "https://in.pinterest.com/pin/273453008617467631/",
+        "desc": "dark featured texture wall"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/3a/89/8b/3a898bc6b699edf56eb6e86b069efdda.jpg",
+        "full": "https://i.pinimg.com/originals/3a/89/8b/3a898bc6b699edf56eb6e86b069efdda.png",
+        "pg": "https://in.pinterest.com/pin/68746999154/",
+        "desc": "dark featured texture wall"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/1f/91/c3/1f91c38cac327e780f4f7ba5787d8111.jpg",
+        "full": "https://i.pinimg.com/originals/1f/91/c3/1f91c38cac327e780f4f7ba5787d8111.jpg",
+        "pg": "https://in.pinterest.com/pin/825566175476612475/",
+        "desc": "dark featured texture wall"
+   },
+    {
+        "thumb": "https://i.pinimg.com/236x/08/06/88/080688ab04f8715650cb5b8e52bd5d14.jpg",
+        "full": "https://i.pinimg.com/564x/08/06/88/080688ab04f8715650cb5b8e52bd5d14.jpg",
+        "pg": "https://in.pinterest.com/pin/450782243968423761/",
+        "desc": "fruit red water drop popular"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2024/01/16/00/30/ai-generated-8511122_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2024/01/16/00/30/ai-generated-8511122_1280.jpg",
         "pg": "https://pixabay.com/illustrations/ai-generated-treasure-chest-magic-8511122/",
