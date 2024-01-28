@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/16/00/30/ai-generated-8511122_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/16/00/30/ai-generated-8511122_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-treasure-chest-magic-8511122/",
+        "desc": "ai generated treasure chest magic fantasy forest fairytale mysterious dream landscape woods"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/29/01/01/ai-generated-8475239_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/29/01/01/ai-generated-8475239_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-new-year-fireworks-8475239/",
+        "desc": "ai generated new year fireworks pyrotechnics celebration celebrate night city"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/01/15/20/01/ai-generated-8510812_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/01/15/20/01/ai-generated-8510812_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-bird-kiwi-animal-8510812/",
+        "desc": "ai generated bird kiwi animal strange wildlife nature new zealand"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/13/05/06/wallpaper-7848531_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/13/05/06/wallpaper-7848531_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7848531/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/12/15/20/21/texture-1909992_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/texture-abstract-structure-colorful-1909992/",
+        "desc": "texture abstract structure colorful modern art artwork abstract artwork multicolored"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/13/05/07/wallpaper-7848534_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/13/05/07/wallpaper-7848534_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7848534/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/46/ai-generated-7752087_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/46/ai-generated-7752087_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752087/",
+        "desc": "ai generated love heart romantic valentines wallpaper 3d"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/03/13/05/05/wallpaper-7848502_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/03/13/05/05/wallpaper-7848502_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-artwork-desktop-background-7848502/",
+        "desc": "wallpaper artwork desktop background computer wallpaper mobile wallpaper image background photo background ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/54/ai-generated-7752191_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/54/ai-generated-7752191_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-plants-roses-7752191/",
+        "desc": "ai generated flowers nature plants roses red roses petals bloom blossom flora"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/47/ai-generated-7752102_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/47/ai-generated-7752102_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752102/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/52/ai-generated-7752166_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/52/ai-generated-7752166_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752166/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/17/13/34/ai-generated-7724623_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/17/13/34/ai-generated-7724623_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-kitten-valentine-7724623/",
+        "desc": "ai generated cat kitten pet animal valentine heart love cute cartoon"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/51/ai-generated-7752155_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/51/ai-generated-7752155_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752155/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/51/ai-generated-7752154_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/51/ai-generated-7752154_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752154/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/49/ai-generated-7752125_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/49/ai-generated-7752125_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752125/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/50/ai-generated-7752136_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/50/ai-generated-7752136_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752136/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/50/ai-generated-7752143_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/50/ai-generated-7752143_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752143/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/49/ai-generated-7752123_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/49/ai-generated-7752123_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752123/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/48/ai-generated-7752108_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/48/ai-generated-7752108_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752108/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/29/01/48/ai-generated-7752114_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/29/01/48/ai-generated-7752114_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-love-heart-romantic-7752114/",
+        "desc": "ai generated love heart romantic valentines wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/28/ai-generated-7747347_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/28/ai-generated-7747347_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-butterflies-flowers-7747347/",
+        "desc": "ai generated butterflies flowers meadow nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/25/ai-generated-7747311_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/25/ai-generated-7747311_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-petals-daisy-7747311/",
+        "desc": "ai generated flower petals daisy plant blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/26/ai-generated-7747322_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/26/ai-generated-7747322_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-petals-daisy-7747322/",
+        "desc": "ai generated flower petals daisy plant blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/29/ai-generated-7747364_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/29/ai-generated-7747364_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-petals-daisy-7747364/",
+        "desc": "ai generated flower petals daisy plant blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/30/ai-generated-7747373_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/30/ai-generated-7747373_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-petals-daisy-7747373/",
+        "desc": "ai generated flowers petals daisy plant blossom floral garden bright nature spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/29/ai-generated-7747365_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/29/ai-generated-7747365_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-fruit-leaves-plant-7747365/",
+        "desc": "ai generated fruit leaves plant nature blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/32/ai-generated-7747400_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/32/ai-generated-7747400_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flower-petals-daisy-7747400/",
+        "desc": "ai generated flower petals daisy plant nature blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/04/12/26/castle-7696633_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/04/12/26/castle-7696633_1280.jpg",
+        "pg": "https://pixabay.com/photos/castle-portals-doors-magic-wizards-7696633/",
+        "desc": "castle portals doors magic wizards fires witch ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/30/ai-generated-7747372_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/30/ai-generated-7747372_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-petals-daisy-7747372/",
+        "desc": "ai generated flowers nature petals daisy plant blossom floral garden bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/32/ai-generated-7747399_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/32/ai-generated-7747399_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-garden-flowers-petals-7747399/",
+        "desc": "ai generated nature garden flowers petals daisy plant blossom floral bright spring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/32/ai-generated-7747396_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/32/ai-generated-7747396_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-blaze-plasma-design-7747396/",
+        "desc": "ai generated blaze plasma design art wallpaper graphic light pattern fractal texture"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/28/ai-generated-7747342_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/26/22/28/ai-generated-7747342_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-flowers-petals-daisy-7747342/",
+        "desc": "ai generated flowers petals daisy plant nature blossom floral garden bright spring"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/12/28/15/46/ai-generated-8474405_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/12/28/15/46/ai-generated-8474405_1280.jpg",
         "pg": "https://pixabay.com/illustrations/ai-generated-galaxy-starry-sky-8474405/",
