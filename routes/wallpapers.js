@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://images.unsplash.com/photo-1632739867170-41aeb7069615?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1632739867170-41aeb7069615?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "pg": "https://unsplash.com/photos/a-close-up-of-a-fire-on-a-rock-near-water-byExseceWAY",
+        "desc": "Fire In Woods Hd Fire Wallpapers Nature Of Iran Bonfire Brown Backgrounds Sea Life Food Images & Pictures Animals Images & Pictures Lobster Seafood popular"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1631799156828-99998235b04d?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1631799156828-99998235b04d?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "pg": "https://in.pinterest.com/pin/825566175476612475/",
+        "desc": "Nature Images Hd Fire Canada For Mobile Sea Hd Grey Hd Wood Outdoors Mountain Images & Pictures Driftwood Hd Water popular Flame"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1632739867170-41aeb7069615?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1632739867170-41aeb7069615?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "pg": "https://unsplash.com/photos/a-close-up-of-a-fire-on-a-rock-near-water-byExseceWAY",
+        "desc": "Iran Firouzkouh Tehran Province Fire Flame Tehran Fire Dance Fire In Woods Hd Fire Nature Of Iran Bonfire Brown Backgrounds Sea Life Food Animals Lobster Seafood popular"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1471400974796-1c823d00a96f?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1471400974796-1c823d00a96f?q=80&w=1667&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "pg": "https://unsplash.com/photos/person-holding-cup-with-body-of-water-background-Spdu7YT1O00",
+        "desc": "Mug Tree Type Typography Begins Vision Motivational Journey Outdoors Canoe Kayaking Kayak The Adventure Begins Northern Riverside Mountain Range Outdoor Hiking Energy Morning popular"
+   },
+    {
+        "thumb": "https://images.unsplash.com/photo-1569081156361-c98e05e7f1e4?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
+        "full": "https://images.unsplash.com/photo-1569081156361-c98e05e7f1e4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "pg": "https://unsplash.com/photos/peace-sign-neon-signage-EJzxF5uwJ-o",
+        "desc": "Hd Neon Light Backgrounds Hd Red Wallpapers Sign featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/20/01/7d/20017d9c5564537b9f58281e6d2c6d17.jpg",
+        "full": "https://i.pinimg.com/originals/20/01/7d/20017d9c5564537b9f58281e6d2c6d17.jpg",
+        "pg": "https://in.pinterest.com/pin/12807180185970066/",
+        "desc": "clock yellow wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/c1/3e/6f/c13e6fa126e8898e7ee8b3f825d00205.jpg",
+        "full": "https://i.pinimg.com/originals/c1/3e/6f/c13e6fa126e8898e7ee8b3f825d00205.jpg",
+        "pg": "https://in.pinterest.com/pin/27021666507790493/",
+        "desc": "faces 3d featured yellow black"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/ae/2f/89/ae2f89c6e9a88c76172fa945b5d6dd28.jpg",
+        "full": "https://i.pinimg.com/originals/ae/2f/89/ae2f89c6e9a88c76172fa945b5d6dd28.jpg",
+        "pg": "https://in.pinterest.com/pin/46654546134205349/",
+        "desc": "bike popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/f3/1c/ed/f31cedf096ca1f21104fcdd98f5fec20.jpg",
+        "full": "https://i.pinimg.com/originals/f3/1c/ed/f31cedf096ca1f21104fcdd98f5fec20.jpg",
+        "pg": "https://in.pinterest.com/pin/4011087172334715/",
+        "desc": "3D yellow ball "
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/14/b8/10/14b810facb4bcd9cdf0e9c691fdbebac.jpg",
+        "full": "https://i.pinimg.com/originals/14/b8/10/14b810facb4bcd9cdf0e9c691fdbebac.jpg",
+        "pg": "https://in.pinterest.com/pin/30610472460068951/",
+        "desc": "green clock 3d"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/2b/32/00/2b3200ca68a5ae05c47e0cc4b8c5e0fa.jpg",
+        "full": "https://i.pinimg.com/originals/2b/32/00/2b3200ca68a5ae05c47e0cc4b8c5e0fa.jpg",
+        "pg": "https://in.pinterest.com/pin/8725793022233012/",
+        "desc": "yellow clocl HD 3D popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/7d/13/5f/7d135fb24c28b10bcbea79ce2f3165ca.jpg",
+        "full": "https://i.pinimg.com/originals/7d/13/5f/7d135fb24c28b10bcbea79ce2f3165ca.jpg",
+        "pg": "https://in.pinterest.com/pin/14777505020587668/",
+        "desc": "earch space moon dark featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/e8/89/0d/e8890d3d4cdab1de334a6479731700c5.jpg",
+        "full": "https://i.pinimg.com/originals/e8/89/0d/e8890d3d4cdab1de334a6479731700c5.jpg",
+        "pg": "https://in.pinterest.com/pin/66709638223739028/",
+        "desc": "earch space moon dark featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/5e/2e/64/5e2e64906be36a1c55d2e1bbbb0f8d8d.jpg",
+        "full": "https://i.pinimg.com/originals/5e/2e/64/5e2e64906be36a1c55d2e1bbbb0f8d8d.jpg",
+        "pg": "https://in.pinterest.com/pin/12877548928908136/",
+        "desc": "dark black earch map space featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/f1/2c/13/f12c133729917de53ceeef0b5aacc075.jpg",
+        "full": "https://64.media.tumblr.com/ad732b8868bed9f2e3743e193d70ee8d/ddae1f523cf17e4f-2f/s1280x1920/b4edca1505456a24620334b57b93e66f377f44da.jpg",
+        "pg": "https://www.tumblr.com/happy-skiderik/724344424614739968?source=share",
+        "desc": "hat black green HD dark featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/05/4c/f9/054cf900171501242e14e8e240391a10.jpg",
+        "full": "https://i.pinimg.com/originals/05/4c/f9/054cf900171501242e14e8e240391a10.jpg",
+        "pg": "https://in.pinterest.com/pin/429530883228980856/",
+        "desc": "dark black charging charge featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/55/50/45/55504506ec9ee1cf670c3e6e4ff591ae.jpg",
+        "full": "https://i.pinimg.com/originals/55/50/45/55504506ec9ee1cf670c3e6e4ff591ae.jpg",
+        "pg": "https://in.pinterest.com/pin/25895766599209349/",
+        "desc": "dark yellow face featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/8d/65/54/8d6554423b574d61ce8b7003c68fd4aa.jpg",
+        "full": "https://i.pinimg.com/originals/8d/65/54/8d6554423b574d61ce8b7003c68fd4aa.jpg",
+        "pg": "https://in.pinterest.com/pin/13088655160979323/",
+        "desc": "face emoji yellow wallpaper 3D"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/17/e9/c7/17e9c79c36ac0d8d5ac1c1a1f98b075a.jpg",
+        "full": "https://i.pinimg.com/originals/17/e9/c7/17e9c79c36ac0d8d5ac1c1a1f98b075a.jpg",
+        "pg": "https://in.pinterest.com/pin/324892560634344904/",
+        "desc": "face emoji yellow wallpaper 3D"
+   },
+    {
+        "thumb": "https://i.pinimg.com/736x/62/71/52/62715258e0e3cc0dee13999c254f1606.jpg",
+        "full": "https://i.pinimg.com/originals/62/71/52/62715258e0e3cc0dee13999c254f1606.jpg",
+        "pg": "https://in.pinterest.com/pin/46936021111617717/",
+        "desc": "emoji yellow wet drop water featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/86/83/8a/86838a488f5fde172303c226dc5b2802.jpg",
+        "full": "https://i.pinimg.com/originals/86/83/8a/86838a488f5fde172303c226dc5b2802.jpg",
+        "pg": "https://in.pinterest.com/pin/12173861486627037/",
+        "desc": "texture wall colorful featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/8c/96/45/8c9645a2bed3bdadfb708fa19c60d9ac.jpg",
+        "full": "https://i.pinimg.com/1200x/8c/96/45/8c9645a2bed3bdadfb708fa19c60d9ac.jpg",
+        "pg": "https://in.pinterest.com/pin/3799980926760522/",
+        "desc": "texture colorful featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/90/78/fa/9078fa1c03ee98c4fb05bf179f781083.jpg",
+        "full": "https://i.pinimg.com/originals/90/78/fa/9078fa1c03ee98c4fb05bf179f781083.jpg",
+        "pg": "https://in.pinterest.com/pin/38210296832716575/",
+        "desc": "quote no limit wall yellow dark featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/b1/a3/d1/b1a3d157b2fdf89049b6ccae2b3ca94c.jpg",
+        "full": "https://i.pinimg.com/originals/b1/a3/d1/b1a3d157b2fdf89049b6ccae2b3ca94c.jpg",
+        "pg": "https://in.pinterest.com/pin/16888567348651002/",
+        "desc": "quote error 404 featured red black wall"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/b0/92/98/b09298caea6843f6e2f532a9017865c0.jpg",
+        "full": "https://i.pinimg.com/564x/b0/92/98/b09298caea6843f6e2f532a9017865c0.jpg",
+        "pg": "https://in.pinterest.com/pin/383368987041915840/",
+        "desc": "car yellow black road featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/96/d5/b8/96d5b89fcb547f379df7f7f430383b21.jpg",
+        "full": "https://i.pinimg.com/564x/96/d5/b8/96d5b89fcb547f379df7f7f430383b21.jpg",
+        "pg": "https://in.pinterest.com/pin/391179917647735904/",
+        "desc": "yellow cat featured minimal"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/ad/64/a9/ad64a9986cb67b5909f4b211b7431b34.jpg",
+        "full": "https://i.pinimg.com/originals/ad/64/a9/ad64a9986cb67b5909f4b211b7431b34.jpg",
+        "pg": "https://in.pinterest.com/pin/6966574417140215/",
+        "desc": "yellow tom and jerry minimal featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/11/89/30/1189304e0873ef154eec5f53f68ce0d0.jpg",
+        "full": "https://i.pinimg.com/originals/11/89/30/1189304e0873ef154eec5f53f68ce0d0.jpg",
+        "pg": "https://in.pinterest.com/pin/4644405858721402/",
+        "desc": "dark umbrella featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/74/76/88/747688c49791df86f253112b5ed1060a.jpg",
+        "full": "https://i.pinimg.com/originals/74/76/88/747688c49791df86f253112b5ed1060a.jpg",
+        "pg": "https://in.pinterest.com/pin/1407443622866663/",
+        "desc": "spider man black featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/96/67/62/966762f7654c5a482ebcfba7525c25b5.jpg",
+        "full": "https://i.pinimg.com/originals/96/67/62/966762f7654c5a482ebcfba7525c25b5.jpg",
+        "pg": "https://in.pinterest.com/pin/25966135344308997/",
+        "desc": "colors colorful featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/9b/55/37/9b5537a224f0ad647167305c7b2f62e0.jpg",
+        "full": "https://i.pinimg.com/originals/9b/55/37/9b5537a224f0ad647167305c7b2f62e0.jpg",
+        "pg": "https://in.pinterest.com/pin/89720217563675040/",
+        "desc": "old timer featured black"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/1e/b9/27/1eb9279e71babd77fa0fa437b002d4f1.jpg",
+        "full": "https://i.pinimg.com/originals/1e/b9/27/1eb9279e71babd77fa0fa437b002d4f1.jpg",
+        "pg": "https://in.pinterest.com/pin/11892386510561349/",
+        "desc": "dark black fish fishes featured"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2023/01/26/22/27/ai-generated-7747334_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2023/01/26/22/27/ai-generated-7747334_1280.jpg",
         "pg": "https://pixabay.com/illustrations/ai-generated-flowers-petals-daisy-7747334/",
