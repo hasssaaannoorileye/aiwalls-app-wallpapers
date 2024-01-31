@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2018/01/05/02/50/boat-3062045_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/01/05/02/50/boat-3062045_1280.jpg",
+        "pg": "https://pixabay.com/photos/boat-ocean-tranquil-coast-shore-3062045/",
+        "desc": "beautiful nature hd coast background 4k shore windows sunset 4k 1920x1080 calm cool popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/02/18/38/butterfly-7631442_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/02/18/38/butterfly-7631442_1280.jpg",
+        "pg": "https://pixabay.com/photos/butterfly-insect-coneflowers-7631442/",
+        "desc": "butterfly insect coneflowers beautiful flowers background echinacea purple plant garden nature summer closeup popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2013/07/25/13/01/stones-167089_1280.jpg",
+        "pg": "https://pixabay.com/photos/stones-rocks-pebbles-colorful-167089/",
+        "desc": "stones 4k 1920x1080 4k desktop laptop rocks pebbles windows colorful nature exture mac  cool backgrounds popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/03/03/20/31/boat-4899802_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/03/03/20/31/boat-4899802_1280.jpg",
+        "pg": "https://pixabay.com/photos/boat-lake-nature-water-mountain-4899802/",
+        "desc": "boat lake nature water mountain landscape laguna barco paisaje paradise lagoon blue boat popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/05/10/17/41/turquoise-3388145_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/05/10/17/41/turquoise-3388145_1280.jpg",
+        "pg": "https://pixabay.com/photos/turquoise-rock-blue-stone-geology-3388145/",
+        "desc": "turquoise rock blue stone geology pebble coloring"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/07/13/20/25/happy-6464461_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/07/13/20/25/happy-6464461_1280.jpg",
+        "pg": "https://pixabay.com/photos/happy-smiley-wallpaper-smile-neon-6464461/",
+        "desc": "happy 4k full hd smiley windows  smile cool 1920x1080 neon light laptop glow"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/08/25/14/57/smiley-427160_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/08/25/14/57/smiley-427160_1280.jpg",
+        "pg": "https://pixabay.com/photos/smiley-smile-happy-427160/",
+        "desc": "smiley smile happy face yellow wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/16/18/52/cupcake-7723091_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/16/18/52/cupcake-7723091_1280.jpg",
+        "pg": "https://pixabay.com/photos/cupcake-dessert-sugar-food-7723091/",
+        "desc": "cupcake free background dessert mac sugar windows  food still life"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/04/03/08/08/flower-4997886_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/04/03/08/08/flower-4997886_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-tulip-garden-bloom-4997886/",
+        "desc": "flower background windows tulip garden beautiful nature cool bloom  netherlands color floral background"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/29/05/55/adult-1867665_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/29/05/55/adult-1867665_1280.jpg",
+        "pg": "https://pixabay.com/photos/adult-blur-bokeh-city-evening-1867665/",
+        "desc": "adult blur bokeh city evening light man outdoors person nature rain reflection road street umbrella wet raining featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/03/08/00/30/honeycomb-6077856_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/03/08/00/30/honeycomb-6077856_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/honeycomb-pattern-hexagon-geometric-6077856/",
+        "desc": "honey comb pattern hexagon geometric design beehive hexa gonal texture mosaichive grid geometry hex modern tileb lued ark background gamer gaming featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/01/02/01/44/wallpaper-1117546_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/01/02/01/44/wallpaper-1117546_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/wallpaper-to-dye-symmetrical-1117546/",
+        "desc": "to dye symmetrical hexagon template structures honeycomb texture featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/02/09/03/ai-generated-8288810_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/02/09/03/ai-generated-8288810_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-lion-king-god-night-8288810/",
+        "desc": "ai generated lion king god night urban cloak darkness future featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/05/14/13/28/watch-6253407_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/05/14/13/28/watch-6253407_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/watch-band-string-wisdom-clock-6253407/",
+        "desc": "watch band string wisdom clock time peony wrist watch commute antique collection stories white expensive smart watchre adromanticdis coloration line mood fantastic dark light"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/05/28/12/09/time-3435879_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/05/28/12/09/time-3435879_1280.jpg",
+        "pg": "https://pixabay.com/photos/time-clock-alarm-clock-3435879/",
+        "desc": "time clock alarm clock pastel colors hour watch countdown wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/01/24/18/06/smart-watch-6964296_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/01/24/18/06/smart-watch-6964296_1280.jpg",
+        "pg": "https://pixabay.com/photos/smart-watch-fitness-watch-watch-6964296/",
+        "desc": "smart watch fitness watch watch fitness band featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/07/30/20/24/earth-6510647_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/07/30/20/24/earth-6510647_1280.jpg",
+        "pg": "https://pixabay.com/photos/earth-giant-earth-installation-lake-6510647/",
+        "desc": "earth giant earth installation lake nature park night water terra gaia globe world glow light reflection dark tourist attraction featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/09/24/03/32/flowers-6651284_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/09/24/03/32/flowers-6651284_1280.jpg",
+        "pg": "https://pixabay.com/photos/flowers-garden-nature-thailand-6651284/",
+        "desc": "flowers garden nature dark"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/19/03/56/halloween-8261760_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/19/03/56/halloween-8261760_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/halloween-dark-cartoon-witch-ghost-8261760/",
+        "desc": "halloween dark cartoon witch ghost spooky creepy pumpkin jack o lantern horror fear monster scary holiday festival mobile wallpaper wallpaper ai generated"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/01/07/16/40/tsar-5897852_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/01/07/16/40/tsar-5897852_1280.jpg",
+        "pg": "https://pixabay.com/photos/car-dark-wheels-5897852/",
+        "desc": "car dark wheels"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/06/21/09/14/vintage-van-4288994_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/06/21/09/14/vintage-van-4288994_1280.jpg",
+        "pg": "https://pixabay.com/photos/vintage-van-wedding-volkswagen-4288994/",
+        "desc": "vintage van wedding volkswagen automobile vw vehicle camper oldtimer classic van vw bus popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/12/07/02/26/buildings-5810399_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/12/07/02/26/buildings-5810399_1280.jpg",
+        "pg": "https://pixabay.com/photos/buildings-skyscraper-street-road-5810399/",
+        "desc": "buildings sky scraper street road cars vehicles traffic urban china town manhattannyc city metro polis"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/06/19/16/00/city-5317948_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/06/19/16/00/city-5317948_1280.jpg",
+        "pg": "https://pixabay.com/photos/city-street-urban-architecture-5317948/",
+        "desc": "city street urban architecture building downtown outdoors buildings"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/12/02/08/04/city-4667143_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/12/02/08/04/city-4667143_1280.jpg",
+        "pg": "https://pixabay.com/photos/city-street-architecture-business-4667143/",
+        "desc": "city street architecture business sky scrapers building paris capital office sky window tower lights metro glass crosswalk nature marb popular leevening"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/22/22/12/automobile-1850862_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/22/22/12/automobile-1850862_1280.jpg",
+        "pg": "https://pixabay.com/photos/automobile-automotive-car-classic-1850862/",
+        "desc": "automobile car wallpapers automotive car classic depth of field headlights road vehicle vintage"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/05/27/16/09/taxi-355625_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/05/27/16/09/taxi-355625_1280.jpg",
+        "pg": "https://pixabay.com/photos/cab-car-traffic-yellow-new-york-355625/",
+        "desc": "cab car wallpapers car traffic yellow new york empire state building popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/12/22/14/57/auto-1925613_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/12/22/14/57/auto-1925613_1280.jpg",
+        "pg": "https://pixabay.com/photos/automobile-antique-car-us-car-1925613/",
+        "desc": "automobile antique car us car collector's item headlights grille exhibition restored classic nostalgic retro vintage old car museum featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/12/30/10/40/red-sky-7686623_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/12/30/10/40/red-sky-7686623_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/red-sky-twilight-sunset-painting-7686623/",
+        "desc": "red sky twilight sunset painting landscape mountains forest field rural panorama nature car road ai generated popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/02/26/14/22/car-6052006_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/02/26/14/22/car-6052006_1280.jpg",
+        "pg": "https://pixabay.com/photos/car-mercedes-white-car-auto-6052006/",
+        "desc": "car mercedes white car auto mercedes benz automotive flyi wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/01/21/08/18/photoshop-4782349_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/01/21/08/18/photoshop-4782349_1280.jpg",
+        "pg": "https://pixabay.com/photos/photoshop-background-fantastic-4782349/",
+        "desc": "photoshop background fantastic fantasy sky rain panda night sky human car machine car wallpapers sky background autumn leaves asphalt nature surrealism beautiful wallpaper night iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/04/15/07/49/moon-5045563_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/04/15/07/49/moon-5045563_1280.jpg",
+        "pg": "https://pixabay.com/photos/moon-sky-mountains-groot-vines-5045563/",
+        "desc": "moon sky nature mountains groot vines night sky water photoshop sky background beautiful wallpaper fantastic fantasy background butterflies iphone wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/29/08/31/animal-1868436_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/29/08/31/animal-1868436_1280.jpg",
+        "pg": "https://pixabay.com/photos/animal-turtle-bubble-reptile-1868436/",
+        "desc": "animal turtle bubble reptile turtle shell animal world wildlife wildlife photography nature close up popular"
+   },
+    {
         "thumb": "https://images.unsplash.com/photo-1632739867170-41aeb7069615?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
         "full": "https://images.unsplash.com/photo-1632739867170-41aeb7069615?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "pg": "https://unsplash.com/photos/a-close-up-of-a-fire-on-a-rock-near-water-byExseceWAY",
