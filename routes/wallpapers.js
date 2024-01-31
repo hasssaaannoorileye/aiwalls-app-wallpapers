@@ -3,6 +3,198 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2017/06/30/21/36/portugal-2459898_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/06/30/21/36/portugal-2459898_1280.jpg",
+        "pg": "https://pixabay.com/photos/portugal-landscape-mountains-2459898/",
+        "desc": "portugal landscape mountains sunrise fog road highway horseshoe turn cliff nature outdoors country countryside popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/29/21/27/astronaut-8222195_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/08/29/21/27/astronaut-8222195_1280.png",
+        "pg": "https://pixabay.com/illustrations/astronaut-moon-clouds-space-nasa-8222195/",
+        "desc": "astronaut moon clouds space nature nasa planet universe science night sky fantasy earth globe astronautics sky galaxy atmosphere technology cosmos space wallpaper highway road"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/09/23/06/45/highway-6648870_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/09/23/06/45/highway-6648870_1280.jpg",
+        "pg": "https://pixabay.com/photos/highway-for-sunrise-morning-mist-6648870/",
+        "desc": "highway for sunrise morning mist forest landscape country road nature morning popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/07/22/22/56/oregon-2530164_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/07/22/22/56/oregon-2530164_1280.jpg",
+        "pg": "https://pixabay.com/photos/oregon-landscape-forest-trees-2530164/",
+        "desc": "oregon landscape forest trees woods road highway travel nature outdoors country rural wilderness popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/05/10/11/40/oregon-2300615_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/05/10/11/40/oregon-2300615_1280.jpg",
+        "pg": "https://pixabay.com/photos/oregon-mountains-landscape-forest-2300615/",
+        "desc": "oregon mountains landscape forest trees woods nature outdoors road winding twisting aerial view country rural hdr popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/17/20/41/ai-illustration-8133524_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/07/17/20/41/ai-illustration-8133524_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-illustration-ai-technology-8133524/",
+        "desc": "ai illustration ai technology ai design ai artwork cloudy creative curved drone highway journey lights line mountains national nature night park peak place range road route featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/10/13/01/59/xizhi-2846636_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/10/13/01/59/xizhi-2846636_1280.jpg",
+        "pg": "https://pixabay.com/photos/xizhi-taipei-taiwan-sunset-sky-2846636/",
+        "desc": "xizhi taipei taiwan sunset sky clouds dusk nature xiaguang sunset glow views view landscape cloud car track highway"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/22/19/11/ai-generated-8334666_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/22/19/11/ai-generated-8334666_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-car-road-colorful-8334666/",
+        "desc": "ai generated car road colorful painting vehicle automobile travel transport nature transportation drive classic vintage sunset street highway autumn trees"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/12/06/28/car-7987805_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/05/12/06/28/car-7987805_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/car-highway-mountains-explore-7987805/",
+        "desc": "car highway mountains explore trees night scenery vehicleh featured illadventurenaturecloudsroadbackgroundcoldseasonfogjourneytravelwinterlandscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/03/25/04/58/trees-6121990_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/03/25/04/58/trees-6121990_1280.jpg",
+        "pg": "https://pixabay.com/photos/trees-road-highway-moon-forest-6121990/",
+        "desc": "trees road nature highway moon forest night sky woods night sky featured"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/01/30/18/07/road-4806130_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/01/30/18/07/road-4806130_1280.jpg",
+        "pg": "https://pixabay.com/photos/road-asphalt-path-travel-landscape-4806130/",
+        "desc": "road asphaltpath travel landscape freedom heaven justendlesshighwayhorizon"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/08/10/03/19/pathway-3596034_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/08/10/03/19/pathway-3596034_1280.jpg",
+        "pg": "https://pixabay.com/photos/pathway-park-trees-lane-road-path-3596034/",
+        "desc": "path way park trees lane nature road path popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/08/15/00/17/night-landscape-6546458_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/08/15/00/17/night-landscape-6546458_1280.jpg",
+        "pg": "https://pixabay.com/photos/night-landscape-full-moon-6546458/",
+        "desc": "night landscape full moon illustration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/09/02/18/38/cat-3649502_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/09/02/18/38/cat-3649502_1280.jpg",
+        "pg": "https://pixabay.com/photos/the-cat-beautiful-blue-eyes-catlike-3649502/",
+        "desc": "the cat beautiful blue eyes catlike funny cute animated popular"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_1280.jpg",
+        "pg": "https://pixabay.com/photos/cat-pet-animal-tabby-cat-300572/",
+        "desc": "cat pet animal tabby cat domestic cat feline mammal cute adorable nature portrait cat portrait"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/08/15/12/28/cat-8191909_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/08/15/12/28/cat-8191909_1280.png",
+        "pg": "https://pixabay.com/illustrations/cat-digital-art-cute-playful-8191909/",
+        "desc": "catdigitalartcuteplayfulfelinekittywhiskerspawsplaypetadorablekittenanimationfunartworkhappyjoyfulfurtailcreativecolorfulcharmingplaytime"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/13/20/55/ai-generated-8447667_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/13/20/55/ai-generated-8447667_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-waterfall-stars-sky-8447667/",
+        "desc": "ai generated waterfall stars sky galaxy anime manga cartoon water reflection landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/12/18/14/ai-generated-8311491_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/12/18/14/ai-generated-8311491_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-abstract-artwork-8311491/",
+        "desc": "ai generated abstract artwork 3d render wallpaper mobile wallpaper lock screen wallpaper 4k mobile wallpaper beautiful"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/03/17/20/ai-generated-7897324_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/03/17/20/ai-generated-7897324_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-feline-cosmic-7897324/",
+        "desc": "ai generated cat feline cosmic space animal universe 3d galaxy"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/01/28/19/17/background-4800743_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/01/28/19/17/background-4800743_1280.jpg",
+        "pg": "https://pixabay.com/photos/background-owl-photo-photoshop-4800743/",
+        "desc": "background owl photo photoshop nature plant floral background surrealism idea bird fantastic fantasy animal"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/02/18/12/24/cosmos-4859330_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/02/18/12/24/cosmos-4859330_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-background-photoshop-a-heart-4859330/",
+        "desc": "space nature background photoshop a heart forest fantasy fantastic glow light space wallpaper crystals red beautiful wallpaper tree"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/01/04/09/20/forest-4740077_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/01/04/09/20/forest-4740077_1280.jpg",
+        "pg": "https://pixabay.com/photos/forest-road-the-park-moon-month-4740077/",
+        "desc": "forest road the park moon nature month triangle glow neon astronaut glare background beautiful wallpaper space fantastic fantasy photoshop space wallpaper iphone wallpape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/05/07/39/ai-generated-8234554_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/09/05/07/39/ai-generated-8234554_1280.png",
+        "pg": "https://pixabay.com/photos/forest-road-the-park-moon-month-4740077/",
+        "desc": "ai generated night sky space sky nebula fire abstract smoke clouds galaxy explosion glow cosmos burn stars fractal nature energy fantasy featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/ee/de/9c/eede9c700eabeed8c73f74ddbb596258.jpg",
+        "full": "https://i.pinimg.com/originals/ee/de/9c/eede9c700eabeed8c73f74ddbb596258.jpg",
+        "pg": "https://in.pinterest.com/pin/6051780742624751/",
+        "desc": "art lamp minimal yellow popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/48/c4/6b/48c46b8306c984f3bc53ddd9707bb778.jpg",
+        "full": "https://i.pinimg.com/originals/48/c4/6b/48c46b8306c984f3bc53ddd9707bb778.jpg",
+        "pg": "https://in.pinterest.com/pin/563018696876453/",
+        "desc": "leaf pink minimal popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/736x/65/3e/ec/653eecd5550e2901592a7a722092bc5e.jpg",
+        "full": "https://i.pinimg.com/originals/65/3e/ec/653eecd5550e2901592a7a722092bc5e.jpg",
+        "pg": "https://in.pinterest.com/pin/24418022973055319/",
+        "desc": "minimal pink green popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/ef/ef/d3/efefd3fdef6a6a3bdbd1c7fdd64051a7.jpg",
+        "full": "https://i.pinimg.com/originals/ef/ef/d3/efefd3fdef6a6a3bdbd1c7fdd64051a7.jpg",
+        "pg": "https://in.pinterest.com/pin/18225573485926042/",
+        "desc": "leaves nature popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/5e/e9/a4/5ee9a4f1ab006ce3a45891a9e49ee9d0.jpg",
+        "full": "https://i.pinimg.com/originals/5e/e9/a4/5ee9a4f1ab006ce3a45891a9e49ee9d0.jpg",
+        "pg": "https://in.pinterest.com/pin/3096293488674847/",
+        "desc": "leaves nature popular "
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/9b/63/67/9b6367d2a23f70d5f9d13bdfabb00d9c.jpg",
+        "full": "https://i.pinimg.com/originals/9b/63/67/9b6367d2a23f70d5f9d13bdfabb00d9c.jpg",
+        "pg": "https://in.pinterest.com/pin/1688918604761864/",
+        "desc": "leaf tree leaves nature popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/f8/66/c9/f866c9c8d51fdf497f4841714cbc5a0a.jpg",
+        "full": "https://i.pinimg.com/originals/f8/66/c9/f866c9c8d51fdf497f4841714cbc5a0a.jpg",
+        "pg": "https://in.pinterest.com/pin/1900024837544340/",
+        "desc": "heart blue popular minimal"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/33/35/c8/3335c8881acc9ec8d2454c41de033ca7.jpg",
+        "full": "https://i.pinimg.com/originals/33/35/c8/3335c8881acc9ec8d2454c41de033ca7.jpg",
+        "pg": "https://in.pinterest.com/pin/1125968649271374/",
+        "desc": "heart red popular minimal"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/6d/eb/36/6deb3640f31b91c12bcab477644a5879.jpg",
+        "full": "https://i.pinimg.com/originals/6d/eb/36/6deb3640f31b91c12bcab477644a5879.jpg",
+        "pg": "https://in.pinterest.com/pin/56435801574739956/",
+        "desc": "heart red popular minimal"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2018/01/05/02/50/boat-3062045_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2018/01/05/02/50/boat-3062045_1280.jpg",
         "pg": "https://pixabay.com/photos/boat-ocean-tranquil-coast-shore-3062045/",
