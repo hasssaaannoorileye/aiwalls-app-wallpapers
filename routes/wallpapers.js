@@ -3,6 +3,102 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://i.pinimg.com/564x/3d/0e/a5/3d0ea51913ebc780edd8d0246888010b.jpg",
+        "full": "https://i.pinimg.com/originals/3d/0e/a5/3d0ea51913ebc780edd8d0246888010b.jpg",
+        "pg": "https://in.pinterest.com/pin/1970393579826301/",
+        "desc": "tree nature white flowers popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/22/51/d9/2251d92386e015de1f7f06b8548c1c6b.jpg",
+        "full": "https://i.pinimg.com/originals/22/51/d9/2251d92386e015de1f7f06b8548c1c6b.jpg",
+        "pg": "https://in.pinterest.com/pin/3096293488858113/",
+        "desc": "flower purble popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/b6/5c/36/b65c36398c609ab6cb668a5c25d5f50b.jpg",
+        "full": "https://i.pinimg.com/originals/b6/5c/36/b65c36398c609ab6cb668a5c25d5f50b.jpg",
+        "pg": "https://in.pinterest.com/pin/140806232417519/",
+        "desc": "flowers stones purble popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/4e/f8/0a/4ef80a68d20f36ba6e543f4f3c151f04.jpg",
+        "full": "https://i.pinimg.com/originals/4e/f8/0a/4ef80a68d20f36ba6e543f4f3c151f04.jpg",
+        "pg": "https://in.pinterest.com/pin/1266706139215224/",
+        "desc": "house lamp light fantasy flowers popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/91/28/5d/91285d01bbb7d152b497fe12b9467ed8.jpg",
+        "full": "https://i.pinimg.com/originals/91/28/5d/91285d01bbb7d152b497fe12b9467ed8.jpg",
+        "pg": "https://in.pinterest.com/pin/6614730696232952/",
+        "desc": "green nature leaves love popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/e4/2a/cc/e42acc06184521745ea55fbcaf8c4ec4.jpg",
+        "full": "https://i.pinimg.com/originals/e4/2a/cc/e42acc06184521745ea55fbcaf8c4ec4.jpg",
+        "pg": "https://in.pinterest.com/pin/54746951712822509/",
+        "desc": "green nature love popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/d6/28/82/d62882d1183d7ce8df0b8586433007d1.jpg",
+        "full": "https://i.pinimg.com/originals/d6/28/82/d62882d1183d7ce8df0b8586433007d1.jpg",
+        "pg": "https://in.pinterest.com/pin/5066618328453087/",
+        "desc": "dark black featured flower yellow cartoon"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/c5/be/ad/c5bead3c8598ad22f098f8487df23bb6.jpg",
+        "full": "https://i.pinimg.com/originals/c5/be/ad/c5bead3c8598ad22f098f8487df23bb6.jpg",
+        "pg": "https://in.pinterest.com/pin/3870349673274701/",
+        "desc": "tea street road wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/72/68/d5/7268d5a19c09f4345a94f5a89ec221f2.jpg",
+        "full": "https://i.pinimg.com/originals/72/68/d5/7268d5a19c09f4345a94f5a89ec221f2.jpg",
+        "pg": "https://in.pinterest.com/pin/11681280277913316/",
+        "desc": "window flower books wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/4b/45/91/4b459117b5b970e64c9c96e7e37c1de2.jpg",
+        "full": "https://i.pinimg.com/originals/4b/45/91/4b459117b5b970e64c9c96e7e37c1de2.jpg",
+        "pg": "https://in.pinterest.com/pin/9851692927469819/",
+        "desc": "red water wet road flowers featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/564x/a3/0b/01/a30b01dccf34ed35488c6b83e2b260eb.jpg",
+        "full": "https://i.pinimg.com/originals/a3/0b/01/a30b01dccf34ed35488c6b83e2b260eb.jpg",
+        "pg": "https://in.pinterest.com/pin/497436721359650804/",
+        "desc": "red water wet road flowers road featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/54/a9/20/54a92009a106c3bb38b25601043b7521.jpg",
+        "full": "https://i.pinimg.com/originals/54/a9/20/54a92009a106c3bb38b25601043b7521.jpg",
+        "pg": "https://in.pinterest.com/pin/113293746855206282/",
+        "desc": "alone dark flowers wet featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/6f/42/f6/6f42f642eeb7df8fd7364eed135cdabd.jpg",
+        "full": "https://i.pinimg.com/originals/6f/42/f6/6f42f642eeb7df8fd7364eed135cdabd.jpg",
+        "pg": "https://in.pinterest.com/pin/844493667433497/",
+        "desc": "sad alone cartoon wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/f9/1d/af/f91daf8f4cc39a709ccdc95d92f18db7.jpg",
+        "full": "https://i.pinimg.com/originals/f9/1d/af/f91daf8f4cc39a709ccdc95d92f18db7.jpg",
+        "pg": "https://in.pinterest.com/pin/703756185473083/",
+        "desc": "beach face smile emoji wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/a9/53/37/a95337c84325ccd6a555ed3a155994cb.jpg",
+        "full": "https://i.pinimg.com/originals/a9/53/37/a95337c84325ccd6a555ed3a155994cb.jpg",
+        "pg": "https://in.pinterest.com/pin/49610033388994229/",
+        "desc": "green nature face smile emoji wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/47/51/be/4751bec2fe004e149fb30f0d340e2f50.jpg",
+        "full": "https://i.pinimg.com/originals/47/51/be/4751bec2fe004e149fb30f0d340e2f50.jpg",
+        "pg": "https://in.pinterest.com/pin/8725793022197618/",
+        "desc": "green nature face smile emoji wallpaper"
+   },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2017/06/30/21/36/portugal-2459898_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2017/06/30/21/36/portugal-2459898_1280.jpg",
         "pg": "https://pixabay.com/photos/portugal-landscape-mountains-2459898/",
