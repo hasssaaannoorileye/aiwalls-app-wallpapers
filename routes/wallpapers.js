@@ -3,6 +3,774 @@ const router = express.Router()
 
 const wallpapers = [
     {
+        "thumb": "https://w0.peakpx.com/wallpaper/675/230/HD-wallpaper-sunset-sun-branch-dark-dusk.jpg",
+        "full": "https://w0.peakpx.com/wallpaper/675/230/HD-wallpaper-sunset-sun-branch-dark-dusk.jpg",
+        "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-pxxgh",
+        "desc": "sunset, sun, branch, dark, dusk,"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/02/27/18/17/road-3186188_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/02/27/18/17/road-3186188_1280.jpg",
+        "pg": "https://pixabay.com/photos/road-desert-sunset-highway-3186188/",
+        "desc": "road desert sunset highway country side nature skyl andscape dusk"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/08/29/22/33/sunset-7419911_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/08/29/22/33/sunset-7419911_1280.jpg",
+        "pg": "https://pixabay.com/photos/sunset-croatia-sea-hvar-colours-7419911/",
+        "desc": "sunset croatia seahvar colours ocean dusk nature twilight"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2013/03/16/07/05/tree-94198_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2013/03/16/07/05/tree-94198_1280.jpg",
+        "pg": "https://pixabay.com/photos/tree-nature-dusk-sunset-kahl-tree-94198/",
+        "desc": "tree nature dusk sunset kahl tree silhouette countryside scenery"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2013/12/16/15/59/tree-229335_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2013/12/16/15/59/tree-229335_1280.jpg",
+        "pg": "https://pixabay.com/photos/tree-silhouette-sunset-dusk-229335/",
+        "desc": "tree silhouette sunset dusk bare tree landscape nature scenery countryside"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270_1280.jpg",
+        "pg": "https://pixabay.com/photos/sunset-poppies-field-red-poppies-815270/",
+        "desc": "sunset poppies field red poppies poppy field red flowers meadow flower meadow flower field dusk twilight horizon sky sun nature"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/11/29/11/51/close-up-1869305_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/11/29/11/51/close-up-1869305_1280.jpg",
+        "pg": "https://pixabay.com/photos/close-up-heart-rustic-text-wooden-1869305/",
+        "desc": "close up heart rustic text wooden love black heart wooden heart"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/d4/87/7a/d4877ab7bde202184481a3bb8a644910.jpg",
+        "full": "https://64.media.tumblr.com/8c06b3cae8e04c06f8525fab64e8f955/e4f6780cb54ae5b9-74/s1280x1920/d61c8b46ce6386192b00ce32ca33e3ae58f09bed.jpg",
+        "pg": "https://www.tumblr.com/semihkoseoglu74/723405258399842304/pin-on-duvar-ka%C4%9F%C4%B1tlar%C4%B1-pin?source=share",
+        "desc": "Butterfly  3d Kelebek Duvar Kağıdı "
+   },
+    {
+        "thumb": "https://64.media.tumblr.com/5c4deb9a71d1dd0135d5ec978670af12/50b6687ae0b2bfd9-b4/s1280x1920/db583e29f4b5d6c83525989bf5751c13711b8f83.jpg",
+        "full": "https://64.media.tumblr.com/5c4deb9a71d1dd0135d5ec978670af12/50b6687ae0b2bfd9-b4/s1280x1920/db583e29f4b5d6c83525989bf5751c13711b8f83.jpg",
+        "pg": "https://www.tumblr.com/semihkoseoglu74/741033144407441408/pin-on-duvar-ka%C4%9F%C4%B1tlar%C4%B1-pin",
+        "desc": "Pembe Ve Mavi Çiçekler Duvar Kağıdı - Pink And Blue Flowers "
+   },
+    {
+        "thumb": "https://64.media.tumblr.com/0728758aa2096064089762c5004998c5/fc6536eea3dd986c-94/s1280x1920/9abfc6b6fe1a98a220b791b7563d73d5767d1eb3.jpg",
+        "full": "https://64.media.tumblr.com/0728758aa2096064089762c5004998c5/fc6536eea3dd986c-94/s1280x1920/9abfc6b6fe1a98a220b791b7563d73d5767d1eb3.jpg",
+        "pg": "https://www.tumblr.com/semihkoseoglu74/741061873659772928/pin-on-duvar-ka%C4%9F%C4%B1tlar%C4%B1",
+        "desc": "Renkli Kalpler Duvar Kağıdı - Colorful Hearts "
+   },
+    {
+        "thumb": "https://64.media.tumblr.com/8ec6a83ed2ad7fd4af82969de4058e7b/f06ac694ad67cd6b-15/s1280x1920/8cdc196e328d86614f68f19408553dc66e5fb30a.jpg",
+        "full": "https://64.media.tumblr.com/8ec6a83ed2ad7fd4af82969de4058e7b/f06ac694ad67cd6b-15/s1280x1920/8cdc196e328d86614f68f19408553dc66e5fb30a.jpg",
+        "pg": "https://www.tumblr.com/semihkoseoglu74/741061873659772928/pin-on-duvar-ka%C4%9F%C4%B1tlar%C4%B1",
+        "desc": "Havalı İskelet Duvar Kağıdı - Cool Skeleton "
+   },
+    {
+        "thumb": "https://64.media.tumblr.com/c995343d643c9f4560dcf998eb515b5c/f535f00ca602e6b2-e8/s1280x1920/c1f8f346ebde5557e441bed94ec32ce4d7474220.jpg",
+        "full": "https://64.media.tumblr.com/c995343d643c9f4560dcf998eb515b5c/f535f00ca602e6b2-e8/s1280x1920/c1f8f346ebde5557e441bed94ec32ce4d7474220.jpg",
+        "pg": "https://www.tumblr.com/semihkoseoglu74/741061873659772928/pin-on-duvar-ka%C4%9F%C4%B1tlar%C4%B1",
+        "desc": "Renkli Neon Kalp Duvar Kağıdı - Colorful Neon Heart"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/28/72/64/287264b7e62a01bbf925ec362d3d9373.jpg",
+        "full": "https://i.pinimg.com/originals/28/72/64/287264b7e62a01bbf925ec362d3d9373.jpg",
+        "pg": "https://in.pinterest.com/pin/9077636742347254/",
+        "desc": "moto bike 3d wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/72/1e/91/721e913aa1f601ac1d3803cc597ae1fc.jpg",
+        "full": "https://i.pinimg.com/originals/72/1e/91/721e913aa1f601ac1d3803cc597ae1fc.jpg",
+        "pg": "https://in.pinterest.com/pin/21110691997013999/",
+        "desc": "heart broken love"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/25/92/f1/2592f1940d9fa2577505e7ca58610333.jpg",
+        "full": "https://i.pinimg.com/originals/25/92/f1/2592f1940d9fa2577505e7ca58610333.jpg",
+        "pg": "https://in.pinterest.com/pin/158259374399510917/",
+        "desc": "heart love water stones"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/21/22/90/212290655715ded5e71769dbf587529a.jpg",
+        "full": "https://i.pinimg.com/originals/21/22/90/212290655715ded5e71769dbf587529a.jpg",
+        "pg": "https://in.pinterest.com/pin/15199717486043593/",
+        "desc": "circle ball fantasy 3d wallpaper"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/8d/2f/d5/8d2fd5c271adfad87a9b73ebb325a2ca.jpg",
+        "full": "https://i.pinimg.com/originals/8d/2f/d5/8d2fd5c271adfad87a9b73ebb325a2ca.jpg",
+        "pg": "https://in.pinterest.com/pin/81416705757645708/",
+        "desc": "world hand 3d green"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/e6/db/5f/e6db5fc64f609cedc72eddbf29d6be7d.jpg",
+        "full": "https://i.pinimg.com/originals/e6/db/5f/e6db5fc64f609cedc72eddbf29d6be7d.jpg",
+        "pg": "https://in.pinterest.com/pin/281543722723405/",
+        "desc": "blur bokeh"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/dd/37/0d/dd370d068430007a2cd01d09b70a5824.jpg",
+        "full": "https://i.pinimg.com/originals/dd/37/0d/dd370d068430007a2cd01d09b70a5824.jpg",
+        "pg": "https://in.pinterest.com/pin/65020788362484299/",
+        "desc": "food anim humberger"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/c6/62/e9/c662e9bfe5999771ecacb38265013ef7.jpg",
+        "full": "https://i.pinimg.com/originals/c6/62/e9/c662e9bfe5999771ecacb38265013ef7.jpg",
+        "pg": "https://in.pinterest.com/pin/2533343533528165/",
+        "desc": "green leaf nature insect popular"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/7e/6d/7a/7e6d7a996c6a076d5c8291d0bd9cc9c5.jpg",
+        "full": "https://i.pinimg.com/originals/7e/6d/7a/7e6d7a996c6a076d5c8291d0bd9cc9c5.jpg",
+        "pg": "https://in.pinterest.com/pin/1055599906519732/",
+        "desc": "stones hearts dark black dimond featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/d7/a2/fe/d7a2fe27cc27841b4ce1f7285ff8acb3.jpg",
+        "full": "https://i.pinimg.com/originals/d7/a2/fe/d7a2fe27cc27841b4ce1f7285ff8acb3.jpg",
+        "pg": "https://in.pinterest.com/pin/116389971612142510/",
+        "desc": "ludo 3d dark yellow featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/7e/18/15/7e1815abc8f6be5ee43a4a584160dbc2.jpg",
+        "full": "https://i.pinimg.com/originals/7e/18/15/7e1815abc8f6be5ee43a4a584160dbc2.jpg",
+        "pg": "https://in.pinterest.com/pin/1970393578036955/",
+        "desc": "iron fence, fence, mesh, wire mesh, wire mesh fence, braid, demarcation, isolated, background, grid, pattern"
+   },
+    {
+        "thumb": "https://p0.pikist.com/photos/554/384/white-bug-flower-mobile-wallpaper.jpg",
+        "full": "https://p0.pikist.com/photos/554/384/white-bug-flower-mobile-wallpaper.jpg",
+        "pg": "https://www.pikist.com/free-photo-vsudw",
+        "desc": "white, bug, flower, mobile"
+   },
+    {
+        "thumb": "https://i.pinimg.com/736x/96/97/01/969701894ad616cfeb78d800b0c151f7.jpg",
+        "full": "https://i.pinimg.com/originals/96/97/01/969701894ad616cfeb78d800b0c151f7.jpg",
+        "pg": "https://in.pinterest.com/pin/1970393579943995/",
+        "desc": "Ambient Warm Tone Light dim lamp in a dark room"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/fd/6c/53/fd6c53bf332dbfaccb02be9b73c1c8ff.jpg",
+        "full": "https://i.pinimg.com/originals/fd/6c/53/fd6c53bf332dbfaccb02be9b73c1c8ff.jpg",
+        "pg": "https://in.pinterest.com/pin/351912462766181/",
+        "desc": "Mandala coloridas com flores folhas e pássaros featured"
+   },
+    {
+        "thumb": "https://i.pinimg.com/474x/f7/fb/fe/f7fbfe0743946d98dddb4d6c3b5ade58.jpg",
+        "full": "https://i.pinimg.com/originals/f7/fb/fe/f7fbfe0743946d98dddb4d6c3b5ade58.jpg",
+        "pg": "https://in.pinterest.com/pin/17803361024233750/",
+        "desc": "Purple Royal Background featured Tarot frame Astrology frame Mystical border Celestial border Witchy background Tarot card frame Tarot border Witchy frame Sun and moon Magic frame"
+   },
+    {
+        "thumb": "https://i.pinimg.com/736x/2d/4e/a0/2d4ea097d212bc7f271963328123dfc5.jpg",
+        "full": "https://i.pinimg.com/originals/2d/4e/a0/2d4ea097d212bc7f271963328123dfc5.jpg",
+        "pg": "https://in.pinterest.com/pin/2674081022566055/",
+        "desc": "Fire sword dark black featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1355567157/winter-sunset-1-60977-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1355567157/winter-sunset-1-60977-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/winter/winter-sunset/Z1R2",
+        "desc": "Winter sunset dusk night nature trees"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1355567157/cosmic-glow-1-60972-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1355567157/cosmic-glow-1-60972-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/space/cosmic-radiance/RN7z",
+        "desc": "Cosmic radiance dark space stones galaxy black featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2910736790/threads-1-60689-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2910736790/threads-1-60689-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/threads/j1J5",
+        "desc": "Threads featured colorful"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3868494768/wolf-1-60846-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3868494768/wolf-1-60846-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/wild/wolf/k1KY",
+        "desc": "dark night animals wolf featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/247584054/pears-1-60319-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/247584054/pears-1-60319-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/food/pears/G0ML",
+        "desc": "Pears food truit"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/688127728/green-parrot-1-60182-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/688127728/green-parrot-1-60182-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/birds/green-parrot/5P9Y",
+        "desc": "Green parrot animals nature popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2459021474/lamborghini-huracan-1-60268-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2459021474/lamborghini-huracan-1-60268-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/lamborghini/lamborghini-huracan/NJOv",
+        "desc": "car Lamborghini Huracan dark featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3386251246/earth-1-60161-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3386251246/earth-1-60161-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/space/planet-earth/Dv96",
+        "desc": "Planet Earth dark black space featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/280436846/waterfall-1-60345-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/280436846/waterfall-1-60345-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/waterfall/j18P",
+        "desc": "Waterfall mountain popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/759174110/ferrari-f12-berlinetta-1-60044-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/759174110/ferrari-f12-berlinetta-1-60044-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/ferrari/ferrari-f12-berlinetta/g0Yj",
+        "desc": "Ferrari F12 Berlinetta car yellow fantasy featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1577996363/lamborghini-huracan-1-59678-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1577996363/lamborghini-huracan-1-59678-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/lamborghini/lamborghini-huracan/1ZK3",
+        "desc": "Lamborghini Huracan cars road street dusk"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1577996363/waves-1-59684-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1577996363/waves-1-59684-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/waves/7ZQw",
+        "desc": "abstract waves dark black illustration"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1499698258/ford-shelby-1-59721-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1499698258/ford-shelby-1-59721-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/ford/ford-shelby/KqJz",
+        "desc": "Ford Shelby car road"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2142987924/beach-1-59385-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2142987924/beach-1-59385-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/others/beach/8ZLL",
+        "desc": "beach aerial view popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/107470384/butterfly-1-59436-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/107470384/butterfly-1-59436-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/insects/butterfly/388M",
+        "desc": "green nature butterfly animals"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2142987924/ferrari-sf90-1-59379-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2142987924/ferrari-sf90-1-59379-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/ferrari/ferrari-sf90/2ZBN",
+        "desc": "Ferrari car"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/349336030/sea-1-59115-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/349336030/sea-1-59115-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/sea/sea/AZll",
+        "desc": "sea palm trees beach sky popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3262257004/black-car-1-58711-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3262257004/black-car-1-58711-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/mercedes/black-car/wL7g",
+        "desc": "Black car dark featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3262257004/paints-1-58710-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3262257004/paints-1-58710-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/paints/v0LL",
+        "desc": "Paints abstract illustration"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/634010219/woe-1-58658-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/634010219/woe-1-58658-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/mountains/woe/zOQ7",
+        "desc": "nature mountain Woe green dusk popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4247539910/in-a-boat-1-58506-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4247539910/in-a-boat-1-58506-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/mountains/in-a-boat/ozvz",
+        "desc": "mountains boat bature water"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2370217033/chevrolet-chevelle-ss-1-58385-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2370217033/chevrolet-chevelle-ss-1-58385-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/chevrolet/chevrolet-chevelle-ss/8ZMm",
+        "desc": "Chevrolet Chevelle SS Red Musclecar Road Forest Leaves car nature forest "
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4247539910/tiger-1-58505-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4247539910/tiger-1-58505-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/wild/tiger/nyY4",
+        "desc": "Tiger Fire Predator Angry featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3590390533/lamborghini-aventador-1-58294-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3590390533/lamborghini-aventador-1-58294-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/lamborghini/lamborghini-aventador/ozV3",
+        "desc": "Lamborghini Aventador Supercar Glare Reflection Headlights car dark featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3088909010/lamborghini-1-58086-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3088909010/lamborghini-1-58086-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/lamborghini/lamborghini/9Z6D",
+        "desc": "car Lamborghini Ai Art Supercar Headlights dark featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1444111358/cake-1-58037-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1444111358/cake-1-58037-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/food/cake/40Ex",
+        "desc": " Dessert Bed Chocolate Strawberry food"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3576638002/scenery-1-57949-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3576638002/scenery-1-57949-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/illustration/scenery/n4D5",
+        "desc": "Scenery AI Art Sun Mountains dark dusk sunset"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3701040665/dome-1-57897-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3701040665/dome-1-57897-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/architecture/dome/r4PL",
+        "desc": "Dome Cells Ball Minimalism architecture"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1775280249/dodge-challenger-1-57460-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1775280249/dodge-challenger-1-57460-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/dodge/dodge-challenger/B00x",
+        "desc": "Dodge Challenger Red Front view Wheelbarrow forest dusk popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2577937421/porsche-911-gt3-1-57240-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2577937421/porsche-911-gt3-1-57240-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/porsche/porsche-911-gt3/7KBj",
+        "desc": "Orange Fog Porsche 911 Back view car dusk fog forest road"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/659516610/mint-1-56807-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/659516610/mint-1-56807-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/plants/mint/p5VQ",
+        "desc": "Mint Leaves Greenery green popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3192274296/waste-water-1-56767-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3192274296/waste-water-1-56767-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/mountains/waste-water/MzW1",
+        "desc": "Waste Water Wasdale England Lake Stones Water Reflection Mountains"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/207765249/earth-1-56587-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/207765249/earth-1-56587-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/space/planet-earth/0zAV",
+        "desc": "Earth Planet Night Stars dark space featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/207765249/palm-1-56584-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/207765249/palm-1-56584-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/plants/palm/7KD8",
+        "desc": "Palm Tree Sky popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2080951182/bubbles-1-56652-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2080951182/bubbles-1-56652-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/bubbles/q4Mk",
+        "desc": "Bubbles Circles Amoled featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1652440790/paints-1-56455-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1652440790/paints-1-56455-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/paints/w4rm",
+        "desc": "Paints Colorful Divorces abstract"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/788496851/bmw-1-56386-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/788496851/bmw-1-56386-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/bmw/bmw/9M9P",
+        "desc": "Bmw Headlights Smoke Front view Glow featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2843747633/wolf-1-56292-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2843747633/wolf-1-56292-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/wild/wolf/m4Q0",
+        "desc": "Wolf Glow Eye Black background animals"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/463742792/flower-1-56032-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/463742792/flower-1-56032-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/flowers/flower/YA4n",
+        "desc": "Flower Plant Branch Macro dark"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/463742792/stripes-1-56051-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/463742792/stripes-1-56051-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/minimalism/stripes/pvGN",
+        "desc": "Stripes Texture Wood"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/482992977/rudbeckia-1-55969-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/482992977/rudbeckia-1-55969-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/flowers/rudbeckia/OnOY",
+        "desc": "Plants Macro Rudbeckia Petals flower"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3971053349/coastline-1-55877-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3971053349/coastline-1-55877-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/sea/coastline/ZB25",
+        "desc": "Stones Sea Coast Sunset Sky popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4073161341/planets-1-56004-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4073161341/planets-1-56004-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/space/planets/mpAr",
+        "desc": "Planets Satellite Space Stars dark space black featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/46077449/waves-1-55805-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/46077449/waves-1-55805-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/waves/nqv7",
+        "desc": "Waves Stripes Attrition Texture"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3957109564/sea-shore-1-55725-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3957109564/sea-shore-1-55725-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/sea/sea-shore/On4R",
+        "desc": "Rocks Waves Sea Coast Drone photo aerial view beach water popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/574413669/dog-in-a-boat-1-55547-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/574413669/dog-in-a-boat-1-55547-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/dogs/dog-in-a-boat/lowV",
+        "desc": "Husky Mountains River Lake Boat Dog Sight popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2541034757/samurai-1-55347-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2541034757/samurai-1-55347-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/graphics/samurai/loWJ",
+        "desc": "Samurai Art Warrior Planet Colorful Amoled featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2115418160/planets-1-55394-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2115418160/planets-1-55394-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/space/planets/orBN",
+        "desc": "Planets Space Fantasy featured dark black earch space"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/574413669/liquid-1-55540-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/574413669/liquid-1-55540-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/abstract/liquid/7rZO",
+        "desc": "Liquid Paints Amoled Colorful featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2298734685/king-1-55188-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2298734685/king-1-55188-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/others/king/gjN6",
+        "desc": "King Crown Dollar Gold Money featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/431814092/boards-1-55249-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/431814092/boards-1-55249-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/textures/boards/nqk4",
+        "desc": "Boards Texture Wood featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/431814092/ferrari-812-1-55251-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/431814092/ferrari-812-1-55251-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/ferrari/ferrari-812/pvm1",
+        "desc": "Ferrari 812 Moon Night Speed Front view featured car"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/431814092/sunset-at-sea-1-55273-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/431814092/sunset-at-sea-1-55273-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/sea/sunset-at-sea/VxV5",
+        "desc": "Sun Clouds Sky Waves Beach Reflection popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/82061731/salon-bmw-convertible-1-54614-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/82061731/salon-bmw-convertible-1-54614-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/bmw/Salon-Bmw-Convertible/zJBq",
+        "desc": "Automobile Bmw Bummer Leather interior Leather Automatic transmission Brown Luxury Wealth To phone car"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2649585689/the-road-in-the-autumn-forest-1-54564-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2649585689/the-road-in-the-autumn-forest-1-54564-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/autumn/The-Road-in-the-Autumn-Forest/JgPy",
+        "desc": "Highway Markup Forest Autumn road forest dark popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3752979988/leaves-1-54216-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3752979988/leaves-1-54216-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/plants/Leaves/BJon",
+        "desc": "Leaves Greens Macro Fibers nature popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/919751457/charge-1-54133-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/919751457/charge-1-54133-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/minimalism/Charge/Zxlv",
+        "desc": "Battery Coffee Charger minimalism dark green"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/16811012/triumph-speed-triple-1-60010-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/16811012/triumph-speed-triple-1-60010-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/motorcycles/triumph-speed-triple/v0Kn",
+        "desc": "Wheel Speed ​​Triple Production Tires featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1499698258/macaroons-1-59715-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1499698258/macaroons-1-59715-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/food/macaroon/AZv1",
+        "desc": "Pastry Dessert Confectionery Macaron food"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1499698258/ice-1-59724-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1499698258/ice-1-59724-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/food/ice-cream/NwMK",
+        "desc": "Ice Cream Dessert Horn food"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2814412820/boat-1-59660-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2814412820/boat-1-59660-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/ships/boat/BZ3x",
+        "desc": "Boat River Sunset dusk sun sunrise water popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/806506908/audi-tt-1-59567-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/806506908/audi-tt-1-59567-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cars/audi/audi-tt/Mvp3",
+        "desc": "Front View Audi TT Supercar dark car"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3648124073/dragon-1-59597-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3648124073/dragon-1-59597-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/animals/reptiles/the-dragon/rDO6",
+        "desc": " Dragon Black Background dark black featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1515044197/gloomy-city-1-59525-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1515044197/gloomy-city-1-59525-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cities/gloomy-city/OxwN",
+        "desc": "Street Clouds Architecture street road dark black featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3449775341/planet-1-59485-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3449775341/planet-1-59485-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/space/planet/8ZVm",
+        "desc": "Planet Asteroids Galaxy space featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3404898548/rosenlauer-valley-1-59511-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3404898548/rosenlauer-valley-1-59511-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/nature/mountains/rosenlaur-valley/wL3w",
+        "desc": "River Mountain Clouds Nature Valley Rosenlaur Valley popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3130545275/lightning-1-59457-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3130545275/lightning-1-59457-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/cities/lightning/yNj7",
+        "desc": "Lightning Thunderstorm Display City Night"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4289267311/cocktail-1-59305-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4289267311/cocktail-1-59305-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/food/cocktail/ny0E",
+        "desc": "Cocktail Drink food drink"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1470207020/oval-1-61009-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1470207020/oval-1-61009-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/oval/r1nW",
+        "desc": "Oval Ring Figure dark black 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4289267311/ball-1-59304-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4289267311/ball-1-59304-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/bullet/mxmr",
+        "desc": "Bullet Abstract 3d wallpaper"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3681101357/stones-1-58810-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3681101357/stones-1-58810-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/stones/v0xM",
+        "desc": "Stones AI Art wallpaper 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2649585689/figures-1-54534-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2649585689/figures-1-54534-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Figures/1l4q",
+        "desc": "Ball Lines Stripes Colorful 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/864780047/balls-1-53841-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/864780047/balls-1-53841-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Balls/8nQL",
+        "desc": "Glow Sphere Ball Energy Futuristic Lines Render 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1507103734/square-1-52607-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1507103734/square-1-52607-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Square/pp2p",
+        "desc": "Square Cube dark 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3497049894/shaoy-1-52804-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3497049894/shaoy-1-52804-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Shaoy/mmGO",
+        "desc": "Balls Render Glow Nucleus 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1232727708/3d-abstract-1-52770-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1232727708/3d-abstract-1-52770-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/3d-Abstract/Pk5W",
+        "desc": "Abstraction Wavy 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1295031711/balls-1-52209-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1295031711/balls-1-52209-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Balls/rGQW",
+        "desc": "Balls 3D Nucleus "
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3859787431/abstraction-1-50934-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3859787431/abstraction-1-50934-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Abstraction/1oEo",
+        "desc": "Abstraction Amoled 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2131164957/red-serpentine-1-50777-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2131164957/red-serpentine-1-50777-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/3d/Red-Serpentine/ZKZ6",
+        "desc": "Red Serpentine Amoled 3d"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4191454555/hand-with-butterflies-1-60375-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4191454555/hand-with-butterflies-1-60375-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/hand-with-butterflies/XWM5",
+        "desc": "Planet Stars Hand Butterflies Night featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4095812702/a-guy-on-a-bicycle-1-60605-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4095812702/a-guy-on-a-bicycle-1-60605-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/guy-on-a-bike/n17l",
+        "desc": "Guy Bicycle Stars AI illustration featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1407012304/sword-1-60820-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1407012304/sword-1-60820-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/sword/JBAl",
+        "desc": "Art Sword Magic Weapon fantasy dark featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2641779982/ball-1-59019-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2641779982/ball-1-59019-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/bullet/GmEK",
+        "desc": "Bullet Planet AI Art featured dark fantasy"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1325945535/flowery-planet-1-58247-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1325945535/flowery-planet-1-58247-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/flower-planet/lw5r",
+        "desc": "Planet Neon Flowered featured space"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2792093578/lighthouse-1-58210-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2792093578/lighthouse-1-58210-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/lighthouse/v0gX",
+        "desc": "Lighthouse Planet Storm Night featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4040815043/hourglass-1-57371-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4040815043/hourglass-1-57371-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/fantasy/hourglass/QElY",
+        "desc": "Hourglass Abstraction Magic Colorful Watch fantasy featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1728940401/coffee-1-55088-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1728940401/coffee-1-55088-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/coffee/gjGY",
+        "desc": "Coffee Grains Macro"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2577937421/drops-on-glass-1-57255-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2577937421/drops-on-glass-1-57255-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/drops-on-glass/w46R",
+        "desc": "Water Drops Glass Plant"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1810035060/leaf-1-53077-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1810035060/leaf-1-53077-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/Leaf/Zxyv",
+        "desc": "Leaflet Plant Macro Drops Ross green nature"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1029335312/macro-1-52002-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1029335312/macro-1-52002-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/Macro/kxAY",
+        "desc": "Macro Drops Ross green nature drop"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/660991819/macro-1-52486-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/660991819/macro-1-52486-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/Macro/9o1J",
+        "desc": "Sunflower flower nature popular"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1873511031/drops-on-a-leaf-1-51583-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1873511031/drops-on-a-leaf-1-51583-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/Drops-on-a-Leaf/6wqV",
+        "desc": "Sheet Drops Dew macro black leaf leaves wet"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4231706321/5ec67f078e525-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4231706321/5ec67f078e525-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/macro/Macro/pDwV",
+        "desc": "Dandelion green nature flower"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3363305053/sad-cat-1-58012-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3363305053/sad-cat-1-58012-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/funny/sad-cat/x4ZB",
+        "desc": "MEM Cat Colorful animals illustration"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/4247539910/lama-with-glasses-1-58512-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/4247539910/lama-with-glasses-1-58512-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/funny/lama-with-glasses/xMVJ",
+        "desc": "Lama Animal Glasses Colorful Ai Art illustration animals art"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/3576638002/cute-rabbit-1-57951-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/3576638002/cute-rabbit-1-57951-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/funny/cute-rabbit/p5GQ",
+        "desc": " Rabbit Flowers illustration animals art"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/1471316557/hand-with-a-heart-1-60174-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/1471316557/hand-with-a-heart-1-60174-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/minimalism/hand-with-a-heart/WV7E",
+        "desc": "Hand Heart Love Neon Sign art illustration wall texture dark"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2792093578/tropical-leaf-1-58215-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2792093578/tropical-leaf-1-58215-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/minimalism/tropical-leaf/AZPP",
+        "desc": "minimalism Neon Plant Tropical Leaf featured"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2541034757/smiley-1-55350-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2541034757/smiley-1-55350-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/minimalism/smiley/orWN",
+        "desc": " Minimalism Grey background Texture Surface dark"
+   },
+    {
+        "thumb": "https://img.wallscloud.net/uploads/thumb/2282991472/aircraft-1-51546-225x400-MM-80.webp",
+        "full": "https://img.wallscloud.net/uploads/thumb/2282991472/aircraft-1-51546-540x1080-MM-80.webp",
+        "pg": "https://wallscloud.net/en/wallpaper/minimalism/Aircraft/kxkN",
+        "desc": "Aircraft Minimalism Amoled dark"
+   },
+    {
         "thumb": "https://images.unsplash.com/photo-1503602642458-232111445657?ixid=2yJhcHBfaWQiOjEyMDd9&fm=jpg&w=200&fit=max",
         "full": "https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "pg": "https://unsplash.com/photos/beige-wooden-bar-stool-4kTbAMRAHtQ",
