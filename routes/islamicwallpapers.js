@@ -31,6 +31,118 @@ function paginatedResults(model) {
 
 const wallpapers = [
     {
+      "thumbUrl": "https://i.pinimg.com/564x/53/f4/90/53f4903a066ea1c190f113bafb751b4d.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/53/f4/90/53f4903a066ea1c190f113bafb751b4d.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/566116615676793849/",
+      "tags": "allah quotes dark black wall islamic wallpaper",
+      "description": "allah is watching you black wallpaper latest islamic"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/564x/4b/66/fc/4b66fce8ba909f0d7d7572180e6932e3.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/4b/66/fc/4b66fce8ba909f0d7d7572180e6932e3.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/351912464899140/",
+      "tags": "quran verses black wallpaper quotes dark islamic",
+      "description": "dark wallpaper latest quotes islamic"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/21/00/fe/2100fe914ebefe6c1dff063dbf2117ad.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/21/00/fe/2100fe914ebefe6c1dff063dbf2117ad.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/57139489015519981/",
+      "tags": "dark islamic wallpaper quran ",
+      "description": "sujud islamic wallpaper latest"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/3d/1d/3e/3d1d3e9a8ff4906e7a64c60f22ec827b.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/3d/1d/3e/3d1d3e9a8ff4906e7a64c60f22ec827b.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/55732114131663100/",
+      "tags": "tree night islamic dark wallpaper",
+      "description": "latest dark wallpaper azkar thikr athkar"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/8e/a8/98/8ea898efcf62090061cde56253465378.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/8e/a8/98/8ea898efcf62090061cde56253465378.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/207587864068582633/",
+      "tags": "quran verses dark black wallpaper heart love red",
+      "description": "quran verses dark black wallpaper heart love red lates"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/62/b3/05/62b305e77340175df1e616c2ee4077d4.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/62/b3/05/62b305e77340175df1e616c2ee4077d4.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/28640147623210134/",
+      "tags": "allah wallpaper quotes yellow dark black popular",
+      "description": "allah wallpaper quotes yellow dark black popular"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/2c/07/cb/2c07cbcca077dfbcfef95e54083de4d9.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/2c/07/cb/2c07cbcca077dfbcfef95e54083de4d9.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/104005072655901852/",
+      "tags": "yellow islamic wallpaper allah popular",
+      "description": "yellow islamic wallpaper allah popular"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/564x/7d/ba/5d/7dba5d001470c2aa49f6663b99e50409.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/7d/ba/5d/7dba5d001470c2aa49f6663b99e50409.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/200621358393337226/",
+      "tags": "allah islamic wallpaper popular leaf leaves drop",
+      "description": "allah islamic wallpaper popular leaf leaves drop"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/10/9e/b9/109eb91b428d21d93ea5635cae99b800.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/10/9e/b9/109eb91b428d21d93ea5635cae99b800.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/25403185392082679/",
+      "tags": "mosque islamic wallpaper latest",
+      "description": "mosque islamic wallpaper latest"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/d0/c6/13/d0c613fd17dfd965989da8b06aa31ded.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/d0/c6/13/d0c613fd17dfd965989da8b06aa31ded.png",
+      "pageUrl": "https://in.pinterest.com/pin/35747390785685772/",
+      "tags": "mosque islamic wallpaper latest",
+      "description": "mosque islamic wallpaper latest"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/8d/08/95/8d089566e68dad7a39e5d8a07d7312a0.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/8d/08/95/8d089566e68dad7a39e5d8a07d7312a0.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/8444318044919514/",
+      "tags": "mosque islamic wallpaper latest dusk",
+      "description": "mosque islamic wallpaper latest dusk"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/564x/7a/3a/7c/7a3a7ca33bf094eee63a4ba18cfbf700.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/7a/3a/7c/7a3a7ca33bf094eee63a4ba18cfbf700.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/1829656092366983/",
+      "tags": "hijab woman",
+      "description": "hijab woman"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/f0/39/e2/f039e2dea2e077d0890cfabfc5c41320.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/f0/39/e2/f039e2dea2e077d0890cfabfc5c41320.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/19703317112189626/",
+      "tags": "hijab woman",
+      "description": "hijab woman"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/e5/15/4f/e5154f9113a7e048d6f2d0d13757ef71.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/e5/15/4f/e5154f9113a7e048d6f2d0d13757ef71.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/6825836927924209/",
+      "tags": "hijab woman flowers",
+      "description": "hijab woman flowers"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/b0/5e/f1/b05ef18d92194facb5f62f91c61a16a7.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/b0/5e/f1/b05ef18d92194facb5f62f91c61a16a7.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/115404809193189867/",
+      "tags": "minimal dark islamic wallpaper quotes quran verses",
+      "description": "minimal dark islamic wallpaper quotes quran verses"
+    },
+    {
+      "thumbUrl": "https://i.pinimg.com/474x/57/f5/f4/57f5f4ecc48f6c176042c9c821038b36.jpg",
+      "fullUrl": "https://i.pinimg.com/originals/57/f5/f4/57f5f4ecc48f6c176042c9c821038b36.jpg",
+      "pageUrl": "https://in.pinterest.com/pin/633387440851924/",
+      "tags": "cartoon hijab minimal",
+      "description": "cartoon hijab minimal"
+    },
+    {
       "thumbUrl": "https://i.pinimg.com/originals/03/72/10/0372105ac3eaab444b828a755345e2ca.jpg",
       "fullUrl": "https://i.pinimg.com/originals/03/72/10/0372105ac3eaab444b828a755345e2ca.jpg",
       "pageUrl": "https://in.pinterest.com/pin/200621358391014261/",
