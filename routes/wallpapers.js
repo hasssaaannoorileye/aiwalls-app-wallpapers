@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const cors = require('cors')
 
 const wallpapers = [
     {
@@ -7029,6 +7030,11 @@ router.get("/wallpapers", paginatedResults(wallpapers), (req, res) => {
     res.json(res.paginatedResults)
 });
 
+router.get('search/', paginatedResults(wallpapers), (req, res) => {
+     res.json(wallpapers.filter(search(query)))
+});
+
+
 function paginatedResults(model) {
     return async (req, res, next) => {
         const page = parseInt(req.query.page)
@@ -7041,12 +7047,11 @@ function paginatedResults(model) {
         if (endIndex < model.length) {
             results.next = page + 1
         }
-
         
         if (startIndex > 0) {
             results.previousPage = page - 1
         }
-    
+
         try {
             results.results = model.slice(startIndex, endIndex)//await model.find().limit(limit).skip(endIndex).exec()
             res.paginatedResults = results
