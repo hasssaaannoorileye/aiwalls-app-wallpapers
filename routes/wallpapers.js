@@ -4,6 +4,54 @@ const cors = require('cors')
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/23/19/41/ai-generated-8408609_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/23/19/41/ai-generated-8408609_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-butterflies-flowers-8408609/",
+        "desc": "ai generated butterflies flowers stream forest sunset water nature illustration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/03/02/12/14/bridge-4895585_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/03/02/12/14/bridge-4895585_1280.jpg",
+        "pg": "https://pixabay.com/photos/bridge-tree-forest-nature-river-4895585/",
+        "desc": "bridge tree forest nature river water sunset green walking popular "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/25/09/34/river-8148654_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/07/25/09/34/river-8148654_1280.png",
+        "pg": "https://pixabay.com/illustrations/river-water-forest-woods-art-8148654/",
+        "desc": "river water forest woods art painting water color colorful nature illustration landscape"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/06/15/07/nature-8433868_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/06/15/07/nature-8433868_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/nature-forest-sunset-sky-water-8433868/",
+        "desc": "nature night sky forest sunset sky water boat stars ai generated featured "
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2019/09/09/15/25/guitar-4463899_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2019/09/09/15/25/guitar-4463899_1280.jpg",
+        "pg": "https://pixabay.com/photos/guitar-forest-monster-water-river-4463899/",
+        "desc": "guitar forest monster water river nature trees neon fantasy photoshop wallpaper"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/12/07/17/03/ai-generated-8435953_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/12/07/17/03/ai-generated-8435953_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-fantasy-landscape-book-8435953/",
+        "desc": "ai generated fantasy landscape book stream brook river water bank moon stars fireflies mystical magic nature forest storybook fairytale illustration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/10/16/17/26/nature-8319731_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/10/16/17/26/nature-8319731_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/nature-tree-fall-forest-sky-8319731/",
+        "desc": "nature tree fall forest sky mountains yellow color green river cloud red park foliage sun outdoors water season sunlight view scenery ai generated illustration"
+   },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2015/05/14/22/15/elsach-767596_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2015/05/14/22/15/elsach-767596_1280.jpg",
+        "pg": "https://pixabay.com/photos/elsach-flow-falkensteiner-cave-767596/",
+        "desc": "elsach flow nature falkensteiner cave baden-wuerttemberg swabian alb grabenstetten bad urach water cave karst active water cave canyon stone moss mossy green overgrown naturally forest forest floor rock cratoneuron filicinum fern-like strong-nerved moss deciduous moss amblystegiaceae strong nervous moss common strong-nerved moss changeable strong-nerved moss palustriella commutata cratoneuron commutatum popular"
+   },
+    {
         "thumb": "https://w0.peakpx.com/wallpaper/675/230/HD-wallpaper-sunset-sun-branch-dark-dusk.jpg",
         "full": "https://w0.peakpx.com/wallpaper/675/230/HD-wallpaper-sunset-sun-branch-dark-dusk.jpg",
         "pg": "https://www.peakpx.com/en/hd-wallpaper-desktop-pxxgh",
