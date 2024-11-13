@@ -6,6 +6,11 @@ const router = Router();
 // Pagination middleware
 function paginatedResults(model) {
     return (req, res, next) => {
+        if (!Array.isArray(model)) {
+            console.error("Model is not an array:", model);
+            return res.status(500).json({ message: "Internal Server Error: Model is not an array" });
+        }
+
         const page = parseInt(req.query.page) || 1;
         const limit = parseInt(req.query.limit) || 5;
 
@@ -17,7 +22,7 @@ function paginatedResults(model) {
         if (endIndex < model.length) {
             results.next = page + 1;
         }
-        
+
         if (startIndex > 0) {
             results.previousPage = page - 1;
         }
@@ -25,8 +30,9 @@ function paginatedResults(model) {
         results.results = model.slice(startIndex, endIndex);
         res.paginatedResults = results;
         next();
-    }
+    };
 }
+
 
 // Search function
 function searchWallpapers(query) {
