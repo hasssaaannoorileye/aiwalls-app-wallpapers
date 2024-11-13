@@ -5,6 +5,7 @@ import { readdirSync } from 'fs';
 import dotenv from 'dotenv';  // Import dotenv explicitly
 import path from 'path'; // Import path to work with file paths
 import { fileURLToPath } from 'url'; // Import fileURLToPath to convert URL to path
+import wallpapersRouter from './routes/wallpapers.mjs'; // Adjust path if different
 
 dotenv.config();  // Initialize dotenv to load environment variables
 
@@ -18,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));  // Use the default bodyPars
 // Get the directory name from the current module's URL
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+app.use('/wallpapers', wallpapersRouter); // Ensure this path matches your route
 
 // Dynamically import all route files
 const routesDir = path.join(__dirname, 'routes');
