@@ -12371,4 +12371,4 @@ const wallpapers = [
     }
 ];
 
-export default wallpapers;
+module.exports = wallpapers;

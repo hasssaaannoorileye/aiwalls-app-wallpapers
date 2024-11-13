@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 require('dotenv').config()
 const port = process.env.PORT || 8000
-const wallpapers = require('./routes/wallpapers')
 const { readdirSync } = require('fs')
 
 
