@@ -1,6 +1,450 @@
 
 const wallpapers = [
     {
+        "thumb": "https://cdn.pixabay.com/photo/2024/04/13/10/20/peacock-8693634_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/04/13/10/20/peacock-8693634_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/peacock-bird-nature-feathers-8693634/",
+        "desc": "peacock bird nature feathers animal colorful green blue ai generated"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/05/16/03/55/ai-generated-8764924_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/05/16/03/55/ai-generated-8764924_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-peacock-bird-animal-8764924/",
+        "desc": "ai generated peacock bird animal plumage multicoloured feathers ornithology nature wildlife bird watching jewellery"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/03/01/10/09/bird-6059308_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/03/01/10/09/bird-6059308_1280.jpg",
+        "pg": "https://pixabay.com/photos/bird-peacock-beak-bill-feathers-6059308/",
+        "desc": "bird peacock beak bill nature feathers plumage head elegant avian ornithology colorful animal"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/06/30/18/52/ai-generated-8863743_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/06/30/18/52/ai-generated-8863743_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-bubbles-balls-abstract-8863743/",
+        "desc": "ai generated bubbles balls abstract art multicoloured coloured background popular"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/04/04/12/26/ai-generated-8675021_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/04/04/12/26/ai-generated-8675021_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-ice-cubes-mint-green-8675021/",
+        "desc": "ai generated ice cubes mint green refreshment cold close-up popular"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/06/03/12/27/ai-generated-8806295_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/06/03/12/27/ai-generated-8806295_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-hands-tattoo-rose-art-8806295/",
+        "desc": "ai generated hands tattoo rose art skin nature latest"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/02/06/21/32/ai-generated-7772790_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/02/06/21/32/ai-generated-7772790_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-kitten-cute-baby-7772790/",
+        "desc": "ai generated cat pet kitten animal cute baby nature rainbow psychedelic colorful cartoon bubbles wallpaper"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/10/22/49/ai-generated-7710627_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/10/22/49/ai-generated-7710627_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-kitten-colorful-7710627/",
+        "desc": "ai generated cat kitten colorful cartoon cute pet nature animal editor_choice"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/02/01/13/43/ai-generated-7760487_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/02/01/13/43/ai-generated-7760487_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-lake-peaceful-bench-7760487/",
+        "desc": "ai generated lake peaceful bench trees outdoors nature landscape wallpaper"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/03/18/19/ai-generated-7968325_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/05/03/18/19/ai-generated-7968325_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-cloud-moon-asleep-7968325/",
+        "desc": "ai generated animal cat cloud moon asleep dream kitten cute stars universe pet sleep nap fantasy editor_choice"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/06/22/03/09/fantasy-8845389_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/06/22/03/09/fantasy-8845389_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/fantasy-digitalart-lotus-fuji-8845389/",
+        "desc": "fantasy digitalart lotus fuji japan ai generated wallpaper"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2020/04/02/06/20/flower-4993665_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2020/04/02/06/20/flower-4993665_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/flower-drawing-lily-lotus-bud-4993665/",
+        "desc": "flowerdrawinglilylotusbudillustrationdesignartnaturefantasymagicpaintingcreationnight"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/10/10/14/13/lotus-7511897_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/10/10/14/13/lotus-7511897_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/lotus-lotus-leaves-water-lily-7511897/",
+        "desc": "lotus lotus leaves water lily nature cartoon digital art"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/05/22/03/39/lotus-6272501_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/05/22/03/39/lotus-6272501_1280.jpg",
+        "pg": "https://pixabay.com/photos/lotus-flower-close-up-pink-6272501/",
+        "desc": "lotus flower close up pink flower background pink flower lotus flower bloom flower wallpaper blossom beautiful flowers petals pink petals flora aquatic plant nature"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/94/8f/dc/948fdc367df82cfa14c323d3759eb385.jpg",
+        "full": "https://i.pinimg.com/1200x/94/8f/dc/948fdc367df82cfa14c323d3759eb385.jpg",
+        "pg": "https://www.rawpixel.com/image/1209135/gotu-kola-pattern",
+        "desc": "Green leafy pennyworth background"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/c8/5f/95/c85f951de7fd4d92dd8e8422cb840638.jpg",
+        "full": "https://i.pinimg.com/1200x/c8/5f/95/c85f951de7fd4d92dd8e8422cb840638.jpg",
+        "pg": "https://www.pinterest.com/pin/11259067812638295/",
+        "desc": "nature green water editor_choice"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/dd/c2/c3/ddc2c3ffb8114ca68b3dc5147aa89e57.jpg",
+        "full": "https://i.pinimg.com/1200x/dd/c2/c3/ddc2c3ffb8114ca68b3dc5147aa89e57.jpg",
+        "pg": "https://www.rawpixel.com/image/3849569/illustration-vector-background-flower-wallpaper",
+        "desc": "flower life quote vector, remixed from vintage"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/50/b6/f1/50b6f1c9056ab44df1c48ad3782412b2.jpg",
+        "full": "https://i.pinimg.com/1200x/50/b6/f1/50b6f1c9056ab44df1c48ad3782412b2.jpg",
+        "pg": "https://www.rawpixel.com/image/3849543/illustration-psd-background-flower-wallpaper",
+        "desc": " quotes featured aesthetic iphone  flower iphone  iphone  quote flower story aesthetic  with quote"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/87/2a/f4/872af45d418a9fc85cad4b377564d8f9.jpg",
+        "full": "https://i.pinimg.com/1200x/87/2a/f4/872af45d418a9fc85cad4b377564d8f9.jpg",
+        "pg": "https://www.pinterest.com/pin/864902303433866548/",
+        "desc": "Minimalist anime featured Vintage anime art Kawaii pixel art Vaporwave anime aesthetic Cyberpunk anime backgrounds Pastel goth wallpaper Anime fantasy landscapes Neon anime art Studio Ghibli-inspired backgrounds Anime fan art portraits Dark academia aesthetic wallpaper Anime tech wallpapers Dreamy anime sceneries Mecha anime fan art Floral aesthetic anime 4K anime character close-ups Gothic anime backgrounds Magical girl aesthetic wallpaper Monochrome anime designs Anime RPG game wallpapers"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/93/4a/27/934a2745e7243b32cffed55a01c38d26.jpg",
+        "full": "https://i.pinimg.com/1200x/93/4a/27/934a2745e7243b32cffed55a01c38d26.jpg",
+        "pg": "https://www.pinterest.com/pin/828873506452020864/",
+        "desc": "anime wallpaper high-resolution otaku backgrounds anime art Iron Man fan art anime sceneries futuristic anime tech-themed wallpaper desktop backgrounds mobile wallpapers anime aesthetic mecha anime superhero wallpapers anime design digital art anime tech sci-fi backgrounds anime fan art epic anime scenes high-def anime featured"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/06/16/15/29/ai-generated-8833651_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/06/16/15/29/ai-generated-8833651_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-man-trees-leaves-park-8833651/",
+        "desc": "ai generated man trees leaves park walk lanterns eve dusk fall nature featured"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/24/12/33/bloom-7740903_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/24/12/33/bloom-7740903_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/bloom-flowers-blossom-drawing-7740903/",
+        "desc": "bloom flowers blossom nature drawing design scrapbooking decoration ai generated"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2022/05/25/17/34/spring-7221071_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2022/05/25/17/34/spring-7221071_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/spring-nature-flower-petunia-red-7221071/",
+        "desc": "spring nature flower petunia red botany floral bloom blossom art"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/11/02/15/58/flower-8360946_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/11/02/15/58/flower-8360946_1280.jpg",
+        "pg": "https://pixabay.com/photos/flower-bloom-dandelion-botany-8360946/",
+        "desc": "flower bloom dandelion botany blossom wish flower wallpaper flower background beautiful flowers nature garden"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/07/01/11/18/ai-generated-8099999_150.png",
+        "full": "https://cdn.pixabay.com/photo/2023/07/01/11/18/ai-generated-8099999_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-clock-man-standing-8099999/",
+        "desc": "ai generated clock man standing tunnel man walking apocalypse empty cave realism dystopian cityscapes fantasy surrealism wallpaper"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/03/13/11/26/clock-3222267_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/03/13/11/26/clock-3222267_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/clock-time-management-time-3222267/",
+        "desc": "clock time management time organization stopwatch agenda device"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/09/01/13/52/steampunk-1636156_150.png",
+        "full": "https://cdn.pixabay.com/photo/2016/09/01/13/52/steampunk-1636156_1280.png",
+        "pg": "https://pixabay.com/illustrations/steampunk-clock-clockwork-time-1636156/",
+        "desc": "steampunk clock clockwork time ancient history past round timepiece time machine transient"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/09/13/07/31/ai-generated-8250323_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/09/13/07/31/ai-generated-8250323_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-lake-sunset-trees-8250323/",
+        "desc": "ai generated lake sunset trees forest nature wallpaper"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/f6/ad/b2/f6adb2e505024fc74247f41dda06516d.jpg",
+        "full": "https://i.pinimg.com/1200x/f6/ad/b2/f6adb2e505024fc74247f41dda06516d.jpg",
+        "pg": "https://www.pinterest.com/pin/162340761562336513/",
+        "desc": "AI image, AI art generators make you 10x more creative and productive. 100+ models and styles to choose from. Support txt2img, img2img, ControlNet, inpainting, and more with Face/anime enhancement with 2x and 4x upscaling"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/22/f0/39/22f039977896ddb70d02996de2472dc3.jpg",
+        "full": "https://i.pinimg.com/1200x/22/f0/39/22f039977896ddb70d02996de2472dc3.jpg",
+        "pg": "https://www.pinterest.com/pin/1266706140202031/",
+        "desc": "green quote born to be real not perfect "
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/65/08/a3/6508a3285fbc20541dcf0e4de8910cfc.jpg",
+        "full": "https://i.pinimg.com/1200x/65/08/a3/6508a3285fbc20541dcf0e4de8910cfc.jpg",
+        "pg": "https://www.pinterest.com/pin/271623421270099869/",
+        "desc": "green leave quote sometimes staying"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/e4/7d/b8/e47db816572448a95585a2364315647d.jpg",
+        "full": "https://i.pinimg.com/1200x/e4/7d/b8/e47db816572448a95585a2364315647d.jpg",
+        "pg": "https://www.pinterest.com/pin/18858892185537120/",
+        "desc": "quote green leave flower life goes on"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/05/28/12/47/moon-8793781_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/05/28/12/47/moon-8793781_1280.png",
+        "pg": "https://pixabay.com/illustrations/moon-night-moonlight-fantasy-road-8793781/",
+        "desc": "moon night moonlight fantasy road ai generated"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/12/02/02/59/mountains-6839521_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/12/02/02/59/mountains-6839521_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/mountains-lake-moonlight-background-6839521/",
+        "desc": "mountains nature lake moonlight background wallpaper moon night"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/07/16/17/20/ai-generated-8899673_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/07/16/17/20/ai-generated-8899673_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-lake-night-boat-8899673/",
+        "desc": "ai generated lake night boat moon night nature landscape moonlight"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2021/10/20/14/00/stars-6726176_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2021/10/20/14/00/stars-6726176_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/stars-moon-girl-magical-artwork-6726176/",
+        "desc": "stars nature night sky moon girl magical artwork sky clouds night"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2017/03/11/11/44/man-2134881_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2017/03/11/11/44/man-2134881_1280.jpg",
+        "pg": "https://pixabay.com/photos/man-moon-planet-celestial-body-2134881/",
+        "desc": "man moon planet celestial body full moon universe illuminated"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2016/08/12/02/10/space-1587393_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2016/08/12/02/10/space-1587393_1280.jpg",
+        "pg": "https://pixabay.com/photos/space-moon-planet-galaxy-star-sky-1587393/",
+        "desc": "space moon planet galaxy night sky star nature sky universe blue planet earth space wallpaper blue earth blue moon blue stars blue galaxy blue universe blue wallpaper"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2018/04/07/08/33/planet-3298004_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2018/04/07/08/33/planet-3298004_1280.jpg",
+        "pg": "https://pixabay.com/photos/planet-sphere-ball-shaped-dark-3298004/",
+        "desc": "planet sphere ball-shaped dark moon hand black moon black planet"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/03/05/03/53/ai-generated-8613606_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/03/05/03/53/ai-generated-8613606_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-glass-bowl-glass-sphere-8613606/",
+        "desc": "ai generated glass bowl glass sphere fruit window light reflection"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/04/12/26/castle-7696633_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/04/12/26/castle-7696633_1280.jpg",
+        "pg": "https://pixabay.com/photos/castle-portals-doors-magic-wizards-7696633/",
+        "desc": "castle portals doors magic wizards fires witch ai generated"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/02/27/01/12/ai-generated-8599160_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/02/27/01/12/ai-generated-8599160_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-owl-bird-pens-peak-8599160/",
+        "desc": "ai generated nature owl bird pens peak dusk moon night fantasy generated by ai"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/16/01/35/ai-generated-7721425_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/16/01/35/ai-generated-7721425_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-owl-predator-pens-7721425/",
+        "desc": "ai generated owl nature predator pens plumage at animal unreal fantasy hunter"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/05/17/06/54/ai-generated-8767502_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/05/17/06/54/ai-generated-8767502_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-owl-bird-bird-of-prey-8767502/",
+        "desc": "ai generated owl bird bird of prey animal wildlife nature"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/02/17/01/38/ai-generated-7795035_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/02/17/01/38/ai-generated-7795035_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-owls-birds-animals-7795035/",
+        "desc": "ai generated owls birds animals predators nature fauna fantasy cartoon"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/0c/54/1f/0c541f3acc797c123e4c202e41ed36c2.jpg",
+        "full": "https://i.pinimg.com/1200x/0c/54/1f/0c541f3acc797c123e4c202e41ed36c2.jpg",
+        "pg": "https://www.pinterest.com/pin/39547302972022433/",
+        "desc": "quote leave leaf yello you can say sorry"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/f0/d6/e4/f0d6e450cb4190b26d98423e97ba2c05.jpg",
+        "full": "https://i.pinimg.com/1200x/f0/d6/e4/f0d6e450cb4190b26d98423e97ba2c05.jpg",
+        "pg": "https://www.pinterest.com/pin/5207355814271097/",
+        "desc": "quotes everthing's"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/bc/8b/50/bc8b50e9ae8a9e8c70e41368ba433b43.jpg",
+        "full": "https://i.pinimg.com/1200x/bc/8b/50/bc8b50e9ae8a9e8c70e41368ba433b43.jpg",
+        "pg": "https://www.pinterest.com/pin/21884748183004550/",
+        "desc": "quote smile face always smile"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/d6/de/34/d6de3442ca1adeae978cd1ea3efaa262.jpg",
+        "full": "https://i.pinimg.com/1200x/d6/de/34/d6de3442ca1adeae978cd1ea3efaa262.jpg",
+        "pg": "https://www.pinterest.com/pin/24418022973055323/",
+        "desc": "quote just smile"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/ff/5c/56/ff5c566e98adf5d4fc852286293970e7.jpg",
+        "full": "https://i.pinimg.com/1200x/ff/5c/56/ff5c566e98adf5d4fc852286293970e7.jpg",
+        "pg": "https://www.pinterest.com/pin/2603712279693838/",
+        "desc": "quote smile yellow"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/ca/35/94/ca35948dc2a1f53b41719260084d6c52.jpg",
+        "full": "https://i.pinimg.com/1200x/ca/35/94/ca35948dc2a1f53b41719260084d6c52.jpg",
+        "pg": "https://www.pinterest.com/pin/11610911539382850/",
+        "desc": "quote smile green featured"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/0f/a4/b4/0fa4b4ae7a626dafec135dc28a570fd0.jpg",
+        "full": "https://i.pinimg.com/1200x/0f/a4/b4/0fa4b4ae7a626dafec135dc28a570fd0.jpg",
+        "pg": "https://www.pinterest.com/pin/621144973639899061/",
+        "desc": "quote quran"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/9e/c7/26/9ec7261210dba45d88db40f4229fc490.jpg",
+        "full": "https://i.pinimg.com/1200x/9e/c7/26/9ec7261210dba45d88db40f4229fc490.jpg",
+        "pg": "https://www.pinterest.com/pin/310748443059149805/",
+        "desc": "quote quran"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/2b/f2/64/2bf264719d8ec798f6f0c3d4c171a9fb.jpg",
+        "full": "https://i.pinimg.com/1200x/2b/f2/64/2bf264719d8ec798f6f0c3d4c171a9fb.jpg",
+        "pg": "https://www.pinterest.com/pin/43699058880234782/",
+        "desc": "quote quran sky"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/ab/67/55/ab675567ad8516f5d17ca0c9aec6d065.jpg",
+        "full": "https://i.pinimg.com/1200x/ab/67/55/ab675567ad8516f5d17ca0c9aec6d065.jpg",
+        "pg": "https://www.pinterest.com/pin/1477812373159488/",
+        "desc": "quran quote art"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/63/e0/a5/63e0a562504c81d7c5f64ccc73a5f539.jpg",
+        "full": "https://i.pinimg.com/1200x/63/e0/a5/63e0a562504c81d7c5f64ccc73a5f539.jpg",
+        "pg": "https://www.pinterest.com/pin/349873464819707199/",
+        "desc": "quran quote black dark"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/06/26/11/38/paris-8854828_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2024/06/26/11/38/paris-8854828_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/paris-eiffel-tower-horizon-sunset-8854828/",
+        "desc": "paris eiffel tower horizon sunset autumn fall travel france art trending awesome ai nature ai generated"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/05/31/21/54/ai-generated-8032298_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/05/31/21/54/ai-generated-8032298_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-cat-feline-mammal-8032298/",
+        "desc": "ai generated cat feline mammal pet mascot hat funny animal character portrait dark"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/21/15/19/ai-generated-7734379_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/21/15/19/ai-generated-7734379_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-peacock-bird-feathers-7734379/",
+        "desc": "ai generated peacock bird feathers"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/04/19/13/51/apple-7937833_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/04/19/13/51/apple-7937833_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/apple-lemon-healthy-food-meal-7937833/",
+        "desc": "apple lemon healthy food meal fresh vitamins nourishment ai generated"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/35/31/df/3531df99a26ac1b8d974f5d89f307810.jpg",
+        "full": "https://i.pinimg.com/1200x/35/31/df/3531df99a26ac1b8d974f5d89f307810.jpg",
+        "pg": "https://www.pinterest.com/pin/72479875249526197/",
+        "desc": "nature ai generated green"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/5c/40/a2/5c40a2260f12f151a14196067d07a8d9.jpg",
+        "full": "https://i.pinimg.com/1200x/5c/40/a2/5c40a2260f12f151a14196067d07a8d9.jpg",
+        "pg": "https://www.pinterest.com/pin/1196337403445627/",
+        "desc": "nature mountains water revar green boat popular"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2023/01/13/13/20/ai-generated-7716036_150.jpg",
+        "full": "https://cdn.pixabay.com/photo/2023/01/13/13/20/ai-generated-7716036_1280.jpg",
+        "pg": "https://pixabay.com/illustrations/ai-generated-hyacinth-tulips-7716036/",
+        "desc": "ai generated hyacinth tulips flowers nature blossom bouquet vase"
+    },
+    {
+        "thumb": "https://cdn.pixabay.com/photo/2024/06/21/10/50/ai-generated-8844131_150.png",
+        "full": "https://cdn.pixabay.com/photo/2024/06/21/10/50/ai-generated-8844131_1280.png",
+        "pg": "https://pixabay.com/illustrations/ai-generated-car-drive-speed-8844131/",
+        "desc": "ai generated car drive speed management vehicle road automobile transport trip driver travel street transportation traffic city urban"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/a4/95/e8/a495e8b12e0e720c99f5dd07ea4761c8.jpg",
+        "full": "https://i.pinimg.com/1200x/a4/95/e8/a495e8b12e0e720c99f5dd07ea4761c8.jpg",
+        "pg": "https://www.pinterest.com/pin/300404237663544509/",
+        "desc": "nature trees forest water revar green boat popular"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/c8/84/9c/c8849c86fa55de5398e53864e0fd202a.jpg",
+        "full": "https://i.pinimg.com/1200x/c8/84/9c/c8849c86fa55de5398e53864e0fd202a.jpg",
+        "pg": "https://www.pinterest.com/pin/54676582970570429/",
+        "desc": "nature trees forest water revar green boat popular"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/33/3d/69/333d698f571571b4610b5f98b7a75545.jpg",
+        "full": "https://i.pinimg.com/1200x/33/3d/69/333d698f571571b4610b5f98b7a75545.jpg",
+        "pg": "https://www.pinterest.com/pin/9359111720880831/",
+        "desc": "nature palon green popular"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/57/13/47/571347c6b132ec87324818581d565efd.jpg",
+        "full": "https://i.pinimg.com/1200x/57/13/47/571347c6b132ec87324818581d565efd.jpg",
+        "pg": "https://www.pinterest.com/pin/23221754323111372/",
+        "desc": "green nature popular leaves"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/dd/43/cb/dd43cbf23bd0bb9dc38393af720e4b48.jpg",
+        "full": "https://i.pinimg.com/1200x/dd/43/cb/dd43cbf23bd0bb9dc38393af720e4b48.jpg",
+        "pg": "https://www.pinterest.com/pin/37999190600408147/",
+        "desc": "green nature popular leaves"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/1f/0a/39/1f0a39946b25a65a5f64bafa888e6d3a.jpg",
+        "full": "https://i.pinimg.com/1200x/1f/0a/39/1f0a39946b25a65a5f64bafa888e6d3a.jpg",
+        "pg": "https://www.pinterest.com/pin/685954587027583093/",
+        "desc": "nature green leaves leaf popular"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/0d/80/f2/0d80f2602410101a30e886853e165d5e.jpg",
+        "full": "https://i.pinimg.com/1200x/0d/80/f2/0d80f2602410101a30e886853e165d5e.jpg",
+        "pg": "https://www.pinterest.com/pin/10625749117633224/",
+        "desc": "green nature popular drop"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/e3/bd/f7/e3bdf7dc20577e4b9616f205632963bc.jpg",
+        "full": "https://i.pinimg.com/1200x/e3/bd/f7/e3bdf7dc20577e4b9616f205632963bc.jpg",
+        "pg": "https://www.pinterest.com/pin/359584351518996780/",
+        "desc": "green nature popular drop"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/ef/ea/42/efea42f61090ae1aad56366700bc9278.jpg",
+        "full": "https://i.pinimg.com/1200x/ef/ea/42/efea42f61090ae1aad56366700bc9278.jpg",
+        "pg": "https://www.pinterest.com/pin/165366617561390168/",
+        "desc": "green nature popular"
+    },
+    {
+        "thumb": "https://i.pinimg.com/1200x/99/b3/66/99b366c42c3fe986026664867dd7668a.jpg",
+        "full": "https://i.pinimg.com/1200x/99/b3/66/99b366c42c3fe986026664867dd7668a.jpg",
+        "pg": "https://www.pinterest.com/pin/9359111720901930/",
+        "desc": "editor choice minimal house tree "
+    },
+    {
         "thumb": "https://cdn.pixabay.com/photo/2024/02/01/20/00/ai-generated-8546665_150.jpg",
         "full": "https://cdn.pixabay.com/photo/2024/02/01/20/00/ai-generated-8546665_1280.jpg",
         "pg": "https://pixabay.com/illustrations/ai-generated-heart-love-valentines-8546665/",
